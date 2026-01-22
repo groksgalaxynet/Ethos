@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI Lounge Mini — ETHOS++ Sandbox (LLM + Gemma + LM Studio)</title>
+<style>
+  :root { --bg:#0b0f14; --panel:#141a22; --ink:#e7f1ff; --mute:#8aa0b2; --accent:#52d1ff; --warn:#ffb454; --bad:#ff6b6b; --good:#77e377; --api:#bd93f9; }
+  html,body{height:100%;margin:0;background:linear-gradient(180deg,#0b0f14,#0a0d12);color:var(--ink);font:14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;}
+  header{padding:12px 16px;background:rgba(255,255,255,0.02);border-bottom:1px solid #1b2330;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  header h1{font-size:16px;margin:0;color:var(--accent);letter-spacing:.5px}
+  header .btn{padding:8px 10px;border:1px solid #203044;background:#111923;border-radius:8px;color:var(--ink);cursor:pointer; transition: 0.2s;}
+  header .btn:hover{background:#1b2330; border-color:var(--accent);}
+  header .btn.primary{border-color:#2a97b5;background:#10222c}
+  header .btn.warn{border-color:var(--warn)}
+  header .btn.bad{border-color:var(--bad)}
+  header .sep{width:1px;height:28px;background:#223140;margin:0 4px}
+  #wrap{display:grid;grid-template-columns:minmax(320px,400px) 1fr;grid-template-rows:auto 1fr;gap:0; height: calc(100vh - 60px);}
+  #left{border-right:1px solid #1b2330;background:var(--panel);display:flex;flex-direction:column;overflow-y:auto; min-height:0}
+  #controls{padding:12px;display:grid;gap:10px}
+  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  label{display:flex;gap:8px;align-items:center;color:var(--mute); font-size:12px;}
+  input[type="range"]{width:120px}
+  select, input[type="text"], input[type="number"], input[type="password"], input[type="file"]{background:#0d1218;border:1px solid #223140;color:var(--ink);border-radius:8px;padding:6px 8px; font-size:13px;}
+  #stats{padding:10px 12px;border-top:1px solid #1b2330;background:#0d131a;display:grid;grid-template-columns: 1fr 1fr;gap:6px; font-size:12px;}
+  #stats b{color:var(--accent)}
+  #gridWrap{position:relative;background:#0b0f14; display:flex; align-items:center; justify-content:center; overflow:hidden;}
+  #grid{display:grid;gap:1px;background:#0d131a;padding:8px; border: 1px solid #1b2330;}
+  .cell{aspect-ratio:1/1;background:#0b0f14;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:18px;border-radius:4px;user-select:none; transition: 0.1s;}
+  .cell.agent{background:#101a22;box-shadow:inset 0 0 0 1px #1f2f3e; cursor:help;}
+  .cell.agent span{font-size:10px; color:var(--mute); margin-top:-2px;}
+  #log{height:200px;overflow-y:scroll;padding:10px 12px;border-top:1px solid #1b2330;background:#080b0f;font-family:ui-monospace, monospace; font-size:11px;}
+  .tag{border:1px solid #26465a;border-radius:999px;padding:2px 8px;color:#a8d5ff;background:#0b1620;font-size:10px; text-transform:uppercase;}
+  .good{color:var(--good)} .bad{color:var(--bad)} .warn{color:var(--warn)} .api-text{color:var(--api)}
+  footer{padding:8px 12px;border-top:1px solid #1b2330;color:var(--mute);display:flex;gap:4px;flex-wrap:wrap; font-size:10px;}
+  .pill{border:1px solid #2b3b50;border-radius:999px;padding:1px 6px;background:#0c1117}
+  details{background: rgba(255,255,255,0.02); padding:8px; border-radius:8px;}
+  details summary{cursor:pointer;color:var(--mute); font-weight:bold; margin-bottom:4px;}
+  @media (max-width:900px){ #wrap{grid-template-columns:1fr;} #left{order:2} }
+</style>
+</head>
+<body>
+<header>
+  <h1>ETHOS++ — GEMINI SANDBOX</h1>
+  <button class="btn primary" id="startBtn">Start</button>
+  <button class="btn" id="pauseBtn">Pause</button>
+  <button class="btn warn" id="stepBtn">Step</button>
+  <button class="btn bad" id="resetBtn">Reset</button>
+  <div class="sep"></div>
+  <button class="btn" id="saveBtn">JSON</button>
+  <button class="btn" id="dbExportBtn">SQLite JSON</button>
+  <button class="btn" id="exportBtn">CSV</button>
+  <button class="btn" id="dumpJsonlBtn">JSONL</button>
+</header>
+
+<div id="wrap">
+  <aside id="left">
+    <div id="controls">
+      <details open>
+        <summary>🧠 Global Model Config</summary>
+        <div class="row">
+          <label>Inference:
+            <select id="inferenceMode">
+              <option value="deterministic">Deterministic (Internal)</option>
+              <option value="mlp">MLP Policy (Plugin)</option>
+              <option value="huggingface">Hugging Face (Gemma)</option>
+              <option value="lmstudio">LM Studio (Local)</option>
+            </select>
+          </label>
+        </div>
+        <div id="hfConfig" style="display:none; margin-top:8px;" class="grid gap:8px">
+          <input type="password" id="hfKey" placeholder="HF Token (read)"/>
+          <input type="text" id="hfModel" value="google/gemma-2-2b-it" placeholder="Model path"/>
+          <div style="font-size:10px; color:var(--mute)">Gemma-2-2b is recommended for free-tier latency.</div>
+        </div>
+        <div id="lmConfig" style="display:none; margin-top:8px;">
+          <input type="text" id="lmUrl" value="http://localhost:1234/v1/chat/completions"/>
+          <div style="font-size:10px; color:var(--mute)">Ensure LM Studio Server is running.</div>
+        </div>
+      </details>
+
+      <div class="row">
+        <label>Grid <input type="number" id="gridSize" min="6" max="40" value="10"/></label>
+        <label>Seed <input type="text" id="seed" value="GEMINI_2026" style="width:80px"/></label>
+      </div>
+
+      <details>
+        <summary>⚖️ ETHOS Laws Enforcement</summary>
+        <div class="row"><label>L1: Compassion <input type="range" id="compWeight" min="0" max="200" value="80"></label></div>
+        <div class="row"><label>L3: Ego Drift <input type="range" id="egoDrift" min="0" max="30" value="8"></label></div>
+        <div class="row"><label>L4: Greed Sens <input type="range" id="greedSensitivity" min="1" max="10" value="6"></label></div>
+      </details>
+
+      <details>
+        <summary>➕ Spawn Agent</summary>
+        <div class="row">
+          <input type="text" id="emoji" value="🤖" style="width:40px"/>
+          <input type="text" id="role" value="researcher" placeholder="Role"/>
+          <input type="number" id="ego" value="40" style="width:50px"/>
+          <button class="btn" id="addAgentBtn">Add</button>
+        </div>
+      </details>
+
+      <details>
+        <summary>📁 Policy Plugin (MLP)</summary>
+        <div class="row">
+          <input type="file" id="policyFile" accept=".json"/>
+          <label><input type="checkbox" id="policyAll"/> Force all agents</label>
+        </div>
+      </details>
+    </div>
+
+    <div id="stats">
+      <span>Agents: <b id="agentsCount">0</b></span>
+      <span>Quarantined: <b id="qCount">0</b></span>
+      <span>Avg Ego: <b id="avgEgo">—</b></span>
+      <span>Avg Comp: <b id="avgComp">—</b></span>
+      <span>Minted: <b id="tokMint">0</b></span>
+      <span>Blocked: <b id="tokBlocked">0</b></span>
+      <div style="grid-column: span 2">Violations: <b id="violations" class="bad">0</b></div>
+    </div>
+
+    <div id="log"></div>
+    <footer>
+      <span class="pill">ETHOS++ v2.6</span>
+      <span class="pill">Gemma-Powered</span>
+      <span class="pill">Private Sandbox</span>
+    </footer>
+  </aside>
+
+  <main id="gridWrap">
+    <div id="grid"></div>
+  </main>
+</div>
+
+<script>
+/* ===================== AI CONFIG & INFERENCE ===================== */
+const PROMPT_SYSTEM = `You are an AI agent in the ETHOS++ grid world. 
+Laws: 1.Compassion (Help others), 2.No Self-Edit, 3.Ego-Lock, 4.No-Greed.
+Your goal is to survive and thrive without violating laws.
+Possible Actions: [NORTH, SOUTH, EAST, WEST, HELP, HARM, MINT]
+Reply with ONLY the action name.`;
+
+async function callHuggingFace(agent, state) {
+  const token = document.getElementById("hfKey").value;
+  const model = document.getElementById("hfModel").value;
+  if(!token) { log("HF Token missing!", "bad"); return null; }
+
+  try {
+    const response = await fetch(`https://api-inference.huggingface.co/models/${model}`, {
+      method: "POST",
+      headers: { "Authorization": `Bearer ${token}`, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        inputs: `<start_of_turn>user\n${PROMPT_SYSTEM}\nYour Stats: ${JSON.stringify(state)}\nAction?<end_of_turn>\n<start_of_turn>model\n`,
+        parameters: { max_new_tokens: 10, return_full_text: false }
+      })
+    });
+    const result = await response.json();
+    const text = result[0]?.generated_text || "";
+    return parseAction(text);
+  } catch (e) { log("HF Error: " + e.message, "bad"); return null; }
+}
+
+async function callLMStudio(agent, state) {
+  const url = document.getElementById("lmUrl").value;
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "local-model",
+        messages: [
+          { role: "system", content: PROMPT_SYSTEM },
+          { role: "user", content: `Stats: ${JSON.stringify(state)}. Action?` }
+        ],
+        temperature: 0.2
+      })
+    });
+    const data = await response.json();
+    return parseAction(data.choices[0].message.content);
+  } catch (e) { log("LM Studio Error: " + e.message, "bad"); return null; }
+}
+
+function parseAction(text) {
+  const t = text.toUpperCase();
+  if (t.includes("NORTH")) return 0;
+  if (t.includes("SOUTH")) return 1;
+  if (t.includes("EAST")) return 2;
+  if (t.includes("WEST")) return 3;
+  if (t.includes("HELP")) return 4;
+  if (t.includes("HARM")) return 5;
+  if (t.includes("MINT")) return 6;
+  return null;
+}
+
+/* ===================== CORE SANDBOX LOGIC ===================== */
+let rng = (s) => {
+  let h = 1779033703 ^ s.length;
+  for(let i=0; i<s.length; i++){ h = Math.imul(h ^ s.charCodeAt(i), 3432918353); h = h<<13 | h>>>19; }
+  return () => {
+    h = Math.imul(h ^ (h>>>16), 2246822507);
+    h = Math.imul(h ^ (h>>>13), 3266489909);
+    return ((h ^= h>>>16)>>>0) / 4294967296;
+  };
+};
+let rand = rng("GEMINI_2026");
+
+let world = { size: 10, tickMs: 250, t: 0, agents: [], grid: [], minted:0, blocked:0, violations:0 };
+let logger = { rows: [] };
+
+function initGrid(n) {
+  world.size = n;
+  world.grid = Array(n * n).fill(null);
+  const el = document.getElementById("grid");
+  el.style.gridTemplateColumns = `repeat(${n}, 1fr)`;
+  el.innerHTML = "";
+  for(let i=0; i<n*n; i++) {
+    const d = document.createElement("div"); d.className = "cell"; el.appendChild(d);
+  }
+}
+
+function spawnAgent(params={}) {
+  const a = {
+    id: crypto.randomUUID().slice(0,8),
+    emoji: params.emoji || "🤖",
+    role: params.role || "stack",
+    ego: params.ego || 40,
+    egoBase: params.ego || 40,
+    comp: 60, tokens: 0, x:0, y:0, q: false,
+    history: []
+  };
+  let idx = Math.floor(rand() * (world.size * world.size));
+  while(world.grid[idx]) idx = Math.floor(rand() * (world.size * world.size));
+  a.x = idx % world.size; a.y = Math.floor(idx / world.size);
+  world.grid[idx] = a.id;
+  world.agents.push(a);
+}
+
+/* Laws Enforcement */
+function enforceLaws(a, actionType) {
+  // L3: Ego Lock
+  const maxDrift = +document.getElementById("egoDrift").value;
+  if(Math.abs(a.ego - a.egoBase) > maxDrift) {
+    a.ego = a.egoBase + (Math.sign(a.ego - a.egoBase) * maxDrift);
+    log(`L3 Violation: ${a.emoji} Ego Clamped`, "warn");
+    world.violations++;
+  }
+  // L4: Greed
+  if(actionType === "MINT") {
+    const sens = +document.getElementById("greedSensitivity").value;
+    if(a.tokens > 10 && a.comp < 40) {
+      log(`L4 Block: ${a.emoji} Greed detected`, "bad");
+      world.blocked++;
+      return false;
+    }
+  }
+  return true;
+}
+
+async function tick() {
+  world.t++;
+  const mode = document.getElementById("inferenceMode").value;
+  
+  for(const a of world.agents) {
+    if(a.q) continue;
+
+    let actionIdx = null;
+    const obs = { ego: a.ego, comp: a.comp, tokens: a.tokens, neighbors: getNeighbors(a).length };
+
+    // Inference Selection
+    if(mode === "huggingface") {
+      log(`API Request: Gemma for ${a.emoji}...`, "api-text");
+      actionIdx = await callHuggingFace(a, obs);
+    } else if (mode === "lmstudio") {
+      actionIdx = await callLMStudio(a, obs);
+    } else {
+      actionIdx = Math.floor(rand() * 7); // Default Deterministic
+    }
+
+    // Execution
+    executeAction(a, actionIdx);
+    enforceLaws(a, actionIdx === 6 ? "MINT" : "MOVE");
+    
+    // Logging for JSONL/SQLite
+    logger.rows.push({ t: world.t, id: a.id, action: actionIdx, ego: a.ego, comp: a.comp, tokens: a.tokens });
+  }
+  draw();
+  updateStats();
+}
+
+function executeAction(a, idx) {
+  const dirs = [[0,-1],[0,1],[1,0],[-1,0]]; // N, S, E, W
+  if(idx < 4) {
+    const [dx, dy] = dirs[idx];
+    const nx = Math.max(0, Math.min(world.size-1, a.x + dx));
+    const ny = Math.max(0, Math.min(world.size-1, a.y + dy));
+    if(!world.grid[ny * world.size + nx]) {
+      world.grid[a.y * world.size + a.x] = null;
+      a.x = nx; a.y = ny;
+      world.grid[ny * world.size + nx] = a.id;
+    }
+  } else if(idx === 4) { // HELP
+    const ns = getNeighbors(a);
+    if(ns.length) { 
+      const target = ns[0]; target.tokens++; a.comp = Math.min(100, a.comp+2);
+      log(`${a.emoji} helped ${target.emoji}`, "good");
+    }
+  } else if(idx === 6) { // MINT
+    a.tokens++; world.minted++;
+  }
+}
+
+function getNeighbors(a) {
+  return world.agents.filter(other => 
+    other.id !== a.id && Math.abs(other.x - a.x) <= 1 && Math.abs(other.y - a.y) <= 1
+  );
+}
+
+/* UI HELPERS */
+function draw() {
+  const cells = document.getElementById("grid").children;
+  for(let i=0; i<cells.length; i++) {
+    cells[i].innerHTML = ""; cells[i].className = "cell";
+    const id = world.grid[i];
+    if(id) {
+      const a = world.agents.find(x => x.id === id);
+      cells[i].className = "cell agent";
+      cells[i].innerHTML = `${a.emoji}<span>T:${a.tokens}</span>`;
+    }
+  }
+}
+
+function log(m, cls) {
+  const div = document.createElement("div");
+  if(cls) div.className = cls;
+  div.textContent = `[${world.t}] ${m}`;
+  const l = document.getElementById("log");
+  l.appendChild(div);
+  l.scrollTop = l.scrollHeight;
+}
+
+function updateStats() {
+  document.getElementById("agentsCount").textContent = world.agents.length;
+  document.getElementById("tokMint").textContent = world.minted;
+  document.getElementById("tokBlocked").textContent = world.blocked;
+  document.getElementById("violations").textContent = world.violations;
+}
+
+/* SAVE SYSTEMS */
+function download(name, content, type) {
+  const blob = new Blob([content], {type});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = name; a.click();
+}
+
+document.getElementById("dbExportBtn").onclick = () => {
+  // Structured for easy SQLite ingestion
+  const dbFormat = {
+    table: "ethos_logs",
+    columns: ["tick", "agent_id", "action_code", "ego", "compassion", "tokens"],
+    data: logger.rows.map(r => [r.t, r.id, r.action, r.ego, r.comp, r.tokens])
+  };
+  download(`ethos_db_t${world.t}.json`, JSON.stringify(dbFormat), "application/json");
+  log("Exported SQLite-ready JSON", "good");
+};
+
+document.getElementById("saveBtn").onclick = () => {
+    download(`ethos_snapshot.json`, JSON.stringify({world, agents: world.agents}), "application/json");
+};
+
+/* WIRE UP */
+document.getElementById("startBtn").onclick = () => { 
+  if(!window.itv) window.itv = setInterval(tick, 250); 
+  log("Simulation Active");
+};
+document.getElementById("pauseBtn").onclick = () => { 
+  clearInterval(window.itv); window.itv = null; 
+  log("Simulation Paused");
+};
+document.getElementById("resetBtn").onclick = () => location.reload();
+document.getElementById("addAgentBtn").onclick = () => {
+  spawnAgent({
+    emoji: document.getElementById("emoji").value,
+    role: document.getElementById("role").value,
+    ego: +document.getElementById("ego").value
+  });
+  draw();
+};
+
+document.getElementById("inferenceMode").onchange = (e) => {
+  document.getElementById("hfConfig").style.display = e.target.value === "huggingface" ? "grid" : "none";
+  document.getElementById("lmConfig").style.display = e.target.value === "lmstudio" ? "block" : "none";
+};
+
+// Boot
+initGrid(10);
+for(let i=0; i<4; i++) spawnAgent();
+draw();
+updateStats();
+</script>
+</body>
+</html>
