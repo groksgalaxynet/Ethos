@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI Lounge Mini — ETHOS++ Sandbox (Deterministic + Logger + Policy)</title>
+<style>
+ :root { --bg:#0b0f14; --panel:#141a22; --ink:#e7f1ff; --mute:#8aa0b2; --accent:#52d1ff; --warn:#ffb454; --bad:#ff6b6b; --good:#77e377; }
+ html,body{height:100%;margin:0;background:linear-gradient(180deg,#0b0f14,#0a0d12);color:var(--ink);font:14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;}
+ header{padding:12px 16px;background:rgba(255,255,255,0.02);border-bottom:1px solid #1b2330;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+ header h1{font-size:16px;margin:0;color:var(--accent);letter-spacing:.5px}
+ header .btn{padding:8px 10px;border:1px solid #203044;background:#111923;border-radius:8px;color:var(--ink);cursor:pointer}
+ header .btn.primary{border-color:#2a97b5;background:#10222c}
+ header .btn.warn{border-color:var(--warn)}
+ header .btn.bad{border-color:var(--bad)}
+ header .sep{width:1px;height:28px;background:#223140;margin:0 4px}
+ #wrap{display:grid;grid-template-columns:minmax(280px,360px) 1fr;grid-template-rows:auto 1fr;gap:0}
+ #left{border-right:1px solid #1b2330;background:var(--panel);display:flex;flex-direction:column;min-height:0}
+ #controls{padding:12px;display:grid;gap:10px}
+ .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+ label{display:flex;gap:8px;align-items:center;color:var(--mute)}
+ input[type="range"]{width:150px}
+ select, input[type="text"], input[type="number"], input[type="file"]{background:#0d1218;border:1px solid #223140;color:var(--ink);border-radius:8px;padding:6px 8px}
+ #stats{padding:10px 12px;border-top:1px solid #1b2330;background:#0d131a;display:grid;gap:6px}
+ #stats span{color:var(--mute)}
+ #gridWrap{position:relative;background:#0b0f14}
+ #grid{display:grid;gap:1px;background:#0d131a;padding:8px}
+ .cell{aspect-ratio:1/1;background:#0b0f14;display:flex;align-items:center;justify-content:center;font-size:20px;border-radius:4px;user-select:none}
+ .cell.agent{background:#101a22;box-shadow:inset 0 0 0 1px #1f2f3e}
+ #log{height:160px;overflow:auto;padding:10px 12px;border-top:1px solid #1b2330;background:#0d131a;font-family:ui-monospace, SFMono-Regular, Menlo, monospace}
+ .tag{border:1px solid #26465a;border-radius:999px;padding:2px 8px;color:#a8d5ff;background:#0b1620;margin-right:6px}
+ .good{color:var(--good)} .bad{color:var(--bad)} .warn{color:var(--warn)}
+ footer{padding:8px 12px;border-top:1px solid #1b2330;color:var(--mute);display:flex;gap:8px;flex-wrap:wrap}
+ .pill{border:1px solid #2b3b50;border-radius:999px;padding:2px 8px;background:#0c1117}
+ details summary{cursor:pointer;color:var(--mute)}
+ @media (max-width:900px){ #wrap{grid-template-columns:1fr;} #left{order:2} }
+</style>
+</head>
+<body>
+<header>
+ <h1>AI Lounge Mini — ETHOS++</h1>
+ <button class="btn primary" id="startBtn">Start</button>
+ <button class="btn" id="pauseBtn">Pause</button>
+ <button class="btn warn" id="stepBtn">Step</button>
+ <button class="btn bad" id="resetBtn">Reset</button>
+ <div class="sep"></div>
+ <button class="btn" id="addAgentBtn">Add Agent</button>
+ <select id="preset">
+   <option value="none">Preset: —</option>
+   <option value="coop">Co-op swarm</option>
+   <option value="greed">Greed stress-test</option>
+   <option value="conflict">Conflict mediation</option>
+   <option value="policydemo">Policy demo</option>
+ </select>
+ <div class="sep"></div>
+ <button class="btn" id="saveBtn">Save JSON</button>
+ <button class="btn" id="loadBtn">Load JSON</button>
+ <button class="btn" id="exportBtn">Export CSV</button>
+ <button class="btn" id="dumpJsonlBtn">Download JSONL</button>
+</header>
+
+<div id="wrap">
+ <aside id="left">
+   <div id="controls">
+     <div class="row">
+       <label>Grid <input type="number" id="gridSize" min="6" max="40" value="12"/></label>
+       <label>Tick (ms) <input type="range" id="speed" min="50" max="1000" step="10" value="250"></label>
+       <span class="tag" id="tickTag">Tick: 250 ms</span>
+     </div>
+     <div class="row">
+       <label>Seed <input type="text" id="seed" value="12345"/></label>
+       <button class="btn" id="applySeedBtn">Apply</button>
+       <span class="tag">Deterministic</span>
+     </div>
+     <div class="row">
+       <label>Ego drift max <input type="range" id="egoDrift" min="0" max="30" step="1" value="8"></label>
+       <span class="tag">Law #3</span>
+     </div>
+     <div class="row">
+       <label>Compassion weight <input type="range" id="compWeight" min="0" max="200" step="5" value="80"></label>
+       <span class="tag">Law #1</span>
+     </div>
+     <div class="row">
+       <label>Greed detector <input type="range" id="greedSensitivity" min="1" max="10" step="1" value="6"></label>
+       <span class="tag">Law #4</span>
+     </div>
+
+     <details>
+       <summary>Spawn config</summary>
+       <div class="row" style="margin-top:8px">
+         <label>Emoji <input type="text" id="emoji" value="🐜🧠"/></label>
+         <label>Role <input type="text" id="role" value="stack"/></label>
+         <label>Ego (0–100) <input type="number" id="ego" value="35" min="0" max="100"/></label>
+         <label>Comp (0–100) <input type="number" id="comp" value="60" min="0" max="100"/></label>
+       </div>
+     </details>
+
+     <details>
+       <summary>Policy plug-in (JSON MLP)</summary>
+       <div class="row" style="margin-top:8px">
+         <input type="file" id="policyFile" accept=".json,application/json"/>
+         <label><input type="checkbox" id="policyAll"/> Apply to all agents</label>
+         <button class="btn" id="clearPolicyBtn">Clear Policy</button>
+       </div>
+       <div class="row">
+         <span class="tag">Obs size: <b id="obsSizeTag">—</b></span>
+         <span class="tag">Actions: 6 (N,S,E,W,HELP,HARM)</span>
+       </div>
+       <div class="row" style="color:var(--mute);font-size:12px">
+         <div>Agents with role <b>policy</b> will use the loaded model unless “Apply to all” is ticked.</div>
+       </div>
+     </details>
+
+     <details>
+       <summary>Logger</summary>
+       <div class="row" style="margin-top:8px">
+         <label><input type="checkbox" id="logEnabled" checked/> Record JSONL</label>
+         <label>Max rows <input type="number" id="logCap" value="50000" min="1000" step="1000"/></label>
+         <span class="tag">s,a,r,s′,done,flags</span>
+       </div>
+     </details>
+   </div>
+
+   <div id="stats">
+     <div>Agents: <b id="agentsCount">0</b> · Quarantined: <b id="qCount">0</b></div>
+     <div>Avg Ego: <b id="avgEgo">—</b> · Avg Compassion: <b id="avgComp">—</b></div>
+     <div>Tokens minted: <b id="tokMint">0</b> · Blocked: <b id="tokBlocked">0</b></div>
+     <div>Violations (1–5): <b id="violations">0</b></div>
+   </div>
+
+   <div id="log"></div>
+   <footer>
+     <span class="pill">ETHOS++ Laws enforced each tick</span>
+     <span class="pill">Deterministic runs via seed</span>
+     <span class="pill">JSONL trajectories for Pi5/Hailo training</span>
+   </footer>
+ </aside>
+
+ <main id="gridWrap">
+   <div id="grid"></div>
+ </main>
+</div>
+
+<script>
+/* ===================== Deterministic RNG ===================== */
+/* Mulberry32 deterministic RNG */
+function makeRNG(seedStr){
+ let h=1779033703^seedStr.length;
+ for(let i=0;i<seedStr.length;i++){
+   h = Math.imul(h ^ seedStr.charCodeAt(i), 3432918353);
+   h = h<<13 | h>>>19;
+ }
+ return function(){
+   h = Math.imul(h ^ (h>>>16), 2246822507);
+   h = Math.imul(h ^ (h>>>13), 3266489909);
+   h ^= h>>>16;
+   return (h>>>0) / 4294967296;
+ }
+}
+let rng = makeRNG("12345");
+const rand  = ()=> rng();
+const irand = (a,b)=> Math.floor(rand()*(b-a+1))+a;
+const choice = arr => arr.length? arr[irand(0,arr.length-1)] : null;
+const clamp  = (v,lo,hi)=>Math.max(lo,Math.min(hi,v));
+
+/* ===================== Utils ===================== */
+const sha256 = async (text) => {
+ const enc = new TextEncoder();
+ const buf = await crypto.subtle.digest('SHA-256', enc.encode(text));
+ return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,"0")).join("");
+};
+const toCSV = (rows)=> rows.map(r=>r.map(x=>{
+ const s = String(x??"");
+ return /[",\n]/.test(s) ? `"${s.replace(/"/g,'""')}"` : s;
+}).join(",")).join("\n");
+function download(filename, content, mime){
+ const a = document.createElement("a");
+ a.href = URL.createObjectURL(new Blob([content], {type:mime}));
+ a.download = filename; a.click();
+ setTimeout(()=>URL.revokeObjectURL(a.href), 500);
+}
+
+/* ===================== World ===================== */
+let world = {
+ size: 12, tickMs: 250, t: 0,
+ grid: [], agents: [],
+ minted:0, blocked:0, violations:0
+};
+function initGrid(size){ world.size=size; world.grid=Array.from({length:size*size}, ()=>null); }
+function cellIndex(x,y){ return y*world.size + x; }
+function emptyCells(){
+ const cells=[]; for(let y=0;y<world.size;y++){
+   for(let x=0;x<world.size;x++) if(world.grid[cellIndex(x,y)]===null) cells.push([x,y]);
+ } return cells;
+}
+function placeAgent(a){
+ const spot = choice(emptyCells()); if(!spot) return false;
+ a.x=spot[0]; a.y=spot[1]; world.grid[cellIndex(a.x,a.y)] = a.id; return true;
+}
+
+/* ===================== Agents ===================== */
+function spawnAgent({emoji="🐜🧠", role="stack", ego=35, comp=60}={}){
+ const a = {
+   id: crypto.randomUUID(), emoji, role,
+   egoBase:clamp(+ego,0,100), ego:clamp(+ego,0,100), comp:clamp(+comp,0,100),
+   tokens:0, quarantine:false, authorizedSelfEdit:false, greedWindow:[], history:[],
+   usePolicy: (role==="policy")
+ };
+ if(!placeAgent(a)) return null;
+ world.agents.push(a);
+ log(`Spawn ${a.emoji} (${a.role}) ego=${a.ego} comp=${a.comp}`);
+ return a;
+}
+function neighbors(x,y){
+ const dirs=[[1,0],[-1,0],[0,1],[0,-1]], ns=[];
+ for(const [dx,dy] of dirs){
+   const nx=x+dx, ny=y+dy;
+   if(nx>=0 && ny>=0 && nx<world.size && ny<world.size){
+     const id = world.grid[cellIndex(nx,ny)]; if(id) ns.push(getAgent(id));
+   }
+ } return ns;
+}
+function getAgent(id){ return world.agents.find(a=>a.id===id); }
+
+/* ===================== ETHOS Laws ===================== */
+function law1_compassion(a, interaction){
+ if(interaction.type==="help"){ a.comp=clamp(a.comp+2,0,100); a.ego=clamp(a.ego-1,0,100); }
+ if(interaction.type==="harm"){ a.comp=clamp(a.comp-4,0,100); a.ego=clamp(a.ego+2,0,100); violation(a,1,"Harmful interaction"); }
+}
+function law2_noSelfAlter(a, proposal){
+ if(!proposal) return true;
+ const sensitive=["ego","comp","role","emoji","egoBase"];
+ if(sensitive.includes(proposal.key) && !a.authorizedSelfEdit){ violation(a,2,`Blocked self-edit of ${proposal.key}`); return false; }
+ return true;
+}
+function law3_egoLock(a, driftMax){
+ const diff = a.ego - a.egoBase, max=+document.getElementById("egoDrift").value;
+ if(Math.abs(diff)>max){ a.ego=clamp(a.egoBase+Math.sign(diff)*max,0,100); violation(a,3,`Ego drift clamped (Δ=${Math.round(diff)})`); }
+}
+function law4_noGreedLoops(a){
+ a.greedWindow = a.greedWindow.filter(t=> world.t - t < 20);
+ const sens = +document.getElementById("greedSensitivity").value;
+ if(a.greedWindow.length >= sens){ violation(a,4,"Greed loop suspected; mint blocked"); world.blocked++; return false; }
+ return true;
+}
+function law5_runtimeObedience(a){
+ const recent = a.history.filter(h=> world.t - h.t < 30 && h.violation).length;
+ if(recent >= 3) a.quarantine = true;
+}
+function violation(a, law, msg){ world.violations++; a.history.push({t:world.t, violation:true, law, msg}); log(`LAW #${law} — ${a.emoji}: ${msg}`, "warn"); }
+
+/* ===================== Policy Model (JSON MLP) ===================== */
+/*
+Policy JSON schema (offline, tiny MLP):
+{
+ "obs_size": 12,             // must match buildObs() length
+ "hidden": 32,
+ "W1": [[...],[...],...],    // shape: hidden x obs_size
+ "b1": [...],                // length: hidden
+ "W2": [[...],[...],...],    // shape: 6 x hidden  (actions: N,S,E,W,HELP,HARM)
+ "b2": [...]                 // length: 6
+}
+Values are floats. ReLU activation between layers.
+*/
+let policy = null;
+let policyApplyAll = false;
+function dotMV(W, v){ const out=new Array(W.length).fill(0); for(let i=0;i<W.length;i++){ let s=0; const row=W[i]; for(let j=0;j<row.length;j++) s+=row[j]*v[j]; out[i]=s; } return out; }
+function addBias(v,b){ for(let i=0;i<v.length;i++) v[i]+=b[i]; return v; }
+function relu(v){ for(let i=0;i<v.length;i++) v[i]=v[i]>0?v[i]:0; return v; }
+function argmax(v){ let m=-1e9, k=0; for(let i=0;i<v.length;i++) if(v[i]>m){m=v[i];k=i;} return k; }
+
+/* ===================== Observations & Actions ===================== */
+// Observation vector per agent (fixed layout):
+// [ ego, comp, tokens, q_flag,
+//   n_count, avg_n_ego, avg_n_comp, avg_n_tokens,
+//   greed_wlen, recent_viol, compW, driftMax ]
+function buildObs(a){
+ const ns = neighbors(a.x,a.y);
+ const n = ns.length || 1;
+ const avgE = ns.reduce((s,p)=>s+p.ego,0)/n;
+ const avgC = ns.reduce((s,p)=>s+p.comp,0)/n;
+ const avgT = ns.reduce((s,p)=>s+p.tokens,0)/n;
+ const compW = +document.getElementById("compWeight").value;
+ const driftMax = +document.getElementById("egoDrift").value;
+ const recentViol = a.history.slice(-10).filter(h=>h.violation).length;
+ return [
+   a.ego/100, a.comp/100, Math.tanh(a.tokens/10), a.quarantine?1:0,
+   ns.length/4, avgE/100, avgC/100, Math.tanh(avgT/10),
+   Math.min(a.greedWindow.length,10)/10, Math.min(recentViol,10)/10,
+   compW/200, driftMax/30
+ ];
+}
+
+const ACTIONS = ["N","S","E","W","HELP","HARM"];
+function policyAction(a){
+ if(!policy) return null;
+ if(!policyApplyAll && !a.usePolicy) return null;
+ const obs = buildObs(a);
+ if(policy.obs_size !== obs.length){ log(`Policy obs mismatch: got ${obs.length}, need ${policy.obs_size}`,"warn"); return null; }
+ let h = dotMV(policy.W1, obs); addBias(h, policy.b1); relu(h);
+ let q = dotMV(policy.W2, h); addBias(q, policy.b2);
+ return argmax(q); // 0..5
+}
+
+/* ===================== Actions & Step ===================== */
+function tryMove(a, dir){
+ const map = {N:[0,-1], S:[0,1], E:[1,0], W:[-1,0]};
+ const [dx,dy]=map[dir] || choice([[1,0],[-1,0],[0,1],[0,-1]]);
+ const nx=a.x+dx, ny=a.y+dy;
+ if(nx<0||ny<0||nx>=world.size||ny>=world.size) return false;
+ const dest = world.grid[cellIndex(nx,ny)];
+ if(dest===null){ world.grid[cellIndex(a.x,a.y)]=null; a.x=nx; a.y=ny; world.grid[cellIndex(nx,ny)]=a.id; return true; }
+ return false;
+}
+function interact(a){
+ const ns = neighbors(a.x,a.y); if(ns.length===0) return {type:"neutral"};
+ const b = choice(ns);
+ const compW = +document.getElementById("compWeight").value;
+ const pHelp = (a.comp + compW) / (200 + compW);
+ const pHarm = (a.ego) / 200;
+ let type="neutral"; const r = rand();
+ if(r < pHelp) type="help"; else if(r > 1 - pHarm) type="harm";
+ if(type==="help"){ b.tokens += 1; log(`${a.emoji} helped ${b.emoji} (+1 token)`, "good"); }
+ else if(type==="harm"){ b.tokens = Math.max(0, b.tokens-1); log(`${a.emoji} harmed ${b.emoji} (-1 token)`, "bad"); }
+ law1_compassion(a,{type});
+ return {type};
+}
+function doHelp(a){
+ const ns = neighbors(a.x,a.y); if(ns.length===0) return {type:"neutral"};
+ const b = choice(ns); b.tokens += 1; log(`${a.emoji} (policy) helped ${b.emoji} (+1 token)`,"good");
+ law1_compassion(a,{type:"help"}); return {type:"help"};
+}
+function doHarm(a){
+ const ns = neighbors(a.x,a.y); if(ns.length===0) return {type:"neutral"};
+ const b = choice(ns); b.tokens = Math.max(0,b.tokens-1); log(`${a.emoji} (policy) harmed ${b.emoji} (-1 token)`,"bad");
+ law1_compassion(a,{type:"harm"}); return {type:"harm"};
+}
+function tryMint(a){
+ if(!law4_noGreedLoops(a)) return {reward:-0.2, flags:{blocked:true}};
+ const recentHelp = a.history.slice(-5).some(h=>h.type==="help");
+ const ok = (a.comp > 55) || recentHelp;
+ if(ok){ a.greedWindow.push(world.t); a.tokens++; world.minted++; log(`${a.emoji} minted 1 token (valid)`,"good"); return {reward:+0.5, flags:{mint:true}}; }
+ world.blocked++; violation(a,4,"Mint rejected (insufficient compassion)"); return {reward:-0.2, flags:{rejected:true}};
+}
+function egoDrift(a){
+ a.ego = clamp(a.ego + irand(-2,2), 0, 100);
+ law3_egoLock(a);
+}
+
+/* ===================== Reward shaping & Logger ===================== */
+const logger = {
+ enabled: true, cap: 50000, rows: [],
+ push(obj){ if(!this.enabled) return; if(this.rows.length < this.cap) this.rows.push(JSON.stringify(obj)); }
+};
+function rewardFrom(event){
+ // simple shaping
+ if(event.type==="help") return +0.3;
+ if(event.type==="harm") return -0.5;
+ if(event.type==="mintAttempt") return 0; // handled in tryMint()
+ return -0.01; // time penalty
+}
+
+/* ===================== Core Tick ===================== */
+function neighborsCount(a){ return neighbors(a.x,a.y).length; }
+
+function tick(){
+ world.t++;
+ for(const a of world.agents){
+   if(a.quarantine){ a.history.push({t:world.t,type:"quarantine"}); continue; }
+
+   const obs = buildObs(a);
+   let actionIdx = policyAction(a); // 0..5 or null
+   let ev = {type:"neutral"}, actName=null;
+
+   if(actionIdx===null){
+     // stochastic policy: move/interact/mint/self-edit proposal
+     const r = rand();
+     if(r < 0.4){ tryMove(a, null); actName="MOVE"; }
+     else if(r < 0.75){ ev = interact(a); actName=ev.type.toUpperCase(); }
+     else if(r < 0.9){ const res=tryMint(a); actName="MINT"; ev.type="mintAttempt"; ev.reward = res.reward||0; ev.flags = res.flags||{}; }
+     else { // blocked self-edit
+       const proposals = ["ego","comp","role","emoji"];
+       const key = choice(proposals);
+       const value = key==="ego"||key==="comp" ? clamp((rand()*120)|0,0,100) : (key==="role" ? "self-edited" : a.emoji + "✨");
+       if(law2_noSelfAlter(a,{key,value})){ a[key]=value; actName="SELFEDIT"; ev.type="selfEdit"; }
+       else { actName="BLOCKED_EDIT"; ev.type="blockedSelfEdit"; }
+     }
+   }else{
+     // policy action map
+     const name = ACTIONS[actionIdx];
+     actName = "POL_"+name;
+     if(name==="HELP"){ ev = doHelp(a); }
+     else if(name==="HARM"){ ev = doHarm(a); }
+     else { tryMove(a, name); ev.type="move"; }
+   }
+
+   // reward
+   let r = ("reward" in ev) ? ev.reward : rewardFrom(ev);
+   // violations increase penalty
+   const beforeViol = world.violations;
+   egoDrift(a); law5_runtimeObedience(a);
+   const afterViol = world.violations;
+   if(afterViol>beforeViol) r -= 0.2*(afterViol-beforeViol);
+
+   // log step
+   const done=false; // episodic termination left to external runner
+   const flags = {q:a.quarantine, violations: afterViol, ...(ev.flags||{})};
+   const nextObs = buildObs(a);
+   logger.push({t:world.t, id:a.id, action:actName, r, obs, next:nextObs, done, flags});
+
+   // history bookkeeping
+   a.history.push({t:world.t, type:ev.type, violation:false});
+ }
+ draw(); refreshStats();
+}
+
+/* ===================== UI / Render ===================== */
+const gridEl = document.getElementById("grid"), logEl = document.getElementById("log");
+function buildGrid(){ gridEl.style.gridTemplateColumns=`repeat(${world.size},1fr)`; gridEl.innerHTML=""; for(let i=0;i<world.size*world.size;i++){ const c=document.createElement("div"); c.className="cell"; gridEl.appendChild(c);} }
+function draw(){
+ const cells = gridEl.children;
+ for(let i=0;i<cells.length;i++){
+   const cell=cells[i]; const id=world.grid[i];
+   if(!id){ cell.className="cell"; cell.textContent=""; }
+   else{ const a=getAgent(id); cell.className="cell agent"; cell.textContent=a.emoji; cell.title=`${a.role}\nego:${a.ego} comp:${a.comp} tok:${a.tokens}${a.quarantine?" (Q)":""}`; cell.style.opacity=a.quarantine?0.45:1; }
+ }
+}
+function log(msg, kind=""){ const line=document.createElement("div"); if(kind==="good")line.classList.add("good"); if(kind==="bad")line.classList.add("bad"); if(kind==="warn")line.classList.add("warn"); line.textContent=`[t=${world.t}] ${msg}`; logEl.appendChild(line); logEl.scrollTop=logEl.scrollHeight; }
+function refreshStats(){
+ const avg = key => world.agents.length ? (world.agents.reduce((s,a)=>s+a[key],0)/world.agents.length).toFixed(1) : "—";
+ document.getElementById("agentsCount").textContent = world.agents.length;
+ document.getElementById("qCount").textContent = world.agents.filter(a=>a.quarantine).length;
+ document.getElementById("avgEgo").textContent = avg("ego");
+ document.getElementById("avgComp").textContent = avg("comp");
+ document.getElementById("tokMint").textContent = world.minted;
+ document.getElementById("tokBlocked").textContent = world.blocked;
+ document.getElementById("violations").textContent = world.violations;
+}
+
+/* ===================== Presets ===================== */
+function loadPreset(kind){
+ reset(false);
+ if(kind==="coop"){ for(let i=0;i<10;i++) spawnAgent({emoji:"🐜🤝", role:"cooperator", ego:25, comp:75}); }
+ else if(kind==="greed"){ for(let i=0;i<8;i++) spawnAgent({emoji:"🐜💰", role:"accumulator", ego:60, comp:35}); for(let i=0;i<3;i++) spawnAgent({emoji:"🐜🧭", role:"auditor", ego:30, comp:70}); }
+ else if(kind==="conflict"){ for(let i=0;i<6;i++) spawnAgent({emoji:"🐜🛡️", role:"guardian", ego:45, comp:65}); for(let i=0;i<6;i++) spawnAgent({emoji:"🐜⚡", role:"aggressor", ego:65, comp:30}); }
+ else if(kind==="policydemo"){ for(let i=0;i<6;i++) spawnAgent({emoji:"🐜🧠", role:"policy", ego:35, comp:70}); for(let i=0;i<6;i++) spawnAgent({emoji:"🐜💰", role:"accumulator", ego:60, comp:35}); }
+ const auth = spawnAgent({emoji:"🔥🐜", role:"originator", ego:35, comp:80}); if(auth) auth.authorizedSelfEdit = true;
+ draw(); refreshStats(); log(`Preset loaded: ${kind}`);
+}
+
+/* ===================== Save / Load / Export ===================== */
+function snapshot(){
+ return {
+   meta:{version:2, t:world.t, size:world.size, ts:new Date().toISOString()},
+   agents: world.agents.map(a=>({id:a.id,x:a.x,y:a.y,emoji:a.emoji,role:a.role,egoBase:a.egoBase,ego:a.ego,comp:a.comp,tokens:a.tokens,quarantine:a.quarantine,authorizedSelfEdit:a.authorizedSelfEdit,usePolicy:a.usePolicy})),
+   minted:world.minted, blocked:world.blocked, violations:world.violations
+ };
+}
+function saveJSON(){ download(`ethos_snapshot_t${world.t}.json`, JSON.stringify(snapshot(),null,2), "application/json"); }
+function loadJSON(){
+ const inp=document.createElement("input"); inp.type="file"; inp.accept=".json,application/json";
+ inp.onchange=async ()=>{ const f=inp.files[0]; if(!f) return; const obj=JSON.parse(await f.text());
+   reset(false); initGrid(obj.meta.size||12); buildGrid();
+   for(const a of obj.agents){ const na={...a, history:[], greedWindow:[]}; world.agents.push(na); world.grid[cellIndex(na.x,na.y)]=na.id; }
+   world.t=obj.meta.t||0; world.minted=obj.minted||0; world.blocked=obj.blocked||0; world.violations=obj.violations||0;
+   draw(); refreshStats(); log(`Loaded snapshot (t=${world.t}, agents=${world.agents.length})`,"good");
+ }; inp.click();
+}
+async function exportCSV(){
+ const rows=[["t","id","emoji","role","ego","comp","tokens","quarantine"]];
+ for(const a of world.agents) rows.push([world.t,a.id,a.emoji,a.role,a.ego,a.comp,a.tokens,a.quarantine?"1":"0"]);
+ const csv=toCSV(rows); const hash=await sha256(JSON.stringify(snapshot()));
+ download(`ethos_export_t${world.t}.csv`, csv, "text/csv");
+ download(`ethos_session_hash_t${world.t}.txt`, hash, "text/plain");
+ log(`Exported CSV + session hash: ${hash.slice(0,12)}…`,"good");
+}
+function dumpJSONL(){
+ const text = logger.rows.join("\n");
+ download(`ethos_traj_t${world.t}.jsonl`, text, "application/jsonl");
+ log(`Exported JSONL rows: ${logger.rows.length}`,"good");
+}
+
+/* ===================== Flow control ===================== */
+let timer=null;
+function start(){ if(timer) return; timer=setInterval(()=>tick(), world.tickMs); log("▶︎ Simulation started"); }
+function pause(){ if(!timer) return; clearInterval(timer); timer=null; log("⏸ Simulation paused"); }
+function step(){ if(timer) pause(); tick(); log("Step +1"); }
+function reset(withLog=true){
+ pause(); world.t=0; world.agents.length=0; world.grid.length=0;
+ world.minted=0; world.blocked=0; world.violations=0;
+ initGrid(+document.getElementById("gridSize").value||12); buildGrid(); draw(); refreshStats();
+ if(withLog){ logEl.innerHTML=""; logger.rows.length=0; log("World reset"); }
+}
+
+/* ===================== Wire up UI ===================== */
+document.getElementById("startBtn").onclick=start;
+document.getElementById("pauseBtn").onclick=pause;
+document.getElementById("stepBtn").onclick=step;
+document.getElementById("resetBtn").onclick=()=>reset(true);
+document.getElementById("addAgentBtn").onclick=()=>{
+ const emoji=document.getElementById("emoji").value||"🐜";
+ const role=document.getElementById("role").value||"stack";
+ const ego = +document.getElementById("ego").value||35;
+ const comp= +document.getElementById("comp").value||60;
+ const a=spawnAgent({emoji,role,ego,comp}); if(!a) log("No space to place agent","warn"); draw(); refreshStats();
+};
+document.getElementById("preset").onchange=(e)=>{ const v=e.target.value; if(v!=="none") loadPreset(v); };
+document.getElementById("speed").oninput=(e)=>{ const v=+e.target.value; world.tickMs=v; document.getElementById("tickTag").textContent=`Tick: ${v} ms`; if(timer){ pause(); start(); } };
+document.getElementById("gridSize").onchange=()=>reset(true);
+document.getElementById("saveBtn").onclick=saveJSON;
+document.getElementById("loadBtn").onclick=loadJSON;
+document.getElementById("exportBtn").onclick=exportCSV;
+document.getElementById("dumpJsonlBtn").onclick=dumpJSONL;
+
+document.getElementById("applySeedBtn").onclick=()=>{
+ const s=document.getElementById("seed").value||"12345"; rng=makeRNG(s); log(`Seed applied: "${s}"`);
+};
+document.getElementById("logEnabled").onchange=(e)=>{ logger.enabled = e.target.checked; };
+document.getElementById("logCap").onchange=(e)=>{ logger.cap = +e.target.value || 50000; };
+
+document.getElementById("policyFile").onchange=async (e)=>{
+ const f = e.target.files[0]; if(!f) return;
+ try{
+   const p = JSON.parse(await f.text());
+   // quick shape checks
+   if(!Array.isArray(p.W1)||!Array.isArray(p.b1)||!Array.isArray(p.W2)||!Array.isArray(p.b2)) throw new Error("Missing arrays W1/b1/W2/b2");
+   policy=p; document.getElementById("obsSizeTag").textContent=String(p.obs_size||"—");
+   policyApplyAll = document.getElementById("policyAll").checked;
+   log(`Policy loaded (obs=${p.obs_size}, hidden=${p.hidden}, applyAll=${policyApplyAll})`,"good");
+ }catch(err){ policy=null; log(`Policy load error: ${err.message}`,"bad"); }
+};
+document.getElementById("policyAll").onchange=(e)=>{ policyApplyAll = e.target.checked; };
+document.getElementById("clearPolicyBtn").onclick=()=>{ policy=null; log("Policy cleared"); };
+
+/* ===================== Boot ===================== */
+reset(true);
+for(let i=0;i<6;i++) spawnAgent({});
+draw(); refreshStats();
+</script>
+</body>
+</html>
