@@ -2,18 +2,16 @@
 #
 #  ETHOS++ — Sloth Regulation Module
 #
-#  Rewired to include a “Save State” button that dumps the current
-#  `sloth_value`, all sub‑scores and weights into a JSON file next to this script.
-#
-#  The original logic is preserved; only the persistence layer has been added.
+#  Updated: Added QScrollArea to handle tall layouts and initialized 
+#  sloth_value to prevent attribute errors.
 #
 #  ────────────────────────────────────────────────────────────────
 
 import sys
 import random
 import datetime
-import json                    # NEW – for serialising state
-from pathlib import Path       # NEW – convenient file handling
+import json
+from pathlib import Path
 from PyQt6.QtWidgets import (
     QApplication,
     QMainWindow,
@@ -24,13 +22,14 @@ from PyQt6.QtWidgets import (
     QSlider,
     QPushButton,
     QTextEdit,
+    QScrollArea,
 )
 from PyQt6.QtCore import Qt, QRect, QTimer
 from PyQt6.QtGui import QColor, QPainter
 
 
 # ------------------------------------------------------------
-# CUSTOM BAR VIEW (replacement for ProgressView)
+# CUSTOM BAR VIEW
 # ------------------------------------------------------------
 class BarWidget(QWidget):
     def __init__(self, bar_color="#39ff14"):
@@ -57,23 +56,30 @@ class SlothRegulator(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("ETHOS++ — Sloth Regulation Module")
-        self.resize(500, 900)
+        self.resize(550, 850)
+        
+        # Initialize internal state
+        self.sloth_value = 0
 
-        central = QWidget()
-        self.setCentralWidget(central)
-        main_layout = QVBoxLayout(central)
-        main_layout.setContentsMargins(20, 20, 20, 20)
+        # Create Scroll Area
+        scroll_area = QScrollArea()
+        scroll_area.setWidgetResizable(True)
+        scroll_area.setStyleSheet("border: none; background-color: #0d101b;")
+
+        # Container Widget
+        container = QWidget()
+        container.setStyleSheet("background-color: #0d101b; color: white; font-family: Menlo;")
+        scroll_area.setWidget(container)
+        self.setCentralWidget(scroll_area)
+
+        main_layout = QVBoxLayout(container)
+        main_layout.setContentsMargins(25, 20, 25, 20)
         main_layout.setSpacing(15)
-
-        # Dark background
-        self.setStyleSheet(
-            "background-color: #0d101b; color: white; font-family: Menlo;"
-        )
 
         # Title
         title = QLabel("Sloth Coefficient Monitor")
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        title.setStyleSheet("font-size: 18pt; font-weight: bold;")
+        title.setStyleSheet("font-size: 18pt; font-weight: bold; margin-bottom: 10px;")
         main_layout.addWidget(title)
 
         # Main Sloth bar
@@ -84,9 +90,9 @@ class SlothRegulator(QMainWindow):
         self.sloth_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         main_layout.addWidget(self.sloth_label)
 
-        # Sub‑channels title
+        # Sub‑channels section
         sub_title = QLabel("Sloth Sub‑Channels")
-        sub_title.setStyleSheet("font-size: 14pt; font-weight: bold;")
+        sub_title.setStyleSheet("font-size: 14pt; font-weight: bold; color: #39ffb0; margin-top: 10px;")
         main_layout.addWidget(sub_title)
 
         self.subscores = {"CWI": 0, "EDR": 0, "RAF": 0, "TCF": 0, "ISL": 0, "EAD": 0}
@@ -103,9 +109,9 @@ class SlothRegulator(QMainWindow):
             hbox.addWidget(bar)
             main_layout.addLayout(hbox)
 
-        # Weights title
+        # Weights section
         w_title = QLabel("Sloth Weight Controls")
-        w_title.setStyleSheet("font-size: 14pt; font-weight: bold;")
+        w_title.setStyleSheet("font-size: 14pt; font-weight: bold; color: #ff8800; margin-top: 10px;")
         main_layout.addWidget(w_title)
 
         self.weights = {"CWI": 1.0, "EDR": 1.0, "RAF": 1.0, "TCF": 1.0, "ISL": 1.0, "EAD": 1.0}
@@ -124,8 +130,9 @@ class SlothRegulator(QMainWindow):
             hbox.addWidget(slider)
             main_layout.addLayout(hbox)
 
-        # Threshold
+        # Threshold section
         t_lbl = QLabel("Ego Lock Threshold")
+        t_lbl.setStyleSheet("font-weight: bold; margin-top: 5px;")
         main_layout.addWidget(t_lbl)
 
         self.threshold_slider = QSlider(Qt.Orientation.Horizontal)
@@ -137,36 +144,39 @@ class SlothRegulator(QMainWindow):
         self.threshold_label = QLabel("Lock ≥ 70")
         main_layout.addWidget(self.threshold_label)
 
-        # Log
+        # Log section
         log_title = QLabel("Sloth Timeline Log")
-        log_title.setStyleSheet("font-size: 14pt; font-weight: bold;")
+        log_title.setStyleSheet("font-size: 14pt; font-weight: bold; margin-top: 10px;")
         main_layout.addWidget(log_title)
 
         self.log_box = QTextEdit()
         self.log_box.setReadOnly(True)
-        self.log_box.setFixedHeight(260)
+        self.log_box.setMinimumHeight(200)
         self.log_box.setStyleSheet(
-            "background-color: #1e1e28; color: white; font-family: Menlo;"
+            "background-color: #1e1e28; border: 1px solid #333; color: white; font-family: Menlo;"
         )
         main_layout.addWidget(self.log_box)
 
-        # Buttons
+        # Action Buttons
+        btn_layout = QVBoxLayout()
+        btn_layout.setSpacing(10)
+
         sim_btn = QPushButton("Simulate Sloth Update")
-        sim_btn.setStyleSheet("background-color: #4444ff; padding: 12px;")
+        sim_btn.setStyleSheet("background-color: #4444ff; color: white; padding: 12px; font-weight: bold;")
         sim_btn.clicked.connect(self.simulate_update)
-        main_layout.addWidget(sim_btn)
+        btn_layout.addWidget(sim_btn)
 
-        clear_btn = QPushButton("Clear Log")
-        clear_btn.setStyleSheet("background-color: #333333; padding: 12px;")
-        clear_btn.clicked.connect(self.clear_log)
-        main_layout.addWidget(clear_btn)
-
-        # NEW: Save State button
-        save_btn = QPushButton("Save State")
-        save_btn.setStyleSheet("background-color: #ff8800; color: white; padding: 12px;")
+        save_btn = QPushButton("Save State (JSON)")
+        save_btn.setStyleSheet("background-color: #ff8800; color: white; padding: 12px; font-weight: bold;")
         save_btn.clicked.connect(self._save_state)
-        main_layout.addWidget(save_btn)
+        btn_layout.addWidget(save_btn)
 
+        clear_btn = QPushButton("Clear Log / Reset")
+        clear_btn.setStyleSheet("background-color: #333333; color: white; padding: 12px;")
+        clear_btn.clicked.connect(self.clear_log)
+        btn_layout.addWidget(clear_btn)
+
+        main_layout.addLayout(btn_layout)
         main_layout.addStretch()
 
     # ------------------------------------------------------------
@@ -196,7 +206,7 @@ class SlothRegulator(QMainWindow):
             bar = self.sub_bars[k]
             bar.set_progress(self.subscores[k] / 100.0)
 
-        # Weighted score
+        # Weighted score calculation
         wsum = sum(self.weights.values()) or 1
         ss = sum(self.subscores[k] * self.weights[k] for k in self.subscores) / wsum
         ss_int = int(ss)
@@ -207,12 +217,12 @@ class SlothRegulator(QMainWindow):
             f"CWI={self.subscores['CWI']} EDR={self.subscores['EDR']} "
             f"RAF={self.subscores['RAF']} TCF={self.subscores['TCF']} "
             f"ISL={self.subscores['ISL']} EAD={self.subscores['EAD']} "
-            f"W={self.weights}\n"
+            f"W={ {k: round(v,2) for k,v in self.weights.items()} }\n"
         )
         self.log_box.append(log_entry)
 
     # ------------------------------------------------------------
-    # CLEAR
+    # CLEAR / RESET
     # ------------------------------------------------------------
     def clear_log(self) -> None:
         self.log_box.clear()
@@ -225,11 +235,13 @@ class SlothRegulator(QMainWindow):
             bar.set_progress(0.0)
 
     # ------------------------------------------------------------
-    # SAVE STATE (NEW)──────────────────────────────────────
+    # SAVE STATE
+    # ------------------------------------------------------------
     def _save_state(self) -> None:
         """Persist the current sloth state to a JSON file."""
         state = {
-            "sloth_value": getattr(self, "sloth_value", 0),
+            "timestamp": datetime.datetime.now().isoformat(),
+            "sloth_value": self.sloth_value,
             "subscores": dict(self.subscores),
             "weights": dict(self.weights),
         }
@@ -240,18 +252,15 @@ class SlothRegulator(QMainWindow):
         try:
             with open(file_path, "w", encoding="utf-8") as fp:
                 json.dump(state, fp, indent=2)
-            self._status_message(f"State saved to: {file_path}")
-        except Exception as exc:  # pragma: no cover – defensive
+            self._status_message(f"State saved to: {fname}")
+        except Exception as exc:
             self._status_message(f"Error saving state: {exc}")
 
-    # ------------------------------------------------------------
-    # TEMPORARY STATUS MESSAGE (optional helper)
-    # ------------------------------------------------------------
     def _status_message(self, text: str) -> None:
         """Show a temporary message in the window title."""
-        original = self.windowTitle()
+        original = "ETHOS++ — Sloth Regulation Module"
         self.setWindowTitle(text)
-        QTimer.singleShot(3000, lambda: self.setWindowTitle(original))  # 3 s
+        QTimer.singleShot(3000, lambda: self.setWindowTitle(original))
 
 
 # ------------------------------------------------------------
@@ -260,4 +269,3 @@ if __name__ == "__main__":
     window = SlothRegulator()
     window.show()
     sys.exit(app.exec())
-
