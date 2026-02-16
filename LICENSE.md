@@ -1,6 +1,6 @@
 # ETHOS++ License
 
-**Copyright © 2025-2026 Michael Warden. All Rights Reserved.**
+**Copyright © 2025-2026 Michael Warden. Aka (neothe_warden, 🔥🐜)All Rights Reserved.**
 
 -----
 
@@ -101,4 +101,4 @@ This license applies to the entire ETHOS++ ecosystem:
 
 -----
 
-*“Just a guy in a garage with AI, trying to make AI governance matter.”*
+*“Just a guy in a garage with AI, trying to make AI governanceand ethics mattermatter.”*
