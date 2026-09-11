@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cronoscope (Koder)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <h1>Cronoscope</h1>
+      <button id="btn-data">Data Fetch</button>
+      <button id="btn-4d">4D View</button>
+      <button id="btn-earth">Earth View</button>
+      <button id="btn-particle">Particle</button>
+      <button id="btn-3d">3D Cube</button>
+      <hr>
+      <div class="panel">
+        <h3>Globals</h3>
+        <label>time <input type="range" id="g-time" min="0" max="1" step="0.001"></label>
+        <label>density <input type="range" id="g-density" min="0" max="1" step="0.001"></label>
+        <label>lensing <input type="range" id="g-lensing" min="0" max="1" step="0.001"></label>
+      </div>
+    </aside>
+
+    <main id="main">
+      <section id="view-data" class="view hidden">
+        <h2>Data Fetch (Local)</h2>
+        <p>Load a local <code>.json</code> or <code>.csv</code> (offline). Nothing leaves your device.</p>
+        <input id="file-input" type="file" accept=".json,.csv">
+        <div class="row">
+          <button id="btn-send4d">Send to 4D</button>
+          <button id="btn-push-tools">Push to Tools</button>
+        </div>
+        <pre id="log"></pre>
+      </section>
+
+      <section id="view-4d" class="view hidden">
+        <h2>4D Selector</h2>
+        <canvas id="canvas-4d" width="640" height="480"></canvas>
+        <div class="row">
+          <label>ax <input type="range" id="ax" min="-3.14159" max="3.14159" step="0.001"></label>
+          <label>ay <input type="range" id="ay" min="-3.14159" max="3.14159" step="0.001"></label>
+        </div>
+        <p class="hint">Tap a node to select slot → mirrors objects for other views.</p>
+      </section>
+
+      <section id="view-earth" class="view hidden">
+        <h2>Earth View</h2>
+        <canvas id="canvas-earth" width="640" height="480"></canvas>
+      </section>
+
+      <section id="view-particle" class="view hidden">
+        <h2>Particle View</h2>
+        <canvas id="canvas-particle" width="640" height="480"></canvas>
+      </section>
+
+      <section id="view-3d" class="view hidden">
+        <h2>3D Cube (wireframe)</h2>
+        <canvas id="canvas-3d" width="640" height="480"></canvas>
+      </section>
+    </main>
+  </div>
+
+  <script type="module">
+    import { bus } from './js/bus.js';
+    import { parseCSV } from './js/utils_csv.js';
+    import { setupDataFetch } from './js/data_fetch.js';
+    import { setupView4D } from './js/view_4d.js';
+    import { setupEarth } from './js/view_earth.js';
+    import { setupParticle } from './js/view_particle.js';
+    import { setupCube3D } from './js/view_cube3d.js';
+
+    // basic nav
+    const views = {
+      data: document.getElementById('view-data'),
+      v4d: document.getElementById('view-4d'),
+      earth: document.getElementById('view-earth'),
+      particle: document.getElementById('view-particle'),
+      v3d: document.getElementById('view-3d'),
+    };
+    function show(name){
+      Object.values(views).forEach(v=>v.classList.add('hidden'));
+      name.classList.remove('hidden');
+    }
+    document.getElementById('btn-data').onclick = ()=>show(views.data);
+    document.getElementById('btn-4d').onclick = ()=>show(views.v4d);
+    document.getElementById('btn-earth').onclick = ()=>show(views.earth);
+    document.getElementById('btn-particle').onclick = ()=>show(views.particle);
+    document.getElementById('btn-3d').onclick = ()=>show(views.v3d);
+
+    // global sliders
+    const gtime = document.getElementById('g-time');
+    const gdens = document.getElementById('g-density');
+    const glens = document.getElementById('g-lensing');
+    [gtime, gdens, glens].forEach(el => el.value = 0.35);
+    gtime.oninput = ()=>bus.setGlobal('time', parseFloat(gtime.value));
+    gdens.oninput = ()=>bus.setGlobal('density', parseFloat(gdens.value));
+    glens.oninput = ()=>bus.setGlobal('lensing', parseFloat(glens.value));
+
+    // init modules
+    setupDataFetch(bus);
+    setupView4D(bus);
+    setupEarth(bus);
+    setupParticle(bus);
+    setupCube3D(bus);
+
+    // default open
+    show(views.data);
+  </script>
+</body>
+</html>
