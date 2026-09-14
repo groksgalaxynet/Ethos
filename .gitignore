@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Runtime evidence / databases
+evidence/
+*.db
+*.db-shm
+*.db-wal
+
+# Generated runtime state
+scars/
+runtime/
+logs/
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+
+# Backups / archives
+*.zip
+duplicates/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Secrets / environment variables
+.env
+.env.*
+*.key
+*.pem
