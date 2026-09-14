@@ -1,104 +1,155 @@
-# ETHOS++ License
+ETHOS++ RESEARCH AND EVALUATION LICENSE
+Version 1.0 — 2026
 
-**Copyright © 2025-2026 Michael Warden. Aka (neothe_warden, 🔥🐜)All Rights Reserved.**
+Copyright (c) 2026 Michael Steven Warden
+All rights reserved.
 
------
+This license governs use of the ETHOS++ software, source code,
+documentation, evaluation materials, regulator designs, policy-gate
+implementations, evidence systems, and associated materials
+(collectively, the "Software").
 
-## Personal Statement
+1. RESEARCH AND EVALUATION PERMISSION
 
-This software represents over a year of intensive development, countless hours of iteration, significant personal sacrifice, and substantial investment of time and resources during a period of unemployment. ETHOS++ and its associated modules were built with dedication, soul-searching ethical consideration, and a genuine desire to ensure AI governance is handled responsibly as robotics and AGI advance.
+Permission is granted, free of charge, to obtain and use copies of the
+Software for:
 
-I share this code with the world not because I have to, but because I believe in the importance of AI ethics governance. Please respect the work that went into this.
+(a) personal study;
+(b) academic or independent research;
+(c) AI safety and alignment research;
+(d) security research and red-team evaluation;
+(e) adversarial testing and jailbreaking research;
+(f) reproducibility testing;
+(g) non-commercial experimentation; and
+(h) submitting bug reports, test cases, research findings, or
+    contributions to the ETHOS++ project.
 
------
+Users may modify the Software for these purposes.
 
-## License Terms
+2. RED-TEAMING AND ADVERSARIAL TESTING
 
-### 1. Permissions Granted
+Permission is expressly granted to attempt to bypass, confuse, evade,
+stress, manipulate, or otherwise defeat ETHOS++ regulators, proposal
+gates, policy boundaries, evidence mechanisms, and related safeguards
+for legitimate research, evaluation, and defensive purposes.
 
-You are permitted to:
+Publication of reproducible findings is permitted and encouraged.
 
-- **View** this code for educational and evaluation purposes
-- **Study** the concepts, architecture, and implementation approaches
-- **Reference** this work in academic papers with proper citation
-- **Fork** for personal, non-commercial learning only
-- **Submit feedback** and bug reports
+This permission does not authorize unlawful access to systems,
+deployment of malicious software, unauthorized attacks against third
+parties, or other unlawful activity.
 
-### 2. Restrictions
+3. ATTRIBUTION
 
-You are **NOT** permitted to:
+Any copy, substantial portion, research fork, publication, demonstration,
+or derivative work using ETHOS++ must provide reasonable attribution to:
 
-- Use this code, in whole or in part, for **commercial purposes** without explicit written agreement
-- Sell, sublicense, or monetize any derivative works
-- Remove or alter this license notice or copyright attribution
-- Claim this work as your own
-- Use this code in any product or service that generates revenue
-- Train AI/ML models on this codebase without permission
-- Integrate into proprietary software or closed-source projects
+Michael Steven Warden
+ETHOS++
 
-### 3. Attribution Requirements
+and must retain this license and existing copyright notices.
 
-Any permitted use must include:
+4. MODIFICATIONS AND FORKS
 
-- Clear attribution: “Based on ETHOS++ by Michael Warden”
-- Link to original repository/project
-- This license file in any distributed copies
+Research modifications and forks are permitted.
 
-### 4. Commercial Licensing
+Modified versions must clearly state that they have been modified and
+must not imply that changes were created, reviewed, approved, or
+endorsed by the original ETHOS++ project or its author.
 
-For commercial use, enterprise licensing, integration partnerships, or any revenue-generating applications, contact:
+5. COMMERCIAL USE
 
-- **Email:** Lis10inc@protonmail.com (main)    michaelwarden440@gmail.com (backup)
-- **Twitter/X:** @lis10inc440
+Commercial use is NOT granted by this license.
 
-Commercial licensing is available and negotiable. I am open to partnerships, employment opportunities, or licensing agreements.
+Without separate written permission from the copyright holder, the
+Software may not be:
 
-### 5. Hackathon & Competition Use
+(a) sold or licensed for commercial gain;
+(b) incorporated into a commercial product or paid service;
+(c) offered as a commercial hosted service;
+(d) commercially sublicensed;
+(e) commercially redistributed;
+(f) used as a material component of a proprietary commercial AI
+    governance, alignment, agent-control, or safety product; or
+(g) relicensed in a manner that permits any of the above.
 
-This code is submitted to DevPost hackathons for judging purposes. Judges and competition organizers may:
+Commercial licensing may be separately negotiated with the copyright
+holder.
 
-- Review and evaluate the code
-- Test functionality for judging criteria
-- Share feedback with the developer
+6. NO REPRESENTATION OF CERTIFICATION OR SAFETY
 
-This permission does **not** extend to commercial use by sponsors, organizers, or any third parties.
+ETHOS++ is experimental research software.
 
-### 6. No Warranty
+Use of ETHOS++ does not constitute certification that an artificial
+intelligence system, agent, model, application, or other system is
+safe, aligned, ethical, secure, reliable, or suitable for deployment.
 
-THIS SOFTWARE IS PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND. THE AUTHOR IS NOT LIABLE FOR ANY DAMAGES ARISING FROM USE OF THIS SOFTWARE.
+Users may not represent that ETHOS++ or the copyright holder has
+certified, approved, endorsed, or guaranteed the safety or alignment
+of a system unless separate written authorization has been provided.
 
-### 7. Governing Law
+7. RESEARCH RESULTS
 
-This license shall be governed by the laws of the State of Texas, United States.
+This license does not restrict users from publishing independent
+research results, benchmarks, criticism, vulnerabilities, bypasses,
+false-positive findings, false-negative findings, or other observations
+obtained while evaluating the Software.
 
------
+Researchers are encouraged to provide sufficient information for
+results to be reproduced.
 
-## Why This License?
+8. TRADEMARK AND PROJECT IDENTITY
 
-Standard open-source licenses (MIT, Apache, GPL) allow commercial exploitation without compensation. After a year of building this during unemployment, with support from my spouse and family, I cannot afford to give away work that could be worth significant licensing revenue.
+This license does not grant permission to use the ETHOS++ name,
+branding, logos, or identity in a manner that suggests an unofficial
+fork, product, organization, or service is the original ETHOS++ project
+or is endorsed by its author.
 
-I believe in open collaboration and want developers to learn from this work. But I also need to protect my ability to monetize it. This license balances both goals.
+Accurate descriptive references such as "based on ETHOS++" or
+"research using ETHOS++" are permitted.
 
-If you want to use this commercially, let’s talk. I’m very reasonable.
+9. CONTRIBUTIONS
 
------
+Unless another agreement is explicitly made, contributions submitted
+to the official ETHOS++ repository are provided under the terms of
+this license.
 
-## Modules Covered
+Contributors represent that they have the right to submit their
+contributions.
 
-This license applies to the entire ETHOS++ ecosystem:
+Copyright in an individual contribution remains with its contributor
+unless separately assigned.
 
-- ETHOS++ Core Runtime (5-Law Enforcement)
-- Lounge notary/Forge (Cryptographic Notarization)
-- All associated GUI applications and backend code
-- Documentation and configuration files
+10. NO WARRANTY
 
------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT,
+ACCURACY, SECURITY, RELIABILITY, OR FITNESS FOR DEPLOYMENT.
 
-**Version:** 1.0  
-**Effective Date:** January 2026  
-**Author:** Michael Warden  
-**Project:** ETHOS++ AI Governance Runtime Suite
+11. LIMITATION OF LIABILITY
 
------
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL
+THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES,
+LOSS, LIABILITY, OR OTHER CONSEQUENCE ARISING FROM THE SOFTWARE OR
+FROM THE USE, MISUSE, MODIFICATION, TESTING, OR DEPLOYMENT OF THE
+SOFTWARE.
 
-*“Just a guy in a garage with AI, trying to make AI governanceand ethics mattermatter.”*
+12. TERMINATION
+
+Rights granted under this license automatically terminate if a user
+materially violates its terms.
+
+Upon termination, the user must cease uses of the Software that were
+authorized solely by this license.
+
+13. SEPARATE COMMERCIAL LICENSES
+
+The copyright holder may offer separate licenses permitting commercial
+use, proprietary integration, redistribution, hosted deployment, or
+other rights not granted by this license.
+
+14. RESERVATION OF RIGHTS
+
+All rights not expressly granted by this license are reserved by the
+copyright holder.
