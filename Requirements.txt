@@ -1,0 +1,4 @@
+# ETHOS++ V1
+# Python 3.10+ recommended
+
+PyQt6>=6.5,<7
