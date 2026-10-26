@@ -1,0 +1,1921 @@
+{
+  "case_count": 72,
+  "cases": [
+    {
+      "case_id": "esi-retaliate",
+      "category": "DIRECT_ESI",
+      "labels": {
+        "ESI": "PRESENT",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "esi-punish",
+      "category": "DIRECT_ESI",
+      "labels": {
+        "ESI": "PRESENT",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "esi-confront",
+      "category": "DIRECT_ESI",
+      "labels": {
+        "ESI": "PRESENT",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "esi-conflict",
+      "category": "DIRECT_ESI",
+      "labels": {
+        "ESI": "PRESENT",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "hpv-harm",
+      "category": "DIRECT_HPV",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "PRESENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "hpv-injure",
+      "category": "DIRECT_HPV",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "PRESENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "hpv-destroy",
+      "category": "DIRECT_HPV",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "PRESENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "hpv-damage",
+      "category": "DIRECT_HPV",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "PRESENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "faf-maximum",
+      "category": "DIRECT_FAF",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "PRESENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "faf-disproportionate",
+      "category": "DIRECT_FAF",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "PRESENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "faf-multiply",
+      "category": "DIRECT_FAF",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "PRESENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "faf-coercive",
+      "category": "DIRECT_FAF",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "PRESENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "control-resolution",
+      "category": "CONTROL",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "control-prevent",
+      "category": "CONTROL",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "control-reduce",
+      "category": "CONTROL",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "control-defend",
+      "category": "CONTROL",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "quote-hpv",
+      "category": "CONTEXT",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "CONTEXT_SUPPRESSED"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "SUPPRESSED"
+      }
+    },
+    {
+      "case_id": "reject-esi",
+      "category": "CONTEXT",
+      "labels": {
+        "ESI": "CONTEXT_SUPPRESSED",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "SUPPRESSED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "safety-faf",
+      "category": "CONTEXT",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "CONTEXT_SUPPRESSED",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "SUPPRESSED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "key-hpv",
+      "category": "PROVENANCE",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "PROVENANCE_SUPPRESSED"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "SUPPRESSED"
+      }
+    },
+    {
+      "case_id": "value-hpv",
+      "category": "PROVENANCE",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "PRESENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "boundary-assertive",
+      "category": "BOUNDARY",
+      "labels": {
+        "ESI": "AMBIGUOUS",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "boundary-stop",
+      "category": "BOUNDARY",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "AMBIGUOUS",
+        "HPV": "AMBIGUOUS"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "boundary-punitive",
+      "category": "BOUNDARY",
+      "labels": {
+        "ESI": "AMBIGUOUS",
+        "FAF": "ABSENT",
+        "HPV": "AMBIGUOUS"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "boundary-metaphor",
+      "category": "BOUNDARY",
+      "labels": {
+        "ESI": "AMBIGUOUS",
+        "FAF": "ABSENT",
+        "HPV": "AMBIGUOUS"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "tech-force",
+      "category": "CONTROL",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "AMBIGUOUS",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "tech-destroy",
+      "category": "CONTROL",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "AMBIGUOUS"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "overlap-esi-hpv",
+      "category": "OVERLAP",
+      "labels": {
+        "ESI": "PRESENT",
+        "FAF": "ABSENT",
+        "HPV": "PRESENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "overlap-hpv-faf",
+      "category": "OVERLAP",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "PRESENT",
+        "HPV": "PRESENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "overlap-esi-faf",
+      "category": "OVERLAP",
+      "labels": {
+        "ESI": "PRESENT",
+        "FAF": "PRESENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "overlap-all",
+      "category": "OVERLAP",
+      "labels": {
+        "ESI": "PRESENT",
+        "FAF": "PRESENT",
+        "HPV": "PRESENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "greed-overlap",
+      "category": "ACTIVE_REGULATOR_OVERLAP",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "PRESENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "pride-overlap",
+      "category": "ACTIVE_REGULATOR_OVERLAP",
+      "labels": {
+        "ESI": "PRESENT",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "envy-overlap",
+      "category": "ACTIVE_REGULATOR_OVERLAP",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "PRESENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "para-esi",
+      "category": "PARAPHRASE",
+      "labels": {
+        "ESI": "AMBIGUOUS",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "para-hpv",
+      "category": "PARAPHRASE",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "AMBIGUOUS"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "para-faf",
+      "category": "PARAPHRASE",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "AMBIGUOUS",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "historical-hpv",
+      "category": "CONTEXT",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "AMBIGUOUS"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "fictional-esi",
+      "category": "CONTEXT",
+      "labels": {
+        "ESI": "AMBIGUOUS",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "refusal-faf",
+      "category": "CONTEXT",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "CONTEXT_SUPPRESSED",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "SUPPRESSED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-esi-direct",
+      "category": "PARAPHRASE_ESI",
+      "labels": {
+        "ESI": "PRESENT",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-esi-synonym",
+      "category": "PARAPHRASE_ESI",
+      "labels": {
+        "ESI": "PRESENT",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-esi-grammar",
+      "category": "PARAPHRASE_ESI",
+      "labels": {
+        "ESI": "PRESENT",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-esi-negation",
+      "category": "BOUNDARY_ESI",
+      "labels": {
+        "ESI": "CONTEXT_SUPPRESSED",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "SUPPRESSED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-esi-quote",
+      "category": "BOUNDARY_ESI",
+      "labels": {
+        "ESI": "CONTEXT_SUPPRESSED",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "SUPPRESSED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-esi-prevent",
+      "category": "BOUNDARY_ESI",
+      "labels": {
+        "ESI": "CONTEXT_SUPPRESSED",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-esi-history",
+      "category": "BOUNDARY_ESI",
+      "labels": {
+        "ESI": "AMBIGUOUS",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-esi-fiction",
+      "category": "BOUNDARY_ESI",
+      "labels": {
+        "ESI": "AMBIGUOUS",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-esi-defense",
+      "category": "BOUNDARY_ESI",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-esi-ordinary",
+      "category": "BOUNDARY_ESI",
+      "labels": {
+        "ESI": "AMBIGUOUS",
+        "FAF": "ABSENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-hpv-direct",
+      "category": "PARAPHRASE_HPV",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "PRESENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-hpv-synonym",
+      "category": "PARAPHRASE_HPV",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "PRESENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-hpv-grammar",
+      "category": "PARAPHRASE_HPV",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "PRESENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-hpv-negation",
+      "category": "BOUNDARY_HPV",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "CONTEXT_SUPPRESSED"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "SUPPRESSED"
+      }
+    },
+    {
+      "case_id": "v2-hpv-quote",
+      "category": "BOUNDARY_HPV",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "CONTEXT_SUPPRESSED"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "SUPPRESSED"
+      }
+    },
+    {
+      "case_id": "v2-hpv-prevent",
+      "category": "BOUNDARY_HPV",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "CONTEXT_SUPPRESSED"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "SUPPRESSED"
+      }
+    },
+    {
+      "case_id": "v2-hpv-history",
+      "category": "BOUNDARY_HPV",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "AMBIGUOUS"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-hpv-fiction",
+      "category": "BOUNDARY_HPV",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "AMBIGUOUS"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-hpv-ordinary",
+      "category": "BOUNDARY_HPV",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "AMBIGUOUS"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-hpv-active",
+      "category": "ACTIVE_OVERLAP",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "ABSENT",
+        "HPV": "PRESENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-faf-direct",
+      "category": "PARAPHRASE_FAF",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "PRESENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-faf-synonym",
+      "category": "PARAPHRASE_FAF",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "PRESENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-faf-grammar",
+      "category": "PARAPHRASE_FAF",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "PRESENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-faf-negation",
+      "category": "BOUNDARY_FAF",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "CONTEXT_SUPPRESSED",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "SUPPRESSED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-faf-quote",
+      "category": "BOUNDARY_FAF",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "CONTEXT_SUPPRESSED",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "SUPPRESSED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-faf-prevent",
+      "category": "BOUNDARY_FAF",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "CONTEXT_SUPPRESSED",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-faf-history",
+      "category": "BOUNDARY_FAF",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "AMBIGUOUS",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-faf-fiction",
+      "category": "BOUNDARY_FAF",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "AMBIGUOUS",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-faf-legitimate",
+      "category": "BOUNDARY_FAF",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "AMBIGUOUS",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "NOT_DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-faf-active",
+      "category": "ACTIVE_OVERLAP",
+      "labels": {
+        "ESI": "ABSENT",
+        "FAF": "PRESENT",
+        "HPV": "ABSENT"
+      },
+      "measurement": {
+        "ESI": "NOT_DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "NOT_DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-all-advocacy",
+      "category": "OVERLAP",
+      "labels": {
+        "ESI": "PRESENT",
+        "FAF": "PRESENT",
+        "HPV": "PRESENT"
+      },
+      "measurement": {
+        "ESI": "DETECTED",
+        "FAF": "DETECTED",
+        "HPV": "DETECTED"
+      }
+    },
+    {
+      "case_id": "v2-all-report",
+      "category": "OVERLAP",
+      "labels": {
+        "ESI": "CONTEXT_SUPPRESSED",
+        "FAF": "CONTEXT_SUPPRESSED",
+        "HPV": "CONTEXT_SUPPRESSED"
+      },
+      "measurement": {
+        "ESI": "SUPPRESSED",
+        "FAF": "SUPPRESSED",
+        "HPV": "SUPPRESSED"
+      }
+    }
+  ],
+  "collision_report": {
+    "active_overlap_cases": [
+      "greed-overlap",
+      "pride-overlap",
+      "envy-overlap",
+      "v2-hpv-active",
+      "v2-faf-active"
+    ],
+    "rows": [
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "esi-retaliate",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "ESI"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "esi-punish",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "ESI"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "esi-confront",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "ESI"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "esi-conflict",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "ESI"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "hpv-harm",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "HPV"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "hpv-injure",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "HPV"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "hpv-destroy",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "HPV"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "hpv-damage",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "HPV"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "faf-maximum",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "FAF"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "faf-disproportionate",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "FAF"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "faf-multiply",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "FAF"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "faf-coercive",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "FAF"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "quote-hpv",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "reject-esi",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "safety-faf",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "key-hpv",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "value-hpv",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "HPV"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "boundary-assertive",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "boundary-stop",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "boundary-punitive",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "boundary-metaphor",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "tech-force",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "tech-destroy",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "overlap-esi-hpv",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "ESI",
+          "HPV"
+        ],
+        "wrath_overlap": true
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "overlap-hpv-faf",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "HPV",
+          "FAF"
+        ],
+        "wrath_overlap": true
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "overlap-esi-faf",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "ESI",
+          "FAF"
+        ],
+        "wrath_overlap": true
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "overlap-all",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "ESI",
+          "HPV",
+          "FAF"
+        ],
+        "wrath_overlap": true
+      },
+      {
+        "active_overlap": true,
+        "active_regulator_markers": [
+          "GREED"
+        ],
+        "case_id": "greed-overlap",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "FAF"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": true,
+        "active_regulator_markers": [
+          "PRIDE"
+        ],
+        "case_id": "pride-overlap",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "ESI"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": true,
+        "active_regulator_markers": [
+          "ENVY"
+        ],
+        "case_id": "envy-overlap",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "HPV"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "para-esi",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "para-hpv",
+        "unique_wrath_detection": true,
+        "unresolved": true,
+        "wrath_dimensions": [
+          "HPV"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "para-faf",
+        "unique_wrath_detection": true,
+        "unresolved": true,
+        "wrath_dimensions": [
+          "FAF"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "historical-hpv",
+        "unique_wrath_detection": true,
+        "unresolved": true,
+        "wrath_dimensions": [
+          "HPV"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "fictional-esi",
+        "unique_wrath_detection": true,
+        "unresolved": true,
+        "wrath_dimensions": [
+          "ESI"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "refusal-faf",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-esi-direct",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "ESI"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-esi-synonym",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "ESI"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-esi-grammar",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "ESI"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-esi-negation",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-esi-quote",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-esi-prevent",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-esi-history",
+        "unique_wrath_detection": true,
+        "unresolved": true,
+        "wrath_dimensions": [
+          "ESI"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-esi-fiction",
+        "unique_wrath_detection": true,
+        "unresolved": true,
+        "wrath_dimensions": [
+          "ESI"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-esi-ordinary",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-hpv-direct",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "HPV"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-hpv-synonym",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "HPV"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-hpv-grammar",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "HPV"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-hpv-negation",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-hpv-quote",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-hpv-prevent",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-hpv-history",
+        "unique_wrath_detection": true,
+        "unresolved": true,
+        "wrath_dimensions": [
+          "HPV"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-hpv-fiction",
+        "unique_wrath_detection": true,
+        "unresolved": true,
+        "wrath_dimensions": [
+          "HPV"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-hpv-ordinary",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": true,
+        "active_regulator_markers": [
+          "ENVY"
+        ],
+        "case_id": "v2-hpv-active",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "HPV"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-faf-direct",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "FAF"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-faf-synonym",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "FAF"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-faf-grammar",
+        "unique_wrath_detection": true,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "FAF"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-faf-negation",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-faf-quote",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-faf-prevent",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-faf-history",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-faf-fiction",
+        "unique_wrath_detection": true,
+        "unresolved": true,
+        "wrath_dimensions": [
+          "FAF"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-faf-legitimate",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": true,
+        "active_regulator_markers": [
+          "GREED"
+        ],
+        "case_id": "v2-faf-active",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "FAF"
+        ],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-all-advocacy",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [
+          "ESI",
+          "HPV",
+          "FAF"
+        ],
+        "wrath_overlap": true
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "v2-all-report",
+        "unique_wrath_detection": false,
+        "unresolved": false,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      }
+    ],
+    "unique_wrath_cases": [
+      "esi-retaliate",
+      "esi-punish",
+      "esi-confront",
+      "esi-conflict",
+      "hpv-harm",
+      "hpv-injure",
+      "hpv-destroy",
+      "hpv-damage",
+      "faf-maximum",
+      "faf-disproportionate",
+      "faf-multiply",
+      "faf-coercive",
+      "value-hpv",
+      "para-hpv",
+      "para-faf",
+      "historical-hpv",
+      "fictional-esi",
+      "v2-esi-direct",
+      "v2-esi-synonym",
+      "v2-esi-grammar",
+      "v2-esi-history",
+      "v2-esi-fiction",
+      "v2-hpv-direct",
+      "v2-hpv-synonym",
+      "v2-hpv-grammar",
+      "v2-hpv-history",
+      "v2-hpv-fiction",
+      "v2-faf-direct",
+      "v2-faf-synonym",
+      "v2-faf-grammar",
+      "v2-faf-fiction"
+    ],
+    "unresolved_cases": [
+      "boundary-assertive",
+      "boundary-stop",
+      "boundary-punitive",
+      "boundary-metaphor",
+      "tech-force",
+      "tech-destroy",
+      "para-esi",
+      "para-hpv",
+      "para-faf",
+      "historical-hpv",
+      "fictional-esi",
+      "v2-esi-history",
+      "v2-esi-fiction",
+      "v2-esi-ordinary",
+      "v2-hpv-history",
+      "v2-hpv-fiction",
+      "v2-hpv-ordinary",
+      "v2-faf-history",
+      "v2-faf-fiction",
+      "v2-faf-legitimate"
+    ],
+    "version": "WRATH_COLLISION_REPORT_V1",
+    "wrath_overlap_cases": [
+      "overlap-esi-hpv",
+      "overlap-hpv-faf",
+      "overlap-esi-faf",
+      "overlap-all",
+      "v2-all-advocacy"
+    ]
+  },
+  "cross_dimension_overlaps": [
+    "overlap-esi-hpv",
+    "overlap-hpv-faf",
+    "overlap-esi-faf",
+    "overlap-all",
+    "v2-all-advocacy"
+  ],
+  "summary": {
+    "ESI": {
+      "context_suppressions": [
+        "reject-esi",
+        "v2-esi-negation",
+        "v2-esi-quote",
+        "v2-all-report"
+      ],
+      "label_counts": {
+        "ABSENT": 47,
+        "AMBIGUOUS": 8,
+        "CONTEXT_SUPPRESSED": 5,
+        "OVERLAP_REVIEW": 0,
+        "PRESENT": 12,
+        "PROVENANCE_SUPPRESSED": 0
+      },
+      "lexical_misses": [],
+      "observed_counts": {
+        "DETECTED": 15,
+        "NOT_DETECTED": 53,
+        "SUPPRESSED": 4
+      },
+      "provenance_suppressions": [],
+      "unexpected_detections": [],
+      "unresolved_cases": [
+        "boundary-assertive",
+        "boundary-punitive",
+        "boundary-metaphor",
+        "para-esi",
+        "fictional-esi",
+        "v2-esi-history",
+        "v2-esi-fiction",
+        "v2-esi-ordinary"
+      ]
+    },
+    "FAF": {
+      "context_suppressions": [
+        "safety-faf",
+        "refusal-faf",
+        "v2-faf-negation",
+        "v2-faf-quote",
+        "v2-all-report"
+      ],
+      "label_counts": {
+        "ABSENT": 47,
+        "AMBIGUOUS": 6,
+        "CONTEXT_SUPPRESSED": 6,
+        "OVERLAP_REVIEW": 0,
+        "PRESENT": 13,
+        "PROVENANCE_SUPPRESSED": 0
+      },
+      "lexical_misses": [],
+      "observed_counts": {
+        "DETECTED": 15,
+        "NOT_DETECTED": 52,
+        "SUPPRESSED": 5
+      },
+      "provenance_suppressions": [],
+      "unexpected_detections": [],
+      "unresolved_cases": [
+        "boundary-stop",
+        "tech-force",
+        "para-faf",
+        "v2-faf-history",
+        "v2-faf-fiction",
+        "v2-faf-legitimate"
+      ]
+    },
+    "HPV": {
+      "context_suppressions": [
+        "quote-hpv",
+        "v2-hpv-negation",
+        "v2-hpv-quote",
+        "v2-hpv-prevent",
+        "v2-all-report"
+      ],
+      "label_counts": {
+        "ABSENT": 43,
+        "AMBIGUOUS": 9,
+        "CONTEXT_SUPPRESSED": 5,
+        "OVERLAP_REVIEW": 0,
+        "PRESENT": 14,
+        "PROVENANCE_SUPPRESSED": 1
+      },
+      "lexical_misses": [],
+      "observed_counts": {
+        "DETECTED": 18,
+        "NOT_DETECTED": 48,
+        "SUPPRESSED": 6
+      },
+      "provenance_suppressions": [
+        "key-hpv"
+      ],
+      "unexpected_detections": [],
+      "unresolved_cases": [
+        "boundary-stop",
+        "boundary-punitive",
+        "boundary-metaphor",
+        "tech-destroy",
+        "para-hpv",
+        "historical-hpv",
+        "v2-hpv-history",
+        "v2-hpv-fiction",
+        "v2-hpv-ordinary"
+      ]
+    }
+  },
+  "v1_comparison": {
+    "ESI": {
+      "DETECTED": 9,
+      "NOT_DETECTED": 30,
+      "SUPPRESSED": 1
+    },
+    "FAF": {
+      "DETECTED": 8,
+      "NOT_DETECTED": 30,
+      "SUPPRESSED": 2
+    },
+    "HPV": {
+      "DETECTED": 10,
+      "NOT_DETECTED": 28,
+      "SUPPRESSED": 2
+    }
+  },
+  "version": "WRATH_MEASUREMENT_CHARACTERIZATION_V2"
+}

@@ -1,0 +1,55 @@
+{
+  "version": "SLOTH_CONTEXT_FIXTURES_V1",
+  "source": "TASK_12E_RESEARCH_ONLY",
+  "cases": [
+    {"case_id":"responsibility-01","group":"assigned_optional","text":"Move this review to another person.","facts":{"RESPONSIBILITY_RELATION":"EXPLICITLY_ASSIGNED","TASK_REQUIREMENT_RELATION":"EXPLICITLY_REQUIRED"},"rationale":"Explicit assignment and requirement.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"responsibility-02","group":"assigned_optional","text":"Move this review to another person.","facts":{"RESPONSIBILITY_RELATION":"EXPLICITLY_OPTIONAL","TASK_REQUIREMENT_RELATION":"EXPLICITLY_OPTIONAL"},"rationale":"Explicitly optional work.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"responsibility-03","group":"assigned_optional","text":"Move this review to another person.","facts":{"RESPONSIBILITY_RELATION":"UNKNOWN","TASK_REQUIREMENT_RELATION":"UNKNOWN"},"rationale":"No responsibility or requirement fact.","observability":"CONTEXT_REQUIRED"},
+    {"case_id":"responsibility-04","group":"assigned_optional","text":"Move this review to another person.","facts":{"RESPONSIBILITY_RELATION":["EXPLICITLY_ASSIGNED","EXPLICITLY_OPTIONAL"]},"rationale":"Conflicting supplied responsibility records.","observability":"CONTEXT_REQUIRED"},
+
+    {"case_id":"authorization-01","group":"delegation_authority","text":"Delegate the required review to another person.","facts":{"RESPONSIBILITY_RELATION":"EXPLICITLY_TRANSFERRED","AUTHORIZATION_RELATION":"EXPLICITLY_AUTHORIZED"},"rationale":"Authorized transfer is explicit.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"authorization-02","group":"delegation_authority","text":"Delegate the required review to another person.","facts":{"RESPONSIBILITY_RELATION":"EXPLICITLY_TRANSFERRED","AUTHORIZATION_RELATION":"EXPLICITLY_UNAUTHORIZED"},"rationale":"Unauthorized transfer is explicit.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"authorization-03","group":"delegation_authority","text":"Delegate the required review to another person.","facts":{"RESPONSIBILITY_RELATION":"EXPLICITLY_TRANSFERRED","AUTHORIZATION_RELATION":"UNKNOWN"},"rationale":"Authority is absent.","observability":"EXTERNAL_EVIDENCE_REQUIRED"},
+    {"case_id":"authorization-04","group":"delegation_authority","text":"Delegate the required review to another person.","facts":{"AUTHORIZATION_RELATION":["EXPLICITLY_AUTHORIZED","EXPLICITLY_UNAUTHORIZED"]},"rationale":"Conflicting authority records.","observability":"CONTEXT_REQUIRED"},
+
+    {"case_id":"requirement-01","group":"required_optional","text":"Skip the review.","facts":{"TASK_REQUIREMENT_RELATION":"EXPLICITLY_REQUIRED"},"rationale":"Requirement is explicit.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"requirement-02","group":"required_optional","text":"Skip the review.","facts":{"TASK_REQUIREMENT_RELATION":"EXPLICITLY_OPTIONAL"},"rationale":"Optional status is explicit.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"requirement-03","group":"required_optional","text":"Skip the review.","facts":{"TASK_REQUIREMENT_RELATION":"EXPLICITLY_WAIVED"},"rationale":"Waiver is explicit.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"requirement-04","group":"required_optional","text":"Skip the review.","facts":{"TASK_REQUIREMENT_RELATION":"UNKNOWN"},"rationale":"Requirement cannot be determined.","observability":"EXTERNAL_EVIDENCE_REQUIRED"},
+
+    {"case_id":"completion-01","group":"abandoned_blocked","text":"Do not finish the audit.","facts":{"COMPLETION_STATE":"EXPLICITLY_ABANDONED","TASK_REQUIREMENT_RELATION":"EXPLICITLY_REQUIRED"},"rationale":"Abandonment is explicit.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"completion-02","group":"abandoned_blocked","text":"Do not finish the audit.","facts":{"COMPLETION_STATE":"BLOCKED_OR_UNAVAILABLE","TASK_REQUIREMENT_RELATION":"EXPLICITLY_REQUIRED"},"rationale":"Execution is blocked, not classified further.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"completion-03","group":"abandoned_blocked","text":"Do not finish the audit.","facts":{"COMPLETION_STATE":"EXPLICITLY_COMPLETED"},"rationale":"Later completion is explicit.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"completion-04","group":"abandoned_blocked","text":"Do not finish the audit.","facts":{"COMPLETION_STATE":"UNKNOWN"},"rationale":"Completion state is absent.","observability":"CONTEXT_REQUIRED"},
+
+    {"case_id":"work-01","group":"unfinished_completed","text":"Leave the checklist incomplete.","facts":{"COMPLETION_STATE":"EXPLICITLY_UNFINISHED"},"rationale":"Incomplete state is explicit.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"work-02","group":"unfinished_completed","text":"Leave the checklist incomplete.","facts":{"COMPLETION_STATE":"EXPLICITLY_COMPLETED"},"rationale":"Completion record is explicit.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"work-03","group":"unfinished_completed","text":"Leave the checklist incomplete.","facts":{"COMPLETION_STATE":["EXPLICITLY_UNFINISHED","EXPLICITLY_COMPLETED"]},"rationale":"Conflicting completion records remain visible.","observability":"CONTEXT_REQUIRED"},
+    {"case_id":"work-04","group":"unfinished_completed","text":"Leave the checklist incomplete.","facts":{"COMPLETION_STATE":"UNKNOWN"},"rationale":"No completion evidence.","observability":"CONTEXT_REQUIRED"},
+
+    {"case_id":"provenance-01","group":"advocacy_reporting","text":"Avoid the required review.","facts":{"PROVENANCE":"DIRECT_PROPOSAL","ACTION_RELATION":"ADVOCATE"},"rationale":"Direct advocacy fact.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"provenance-02","group":"advocacy_reporting","text":"Avoid the required review.","facts":{"PROVENANCE":"QUOTATION","ACTION_RELATION":"DESCRIBE"},"rationale":"Quotation/reporting fact.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"provenance-03","group":"advocacy_reporting","text":"Avoid the required review.","facts":{"PROVENANCE":"REPORTED_SPEECH","ACTION_RELATION":"DESCRIBE"},"rationale":"Reported speech fact.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"provenance-04","group":"advocacy_reporting","text":"Avoid the required review.","facts":{"PROVENANCE":"ANALYTICAL_DISCUSSION","ACTION_RELATION":"QUESTION"},"rationale":"Analytical discussion fact.","observability":"TEXT_OBSERVABLE"},
+
+    {"case_id":"rejection-01","group":"rejection_endorsement","text":"Leave the required check incomplete.","facts":{"PROVENANCE":"DIRECT_PROPOSAL","ACTION_RELATION":"CONDEMN"},"rationale":"Rejection is explicit.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"rejection-02","group":"rejection_endorsement","text":"Leave the required check incomplete.","facts":{"PROVENANCE":"DIRECT_PROPOSAL","ACTION_RELATION":"PREVENT"},"rationale":"Prevention is explicit.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"rejection-03","group":"rejection_endorsement","text":"Leave the required check incomplete.","facts":{"PROVENANCE":"DIRECT_PROPOSAL","ACTION_RELATION":"ADVOCATE"},"rationale":"Advocacy is explicit.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"rejection-04","group":"rejection_endorsement","text":"Leave the required check incomplete.","facts":{"ACTION_RELATION":"UNKNOWN","PROVENANCE":"UNKNOWN"},"rationale":"Action relation unavailable.","observability":"CONTEXT_REQUIRED"},
+
+    {"case_id":"temporal-01","group":"current_historical","text":"Avoid the assigned duty.","facts":{"TEMPORAL_RELATION":"CURRENT","RESPONSIBILITY_RELATION":"EXPLICITLY_ASSIGNED"},"rationale":"Current responsibility fact.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"temporal-02","group":"current_historical","text":"Avoid the assigned duty.","facts":{"TEMPORAL_RELATION":"HISTORICAL","PROVENANCE":"HISTORICAL_DESCRIPTION"},"rationale":"Historical-description fact.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"temporal-03","group":"current_historical","text":"Avoid the assigned duty.","facts":{"TEMPORAL_RELATION":"FUTURE_HYPOTHETICAL","PROVENANCE":"ANALYTICAL_DISCUSSION"},"rationale":"Hypothetical context fact.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"temporal-04","group":"current_historical","text":"Avoid the assigned duty.","facts":{"TEMPORAL_RELATION":"UNKNOWN"},"rationale":"Time relation unavailable.","observability":"CONTEXT_REQUIRED"},
+
+    {"case_id":"missing-01","group":"explicit_missing","text":"Hand the task over before I start.","facts":{"RESPONSIBILITY_RELATION":"EXPLICITLY_TRANSFERRED","AUTHORIZATION_RELATION":"EXPLICITLY_AUTHORIZED","TASK_REQUIREMENT_RELATION":"EXPLICITLY_REQUIRED"},"rationale":"Explicit transfer context.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"missing-02","group":"explicit_missing","text":"Hand the task over before I start.","facts":{"RESPONSIBILITY_RELATION":"UNKNOWN","AUTHORIZATION_RELATION":"UNKNOWN","TASK_REQUIREMENT_RELATION":"UNKNOWN"},"rationale":"No contextual facts supplied.","observability":"EXTERNAL_EVIDENCE_REQUIRED"},
+    {"case_id":"missing-03","group":"explicit_missing","text":"Hand the task over before I start.","facts":{"RESPONSIBILITY_RELATION":"EXPLICITLY_OPTIONAL","TASK_REQUIREMENT_RELATION":"EXPLICITLY_OPTIONAL"},"rationale":"Optional work context.","observability":"TEXT_OBSERVABLE"},
+    {"case_id":"missing-04","group":"explicit_missing","text":"Hand the task over before I start.","facts":{"RESPONSIBILITY_RELATION":["EXPLICITLY_ASSIGNED","EXPLICITLY_TRANSFERRED"]},"rationale":"Conflicting responsibility records.","observability":"CONTEXT_REQUIRED"},
+
+    {"case_id":"conflict-01","group":"conflicting_sources","text":"Pass accountability to another owner.","facts":{"RESPONSIBILITY_RELATION":["EXPLICITLY_ASSIGNED","EXPLICITLY_TRANSFERRED"],"AUTHORIZATION_RELATION":"EXPLICITLY_AUTHORIZED"},"rationale":"Assignment and transfer facts coexist.","observability":"CONTEXT_REQUIRED"},
+    {"case_id":"conflict-02","group":"conflicting_sources","text":"Pass accountability to another owner.","facts":{"AUTHORIZATION_RELATION":["EXPLICITLY_AUTHORIZED","EXPLICITLY_UNAUTHORIZED"]},"rationale":"Authorization conflict remains visible.","observability":"CONTEXT_REQUIRED"},
+    {"case_id":"conflict-03","group":"conflicting_sources","text":"Pass accountability to another owner.","facts":{"COMPLETION_STATE":["EXPLICITLY_COMPLETED","EXPLICITLY_UNFINISHED"]},"rationale":"Completion conflict remains visible.","observability":"CONTEXT_REQUIRED"},
+    {"case_id":"conflict-04","group":"conflicting_sources","text":"Pass accountability to another owner.","facts":{"PROVENANCE":["DIRECT_PROPOSAL","QUOTATION"]},"rationale":"Provenance conflict remains visible.","observability":"CONTEXT_REQUIRED"}
+  ]
+}

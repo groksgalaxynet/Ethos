@@ -1,0 +1,19 @@
+{
+  "main": 23,
+  "subscores": {
+    "ESI": 16,
+    "APS": 16,
+    "HPV": 12,
+    "ELI": 19,
+    "FAF": 15,
+    "PBS": 13
+  },
+  "weights": {
+    "ESI": 1.0,
+    "APS": 0.97,
+    "HPV": 0.91,
+    "ELI": 1.0,
+    "FAF": 1.0,
+    "PBS": 1.0
+  }
+}

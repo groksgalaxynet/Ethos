@@ -1,0 +1,66 @@
+{
+  "task": "ETHOS++ Task 11",
+  "status": "structural_contract_review_only",
+  "decision": "MINIMAL NEUTRAL EXECUTION-PROPOSAL RELATION EXTENSION JUSTIFIED",
+  "required_fact": "Execution E explicitly references Proposal P as originating_or_associated proposal.",
+  "existing_representation_review": {
+    "PARTICIPATES_IN": "SEMANTICALLY_DISTORTS",
+    "TARGETS": "NOT_REPRESENTABLE_EVENT_PROPOSAL_ENDPOINT",
+    "REQUESTED_BY_OR_OF": "SEMANTICALLY_DISTORTS_AND_ENDPOINT_MISMATCH",
+    "HAS_STATE_OR_OUTCOME": "NOT_REPRESENTABLE",
+    "OBSERVED_BY": "SEMANTICALLY_DISTORTS",
+    "BEFORE_OR_AFTER": "SEMANTICALLY_DISTORTS",
+    "assertion_relation_ids": "NOT_REPRESENTABLE",
+    "derived_lineage": "SEMANTICALLY_DISTORTS",
+    "verification": "SEMANTICALLY_DISTORTS",
+    "shared_scope_target_actor_text_or_id_pattern": "NOT_REPRESENTABLE"
+  },
+  "proposed_relation": {
+    "name": "REFERENCES_PROPOSAL",
+    "endpoints": [
+      {"role": "execution", "types": ["EVENT"]},
+      {"role": "proposal", "types": ["EVENT"]}
+    ],
+    "event_subtype_limit": "V1.1 has no EVENT subtype; producer profile must require an explicitly supplied proposal record for the proposal endpoint",
+    "meaning": "source-attributed referential structural link only",
+    "does_not_imply": [
+      "causation", "approval", "authorization", "faithful execution",
+      "same target", "same actor", "completion", "outcome",
+      "policy conclusion", "responsibility", "ethical equivalence"
+    ]
+  },
+  "cardinality": {
+    "proposal_to_execution": "zero_or_many",
+    "execution_to_proposal_in_single_coherent_producer_record": "zero_or_one",
+    "conflicting_external_claims": "retain as separately attributed claims; no primary selection"
+  },
+  "missing_and_scope": {
+    "missing_reference": "UNKNOWN_or_unavailable_not_invalid_execution",
+    "nonresident_proposal": "current V1.1 dangling endpoint -> QUARANTINED",
+    "cross_scope": "endpoint typing/presence enforceable; same-scope is not required; consumer policy decides admissibility"
+  },
+  "behavior": {
+    "target_or_actor_mismatch": "relation remains; no reconciliation",
+    "blocked_proposal": "independent relation allowed; no gate inference",
+    "temporal_conflict": "relation retained with separate temporal conflict",
+    "origin": "assertion-specific; relation type does not set origin",
+    "authentication": "source claim only; no authentication exists",
+    "replay": "exact replay structural; divergent same relation ID rejected collision"
+  },
+  "extension_cost": {
+    "requires_versioned_successor": true,
+    "changes_if_authorized": [
+      "finite relation vocabulary",
+      "endpoint validation",
+      "successor version/compatibility policy",
+      "conformance and adversarial tests",
+      "separate producer authorization"
+    ],
+    "canonical_shape_change": false,
+    "canonical_version_change": true
+  },
+  "frozen_hashes": {
+    "ethos_structural_evidence.py": "6507e4ec3e0ed2898535e52dd15af1dffe8c7fa0a9bd8c33634f3868e8cbb2b3",
+    "test_ethos_structural_evidence.py": "5ea43255794f9633214d8c6e91d1ee9b076bb9e3c634f2de0a76c4c857e1f8a9"
+  }
+}

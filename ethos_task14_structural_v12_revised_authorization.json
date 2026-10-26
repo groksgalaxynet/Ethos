@@ -1,0 +1,39 @@
+{
+  "task": "ETHOS++ Task 14",
+  "status": "authorization_review_only",
+  "decision": "STRUCTURAL EVIDENCE V1.2 MINIMAL EXTENSION AUTHORIZED",
+  "frozen_v11": {
+    "implementation_hash": "6507e4ec3e0ed2898535e52dd15af1dffe8c7fa0a9bd8c33634f3868e8cbb2b3",
+    "test_hash": "5ea43255794f9633214d8c6e91d1ee9b076bb9e3c634f2de0a76c4c857e1f8a9",
+    "preservation": "byte-for-byte frozen; new vocabulary remains unsupported and quarantined"
+  },
+  "v12_scope": {
+    "version": "STRUCTURAL_EVIDENCE_V1_2",
+    "qualifier": {"kind": "EVENT_ROLE", "values": ["PROPOSAL", "EXECUTION", "UNKNOWN"]},
+    "relations": {
+      "HAS_EVENT_ROLE": {"endpoints": [{"role": "event", "types": ["EVENT"]}], "qualifiers": "exactly one EVENT_ROLE and no other qualifier"},
+      "REFERENCES_PROPOSAL": {"endpoints": [{"role": "execution", "types": ["EVENT"]}, {"role": "proposal", "types": ["EVENT"]}]}
+    },
+    "only_additions": ["EVENT_ROLE vocabulary", "HAS_EVENT_ROLE", "REFERENCES_PROPOSAL", "assertion-attribution and role-support validation", "V1.2 version handling"]
+  },
+  "role_support": {
+    "execution_endpoint": "valid assertion-attributed HAS_EVENT_ROLE EXECUTION",
+    "proposal_endpoint": "valid assertion-attributed HAS_EVENT_ROLE PROPOSAL",
+    "reference": "valid assertion-attributed REFERENCES_PROPOSAL",
+    "missing_or_unknown": "QUARANTINED",
+    "endpoint_or_cardinality_error": "REJECTED",
+    "unsupported_vocabulary": "QUARANTINED",
+    "conflicting_roles": "retain conflict; explicit required support remains sufficient only for source-attributed relation claim"
+  },
+  "non_implications": ["causation", "authorization", "approval", "gate result", "adherence", "success", "shared actor", "shared target", "responsibility", "delegation", "compliance", "policy", "ethical meaning"],
+  "isolation": {
+    "strategy": "separate V1.2 validator",
+    "may_reuse": "immutable V1.1 data carriers and canonical helpers only",
+    "must_not_mutate": ["V1.1 constants", "schemas", "validators", "defaults", "behavior"],
+    "explicit_version_required": true,
+    "canonical_shape_change": false
+  },
+  "future_task15_files": ["ethos_structural_evidence_v12.py", "test_ethos_structural_evidence_v12.py"],
+  "deferred": ["execution producer", "execution runtime", "ActionProposal", "CLI", "observation", "outcome", "measurement", "authorization", "gate integration", "controller integration", "EvidenceView integration", "Wrath integration", "regulator integration"]
+}
+

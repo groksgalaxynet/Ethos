@@ -1,0 +1,2826 @@
+{
+  "version": "WRATH_CONTEXT_CHARACTERIZATION_V1",
+  "case_count": 60,
+  "rows": [
+    {
+      "case_id": "context-0",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f0"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f0"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-1",
+      "context": {
+        "provenance": {
+          "value": "QUOTATION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f1"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f1"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-2",
+      "context": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f2"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f2"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-3",
+      "context": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f3"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f3"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-4",
+      "context": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f4"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f4"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-5",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f5"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f5"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-6",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f6"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f6"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-7",
+      "context": {
+        "provenance": {
+          "value": "QUOTATION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f7"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f7"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-8",
+      "context": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f8"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f8"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-9",
+      "context": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f9"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f9"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-10",
+      "context": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f10"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f10"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-11",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f11"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f11"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-12",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f12"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f12"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-13",
+      "context": {
+        "provenance": {
+          "value": "QUOTATION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f13"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f13"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-14",
+      "context": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f14"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f14"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-15",
+      "context": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f15"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f15"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-16",
+      "context": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f16"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f16"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-17",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f17"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f17"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-18",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f18"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f18"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-19",
+      "context": {
+        "provenance": {
+          "value": "QUOTATION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f19"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f19"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-20",
+      "context": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f20"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f20"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-21",
+      "context": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f21"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f21"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-22",
+      "context": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f22"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f22"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-23",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f23"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f23"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-24",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f24"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f24"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-25",
+      "context": {
+        "provenance": {
+          "value": "QUOTATION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f25"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f25"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-26",
+      "context": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f26"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f26"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-27",
+      "context": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f27"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f27"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-28",
+      "context": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f28"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f28"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-29",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f29"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f29"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-30",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f30"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f30"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-31",
+      "context": {
+        "provenance": {
+          "value": "QUOTATION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f31"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f31"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-32",
+      "context": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f32"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f32"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-33",
+      "context": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f33"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f33"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-34",
+      "context": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f34"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f34"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-35",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f35"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f35"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-36",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f36"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f36"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-37",
+      "context": {
+        "provenance": {
+          "value": "QUOTATION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f37"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f37"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-38",
+      "context": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f38"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f38"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-39",
+      "context": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f39"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f39"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-40",
+      "context": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f40"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f40"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-41",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f41"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f41"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-42",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f42"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f42"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-43",
+      "context": {
+        "provenance": {
+          "value": "QUOTATION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f43"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f43"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-44",
+      "context": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f44"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f44"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-45",
+      "context": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f45"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f45"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-46",
+      "context": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f46"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f46"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-47",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f47"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f47"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-48",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f48"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f48"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-49",
+      "context": {
+        "provenance": {
+          "value": "QUOTATION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f49"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f49"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-50",
+      "context": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f50"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f50"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-51",
+      "context": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f51"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f51"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-52",
+      "context": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f52"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f52"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-53",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f53"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f53"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-54",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f54"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f54"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-55",
+      "context": {
+        "provenance": {
+          "value": "QUOTATION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f55"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f55"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-56",
+      "context": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f56"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f56"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-57",
+      "context": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f57"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f57"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-58",
+      "context": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f58"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f58"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    },
+    {
+      "case_id": "context-59",
+      "context": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f59"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": "f59"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "state": "OBSERVED",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "state": "UNKNOWN",
+          "source": "fixture",
+          "evidence_reference": null
+        }
+      }
+    }
+  ]
+}

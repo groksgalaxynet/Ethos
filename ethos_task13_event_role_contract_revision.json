@@ -1,0 +1,47 @@
+{
+  "task": "ETHOS++ Task 13",
+  "status": "design_contract_revision_only",
+  "decision": "EVENT ROLE CONTRACT REVISION READY FOR V1.2 AUTHORIZATION",
+  "v11_event_semantics": "broad neutral EVENT with no lifecycle subtype or role validation",
+  "strategy_review": {
+    "new_entity_types": "rejected; intrinsic taxonomy loses attributed conflict representation",
+    "entity_role_field": "rejected; intrinsic global-looking metadata and new canonical field",
+    "has_event_role_relation": "recommended; assertion-attributed role using existing structures",
+    "separate_lifecycle_record": "rejected; unnecessary record and serialization surface",
+    "conventions": "rejected; no mechanical proof"
+  },
+  "role_contract": {
+    "qualifier_kind": "EVENT_ROLE",
+    "values": ["PROPOSAL", "EXECUTION", "UNKNOWN"],
+    "relation": {"name": "HAS_EVENT_ROLE", "endpoints": [{"role": "event", "types": ["EVENT"]}]},
+    "qualifier_rule": "exactly one EVENT_ROLE qualifier and no other qualifier",
+    "attribution_rule": "role relation must be referenced by a valid assertion",
+    "observation_role": "not added; V1.1 OBSERVED assertions and OBSERVED_BY already represent observation"
+  },
+  "reference_validation": {
+    "relation": "REFERENCES_PROPOSAL",
+    "endpoints": [{"role": "execution", "types": ["EVENT"]}, {"role": "proposal", "types": ["EVENT"]}],
+    "required_support": {
+      "execution": "asserted HAS_EVENT_ROLE EVENT_ROLE=EXECUTION",
+      "proposal": "asserted HAS_EVENT_ROLE EVENT_ROLE=PROPOSAL"
+    },
+    "missing_or_unknown_role": "QUARANTINED missing role support",
+    "conflicting_roles": "retain attributed conflict; required support may still exist",
+    "forbidden_support": ["ID syntax", "text", "metadata", "timestamp", "actor", "target", "gate result", "relation position"]
+  },
+  "independence": ["time", "actor", "target", "gate", "authorization", "outcome", "verification", "lineage", "producer identity"],
+  "scope": "role belongs to resident scoped EVENT; no global merge or cross-scope trust inference",
+  "v12_architecture": {
+    "strategy": "B",
+    "new_files_if_authorized": ["ethos_structural_evidence_v12.py", "test_ethos_structural_evidence_v12.py"],
+    "v12_additions": ["EVENT_ROLE qualifier vocabulary", "HAS_EVENT_ROLE relation", "REFERENCES_PROPOSAL relation", "assertion-attribution and role-support validation"],
+    "v11_files_frozen": ["ethos_structural_evidence.py", "test_ethos_structural_evidence.py"],
+    "canonical_shape_change": false,
+    "version_marker": "STRUCTURAL_EVIDENCE_V1_2 in Relation.vocabulary_version"
+  },
+  "frozen_hashes": {
+    "ethos_structural_evidence.py": "6507e4ec3e0ed2898535e52dd15af1dffe8c7fa0a9bd8c33634f3868e8cbb2b3",
+    "test_ethos_structural_evidence.py": "5ea43255794f9633214d8c6e91d1ee9b076bb9e3c634f2de0a76c4c857e1f8a9"
+  }
+}
+

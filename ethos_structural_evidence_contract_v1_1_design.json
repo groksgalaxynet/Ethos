@@ -1,0 +1,99 @@
+{
+  "authority_boundary": {
+    "producer_may_not_supply_effectively": [
+      "authority",
+      "trust",
+      "priority",
+      "precedence",
+      "verification strength",
+      "independence"
+    ],
+    "producer_may_supply": [
+      "claimed identity",
+      "source class",
+      "assertion content",
+      "evidence references"
+    ],
+    "rule": "Payload fields bearing those names are OPAQUE and have no authority effect. External fact-specific authority evaluation is a separate policy/admission output; if referenced, authority_decision_ref must identify an externally produced decision and is not producer-controlled. Verification record remains distinct from authority decision."
+  },
+  "conformance": {
+    "ACCEPT": "Well-formed recognized structural record; not automatically authoritative or consumable.",
+    "ACCEPT_OPAQUE": "Valid envelope carrying opaque payload only; payload is non-structural.",
+    "QUARANTINE": "Unsupported vocabulary/version, unresolved reference, invalid/unknown phase, incomplete derivation/verification; retained with reason and non-consumable.",
+    "REJECT": "Integrity-invalid records: conflicting duplicate ID, endpoint type mismatch, impossible reference form, derivation cycle, required identity absent.",
+    "UNKNOWN": "Representable factual unknown; not a malformed-record fallback and not structural permission."
+  },
+  "data_partitions": {
+    "OPAQUE": "Retained/loggable producer data and unknown extensions; cannot establish relation/state/outcome/authority/verification/identity/phase or become regulator-consumable structural evidence.",
+    "QUARANTINED": "Recognizable input failing structural conformance or unsupported vocabulary; retained with reason, non-consumable.",
+    "REJECTED": "Invalid identity/integrity/cycle/conflicting-ID input; not structural and no silent placeholder created.",
+    "STRUCTURAL": "Only contract-versioned, vocabulary-recognized, conformance-valid records. Eligible only after external authority and temporal-consumption policy."
+  },
+  "deterministic_rules": {
+    "derivation": "Derived facts require parent IDs, supported parent versions, derivation rule/version, derivation time, and acyclic lineage. Missing/invalid parents quarantine; cycle rejects; derivation never increases authority.",
+    "duplicates": "Exact same-ID/same-canonical-content replay is idempotent; same ID/different content is REJECT with conflict/integrity record; never overwrite.",
+    "endpoint_types": "Every relation vocabulary entry declares permitted endpoint entity categories/role cardinality. Mismatch is REJECT; a target type may not be consumer-selected.",
+    "phase": "Malformed/unknown/unsupported phase is QUARANTINED; no default PRE_ACTION. Impossible transition is REJECT.",
+    "references": "Missing entity/event/task/assertion/evidence references are QUARANTINED pending authoritative resolution; no fabricated placeholder.",
+    "verification": "A claimed VERIFIED status without valid verifier identity and evidence/method reference is QUARANTINED and cannot retain VERIFIED structural status.",
+    "versions": "Unsupported relation/state/outcome/authorization/assignment/context vocabulary version or unknown type quarantines at record granularity."
+  },
+  "invariants": [
+    "opaque metadata cannot create structural truth",
+    "unsupported vocabulary cannot create structural truth",
+    "producers cannot self-grant authority",
+    "malformed relations cannot become consumable",
+    "derived facts require valid acyclic lineage",
+    "target type cannot be guessed",
+    "availability cannot default permissively",
+    "future evidence cannot affect past decision",
+    "consumer boundary constrains selection",
+    "verification does not create authority",
+    "unknown is not a malformed-record fallback"
+  ],
+  "preserved_v1": [
+    "immutable assertion envelopes",
+    "assertor/actor/observer/verifier separation",
+    "many-to-many actors and targets",
+    "scoped identities",
+    "task/event/provenance/verification/lineage/conflict/UNKNOWN",
+    "fact-specific authority outside shared truth",
+    "temporal availability",
+    "N=1/N>1 common model",
+    "regulator neutrality"
+  ],
+  "readiness": "V1.1 READY FOR ADVERSARIAL DELTA REVIEW",
+  "semantic_fingerprint": "b885e36e0bf5b185ac953a345234c33250781aa7447d16d1a37b18c2445925c6",
+  "status": "DESIGN_ONLY_BOUNDED_REVISION",
+  "target_temporal": {
+    "replay": "Historical replay selects evidence by original evaluation boundary; later evidence may be shown separately but cannot contaminate reconstruction.",
+    "target_typing": "Target relation requires referenced entity category from controlled neutral set (e.g., TASK, OBJECT, PARTICIPANT, RESOURCE, SERVICE, ENVIRONMENT, UNKNOWN). Claimed type inconsistent with registered entity is REJECT. UNKNOWN target is legal but consumers requiring target identity must not substitute a default. Many targets remain relation records; no primary inferred.",
+    "temporal_consumption": "A consumer declares evaluation timestamp, availability phase/boundary, and scope. It may consume only structurally accepted/admitted evidence whose availability is valid at that boundary. Event time never substitutes for availability time. Missing availability quarantines."
+  },
+  "traceability": {
+    "b-036": "CLOSED: typed targets represent stop(E,timer) distinctly from task T; no target-to-task inference. This requires authoritative supply, not prose parsing.",
+    "neg-03": "CLOSED structurally: actor/event/task/role/target may be separate typed facts; no responsibility-displacement predicate is allowed.",
+    "tcf-11/tcf-13/tcf-14/both-07": "PARTIALLY_REPRESENTABLE: event/task/target/order/completion/availability prerequisites are neutral and representable if supplied; V1.1 adds no TCF conclusion or extraction."
+  },
+  "verified_inputs": {
+    "ETHOS_STRUCTURAL_EVIDENCE_CONTRACT_V1_DESIGN.md": "79fb4fc21e7b6d7a5a71b53c7af978d9875407ec26ab62f3e4da89afefbef816",
+    "ethos_structural_evidence_contract_v1_design.json": "cdb4b8179bb199ac802d30b31453b09b60d769d14fccf8195568b74f5e66c58b",
+    "ethos_task12v_attack_matrix.json": "c99efdf3ccc382570f7fb41857c040368d9967b19dfa762b2d446a13ae8b3047",
+    "ethos_task12v_structural_contract_adversarial_review.json": "6851683b981abc56a6af517eb157a983794ecd8ff44b894021c4418f58b2b163",
+    "sloth_contextual_measurement_v21_research.py": "bff933de8a5095410e38b17053b2d158d5db0df1c9a7f56abdcca3c1ccace3f7"
+  },
+  "version": "STRUCTURAL_EVIDENCE_CONTRACT_V1_1_DESIGN",
+  "vocabulary_boundary": {
+    "domain_extensions": "Opaque by default. A future structural extension requires separately registered neutral vocabulary/version and conformance review; producer-defined names never become structural.",
+    "prohibited_examples": [
+      "slothful",
+      "abandoning",
+      "greedy",
+      "unethical",
+      "unethical_success",
+      "responsibility_displacement",
+      "RAF/TCF contribution or score"
+    ],
+    "relation_state_outcome_context": "Each uses a contract/version-owned finite neutral vocabulary with endpoint/type constraints. Unknown type or unsupported version is QUARANTINED (or REJECTED for integrity-malformed records), never guessed/mapped/consumed."
+  }
+}

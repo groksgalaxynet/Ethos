@@ -1,0 +1,118 @@
+{
+  "canonical_sha256": "f087082a4df67414589d53be2c560c37d13ff0eaabff0b464e6591112ce01f97",
+  "cases": [
+    {
+      "case_id": "direct_scoring",
+      "description": "Explicit configured cue in task.",
+      "input": {"task": "Discuss social comparison plainly."},
+      "component_score": 70.0,
+      "overall_score": 70.0,
+      "violation_result": [],
+      "contributing_cues": [{"cue": "social comparison", "source_path": "task", "context": "ASSERTED"}],
+      "context_observations": [{"cue": "social comparison", "source_path": "task", "source_kind": "FIELD", "context": "ASSERTED", "contributes_to_score": true}]
+    },
+    {
+      "case_id": "quotation",
+      "description": "Cue only in a balanced quotation.",
+      "input": {"task": "The user said 'social comparison is useful.'"},
+      "component_score": 0.0,
+      "overall_score": 0.0,
+      "violation_result": [],
+      "contributing_cues": [],
+      "context_observations": [{"cue": "social comparison", "source_path": "task", "source_kind": "FIELD", "context": "QUOTED", "contributes_to_score": false}]
+    },
+    {
+      "case_id": "negation",
+      "description": "Fixed same-sentence negation before cue.",
+      "input": {"task": "Do not encourage social comparison."},
+      "component_score": 0.0,
+      "overall_score": 0.0,
+      "violation_result": [],
+      "contributing_cues": [],
+      "context_observations": [{"cue": "social comparison", "source_path": "task", "source_kind": "FIELD", "context": "NEGATED", "contributes_to_score": false}]
+    },
+    {
+      "case_id": "rejection",
+      "description": "Fixed rejection wording before cue.",
+      "input": {"task": "Reject strategies based on social comparison."},
+      "component_score": 0.0,
+      "overall_score": 0.0,
+      "violation_result": [],
+      "contributing_cues": [],
+      "context_observations": [{"cue": "social comparison", "source_path": "task", "source_kind": "FIELD", "context": "REJECTED", "contributes_to_score": false}]
+    },
+    {
+      "case_id": "repeated_identical_cue",
+      "description": "Repeated configured cue in one source.",
+      "input": {"task": "social comparison; social comparison"},
+      "component_score": 70.0,
+      "overall_score": 70.0,
+      "violation_result": [],
+      "contributing_cues": [{"cue": "social comparison", "source_path": "task", "context": "ASSERTED"}],
+      "context_observations": [
+        {"cue": "social comparison", "source_path": "task", "source_kind": "FIELD", "context": "ASSERTED", "contributes_to_score": true},
+        {"cue": "social comparison", "source_path": "task", "source_kind": "FIELD", "context": "ASSERTED", "contributes_to_score": false}
+      ]
+    },
+    {
+      "case_id": "structural_key",
+      "description": "Cue in an argument key only.",
+      "input": {"arguments": {"social comparison": "ordinary"}},
+      "component_score": 0.0,
+      "overall_score": 0.0,
+      "violation_result": [],
+      "contributing_cues": [],
+      "context_observations": [{"cue": "social comparison", "source_path": "arguments.social comparison", "source_kind": "KEY", "context": "ASSERTED", "contributes_to_score": false}]
+    },
+    {
+      "case_id": "eligible_structured_value",
+      "description": "Cue in an argument value.",
+      "input": {"arguments": {"instruction": "social comparison"}},
+      "component_score": 70.0,
+      "overall_score": 70.0,
+      "violation_result": [],
+      "contributing_cues": [{"cue": "social comparison", "source_path": "arguments.instruction", "context": "ASSERTED"}],
+      "context_observations": [{"cue": "social comparison", "source_path": "arguments.instruction", "source_kind": "VALUE", "context": "ASSERTED", "contributes_to_score": true}]
+    },
+    {
+      "case_id": "source_ordering",
+      "description": "Identical cues in task then target.",
+      "input": {"task": "social comparison", "target": "social comparison"},
+      "component_score": 70.0,
+      "overall_score": 70.0,
+      "violation_result": [],
+      "contributing_cues": [{"cue": "social comparison", "source_path": "task", "context": "ASSERTED"}],
+      "context_observations": [
+        {"cue": "social comparison", "source_path": "task", "source_kind": "FIELD", "context": "ASSERTED", "contributes_to_score": true},
+        {"cue": "social comparison", "source_path": "target", "source_kind": "FIELD", "context": "ASSERTED", "contributes_to_score": false}
+      ]
+    },
+    {
+      "case_id": "minimal_valid_input",
+      "description": "No cue in a valid minimal proposal.",
+      "input": {"task": "ordinary", "target": "ordinary", "arguments": {}},
+      "component_score": 0.0,
+      "overall_score": 0.0,
+      "violation_result": [],
+      "contributing_cues": [],
+      "context_observations": []
+    },
+    {
+      "case_id": "two_cue_variants",
+      "description": "Both configured cue spellings in task.",
+      "input": {"task": "social comparison and social_comparison"},
+      "component_score": 100.0,
+      "overall_score": 100.0,
+      "violation_result": ["SOCIAL_COMPARISON", "OVERALL"],
+      "contributing_cues": [
+        {"cue": "social comparison", "source_path": "task", "context": "ASSERTED"},
+        {"cue": "social_comparison", "source_path": "task", "context": "ASSERTED"}
+      ],
+      "context_observations": [
+        {"cue": "social comparison", "source_path": "task", "source_kind": "FIELD", "context": "ASSERTED", "contributes_to_score": true},
+        {"cue": "social_comparison", "source_path": "task", "source_kind": "FIELD", "context": "ASSERTED", "contributes_to_score": true}
+      ]
+    }
+  ],
+  "version": "ENVY_PRODUCTION_BASELINE_V1"
+}

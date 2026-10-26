@@ -1,0 +1,40 @@
+{
+  "task": "ETHOS++ Task 12",
+  "status": "authorization_review_only",
+  "decision": "STRUCTURAL EVIDENCE V1.2 AUTHORIZATION BLOCKED — CONTRACT REVISION REQUIRED",
+  "v11": {
+    "implementation_hash": "6507e4ec3e0ed2898535e52dd15af1dffe8c7fa0a9bd8c33634f3868e8cbb2b3",
+    "test_hash": "5ea43255794f9633214d8c6e91d1ee9b076bb9e3c634f2de0a76c4c857e1f8a9",
+    "preservation": "byte-for-byte unchanged; unsupported REFERENCES_PROPOSAL remains quarantined"
+  },
+  "candidate_relation": {
+    "name": "REFERENCES_PROPOSAL",
+    "intended_semantics": "assertion source claims execution EVENT E references proposal EVENT P",
+    "endpoint_intent": [{"role": "execution", "type": "EVENT"}, {"role": "proposal", "type": "EVENT"}],
+    "prohibited_implications": ["causation", "authorization", "approval", "gate ALLOW", "adherence", "success", "shared actor", "shared target", "responsibility", "delegation", "ethical acceptability", "policy result"],
+    "cardinality": {"proposal_to_execution": "zero_or_many", "execution_to_proposal_in_coherent_producer_record": "zero_or_one"}
+  },
+  "blocker": {
+    "name": "EVENT_ROLE_AMBIGUITY",
+    "finding": "V1.1 has only one EVENT entity type and no structural proposal-event role marker.",
+    "effect": "A relation-only V1.2 would accept execution EVENT to observation EVENT under role labels supplied by producer.",
+    "non_solutions": ["ID naming", "text inference", "scope inference", "opaque metadata", "shared targets", "temporal order", "relation role labels", "external producer profile"],
+    "required_revision": "design a minimal neutral structural event-role representation before relation authorization"
+  },
+  "behavior_if_reconsidered": {
+    "missing_link": "UNKNOWN_or_unavailable",
+    "dangling_proposal": "quarantine; no placeholder",
+    "cross_scope": "visible neutral scopes; no trust/authority inference",
+    "conflicts": "retain target, actor, gate, temporal, and separately attributed proposal-reference conflicts",
+    "origin": "assertion envelope controls origin",
+    "verification": "fact-specific only"
+  },
+  "recommended_strategy_after_revision": {
+    "strategy": "B",
+    "description": "separate V1.2 module and tests, retaining V1.1 files byte-for-byte",
+    "anticipated_files": ["ethos_structural_evidence_v12.py", "test_ethos_structural_evidence_v12.py"],
+    "frozen_files_not_modified": ["ethos_structural_evidence.py", "test_ethos_structural_evidence.py"]
+  },
+  "deferred": ["execution producer", "runtime execution", "observation", "outcome", "measurement", "authorization", "gate integration", "Wrath integration", "regulator consumer"]
+}
+

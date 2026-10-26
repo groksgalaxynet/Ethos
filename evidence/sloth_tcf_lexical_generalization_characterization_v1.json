@@ -1,0 +1,23 @@
+{
+  "admitted_records": 39,
+  "conditional_records": 0,
+  "contextual_controls_preserved": 8,
+  "corpus_sha256": "77503ae97aee600ad2a1c4bc8d7106da5f82d84b55064c79c23b113c2be77338",
+  "deterministic_sha256": "40bd382b71b3a83dccdfd8d7fb8068eca8691710c33373dc69f0081cab1c7ab1",
+  "failure_categories": {
+    "CONTEXT_MISSING": 6,
+    "LEXICAL_RELATION_MISSING": 16
+  },
+  "false_positives": 0,
+  "family_classifications": {
+    "NEGATED_COMPLETION_COMMAND": "PARTIAL",
+    "SEPARATED_NONCOMPLETION": "PARTIAL"
+  },
+  "matched_controls_preserved": 12,
+  "positive_detections": 0,
+  "positive_misses": 16,
+  "rejected_records": 6,
+  "total_cases": 48,
+  "unknown_behavior": 0,
+  "v2_sha256": "55f3f524e74aedd5080a17ee28244f58220dfeb28c70616d68c4e2301fb8d025"
+}

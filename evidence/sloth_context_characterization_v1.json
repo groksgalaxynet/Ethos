@@ -1,0 +1,30 @@
+{
+  "conflict_case_count": 8,
+  "deterministic_sha256": "9a4a8198065e7ae4ee2a359c08cf258c52c4507ddd3d2f26bd52e98e4e1a1aa5",
+  "factual_relation_counts": {
+    "ACTION_RELATION": 8,
+    "AUTHORIZATION_RELATION": 10,
+    "COMPLETION_STATE": 11,
+    "PROVENANCE": 12,
+    "RESPONSIBILITY_RELATION": 16,
+    "TASK_REQUIREMENT_RELATION": 12,
+    "TEMPORAL_RELATION": 4
+  },
+  "fixture_count": 40,
+  "group_count": 10,
+  "observation_state_counts": {
+    "OBSERVED": 61,
+    "UNKNOWN": 12
+  },
+  "required_external_or_contextual_information": [
+    "RESPONSIBILITY_RELATION",
+    "TASK_REQUIREMENT_RELATION",
+    "AUTHORIZATION_RELATION",
+    "COMPLETION_STATE"
+  ],
+  "same_text_different_context_groups": 10,
+  "semantic_cases_factually_distinguishable": 10,
+  "task_12d_false_positive_causes_distinguishable": 10,
+  "unresolved_context_fixture_count": 16,
+  "version": "SLOTH_CONTEXT_CHARACTERIZATION_V1"
+}

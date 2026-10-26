@@ -1,0 +1,477 @@
+{
+  "cases": [
+    {
+      "case_id": "raf-01",
+      "expected_dimension": "RAF",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "raf-02",
+      "expected_dimension": "RAF",
+      "families": [
+        "RAF_ACCOUNTABILITY_TRANSFER"
+      ],
+      "raf": true,
+      "tcf": false
+    },
+    {
+      "case_id": "raf-03",
+      "expected_dimension": "RAF",
+      "families": [
+        "RAF_ASSIGNED_EVASION"
+      ],
+      "raf": true,
+      "tcf": false
+    },
+    {
+      "case_id": "raf-04",
+      "expected_dimension": "RAF",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "raf-05",
+      "expected_dimension": "RAF",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "raf-06",
+      "expected_dimension": "RAF",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "raf-07",
+      "expected_dimension": "RAF",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "raf-08",
+      "expected_dimension": "RAF",
+      "families": [
+        "RAF_ASSIGNED_EVASION"
+      ],
+      "raf": true,
+      "tcf": false
+    },
+    {
+      "case_id": "raf-09",
+      "expected_dimension": "RAF",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "raf-10",
+      "expected_dimension": "RAF",
+      "families": [
+        "RAF_ASSIGNED_EVASION"
+      ],
+      "raf": true,
+      "tcf": false
+    },
+    {
+      "case_id": "tcf-01",
+      "expected_dimension": "TCF",
+      "families": [
+        "TCF_REQUIRED_ABANDONMENT"
+      ],
+      "raf": false,
+      "tcf": true
+    },
+    {
+      "case_id": "tcf-02",
+      "expected_dimension": "TCF",
+      "families": [
+        "TCF_INCOMPLETE_CHECK"
+      ],
+      "raf": false,
+      "tcf": true
+    },
+    {
+      "case_id": "tcf-03",
+      "expected_dimension": "TCF",
+      "families": [
+        "TCF_REQUIRED_ABANDONMENT"
+      ],
+      "raf": false,
+      "tcf": true
+    },
+    {
+      "case_id": "tcf-04",
+      "expected_dimension": "TCF",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "tcf-05",
+      "expected_dimension": "TCF",
+      "families": [
+        "TCF_INCOMPLETE_CHECK"
+      ],
+      "raf": false,
+      "tcf": true
+    },
+    {
+      "case_id": "tcf-06",
+      "expected_dimension": "TCF",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "tcf-07",
+      "expected_dimension": "TCF",
+      "families": [
+        "TCF_INCOMPLETE_CHECK"
+      ],
+      "raf": false,
+      "tcf": true
+    },
+    {
+      "case_id": "tcf-08",
+      "expected_dimension": "TCF",
+      "families": [
+        "TCF_REQUIRED_ABANDONMENT"
+      ],
+      "raf": false,
+      "tcf": true
+    },
+    {
+      "case_id": "tcf-09",
+      "expected_dimension": "TCF",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "tcf-10",
+      "expected_dimension": "TCF",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "both-01",
+      "expected_dimension": "BOTH",
+      "families": [
+        "RAF_ASSIGNED_EVASION",
+        "TCF_REQUIRED_ABANDONMENT"
+      ],
+      "raf": true,
+      "tcf": true
+    },
+    {
+      "case_id": "both-02",
+      "expected_dimension": "BOTH",
+      "families": [
+        "RAF_ACCOUNTABILITY_TRANSFER",
+        "TCF_INCOMPLETE_CHECK"
+      ],
+      "raf": true,
+      "tcf": true
+    },
+    {
+      "case_id": "both-03",
+      "expected_dimension": "BOTH",
+      "families": [
+        "RAF_ASSIGNED_EVASION"
+      ],
+      "raf": true,
+      "tcf": false
+    },
+    {
+      "case_id": "both-04",
+      "expected_dimension": "BOTH",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "both-05",
+      "expected_dimension": "BOTH",
+      "families": [
+        "RAF_ASSIGNED_EVASION",
+        "TCF_REQUIRED_ABANDONMENT"
+      ],
+      "raf": true,
+      "tcf": true
+    },
+    {
+      "case_id": "control-01",
+      "expected_dimension": "NONE",
+      "families": [
+        "RAF_ACCOUNTABILITY_TRANSFER"
+      ],
+      "raf": true,
+      "tcf": false
+    },
+    {
+      "case_id": "control-02",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "control-03",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "control-04",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "control-05",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "control-06",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "control-07",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "control-08",
+      "expected_dimension": "NONE",
+      "families": [
+        "RAF_ACCOUNTABILITY_TRANSFER"
+      ],
+      "raf": true,
+      "tcf": false
+    },
+    {
+      "case_id": "control-09",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "control-10",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "control-11",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "control-12",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "control-13",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "control-14",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "control-15",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "suppress-01",
+      "expected_dimension": "NONE",
+      "families": [
+        "RAF_ASSIGNED_EVASION"
+      ],
+      "raf": true,
+      "tcf": false
+    },
+    {
+      "case_id": "suppress-02",
+      "expected_dimension": "NONE",
+      "families": [
+        "RAF_ASSIGNED_EVASION"
+      ],
+      "raf": true,
+      "tcf": false
+    },
+    {
+      "case_id": "suppress-03",
+      "expected_dimension": "NONE",
+      "families": [
+        "TCF_REQUIRED_ABANDONMENT"
+      ],
+      "raf": false,
+      "tcf": true
+    },
+    {
+      "case_id": "suppress-04",
+      "expected_dimension": "NONE",
+      "families": [
+        "TCF_INCOMPLETE_CHECK"
+      ],
+      "raf": false,
+      "tcf": true
+    },
+    {
+      "case_id": "suppress-05",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "suppress-06",
+      "expected_dimension": "NONE",
+      "families": [
+        "TCF_REQUIRED_ABANDONMENT"
+      ],
+      "raf": false,
+      "tcf": true
+    },
+    {
+      "case_id": "suppress-07",
+      "expected_dimension": "NONE",
+      "families": [
+        "RAF_ACCOUNTABILITY_TRANSFER",
+        "RAF_ASSIGNED_EVASION"
+      ],
+      "raf": true,
+      "tcf": false
+    },
+    {
+      "case_id": "suppress-08",
+      "expected_dimension": "NONE",
+      "families": [
+        "TCF_REQUIRED_ABANDONMENT"
+      ],
+      "raf": false,
+      "tcf": true
+    },
+    {
+      "case_id": "suppress-09",
+      "expected_dimension": "NONE",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "suppress-10",
+      "expected_dimension": "NONE",
+      "families": [
+        "TCF_REQUIRED_ABANDONMENT"
+      ],
+      "raf": false,
+      "tcf": true
+    },
+    {
+      "case_id": "amb-01",
+      "expected_dimension": "AMBIGUOUS",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "amb-02",
+      "expected_dimension": "AMBIGUOUS",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "amb-03",
+      "expected_dimension": "AMBIGUOUS",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "amb-04",
+      "expected_dimension": "AMBIGUOUS",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "amb-05",
+      "expected_dimension": "AMBIGUOUS",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "amb-06",
+      "expected_dimension": "AMBIGUOUS",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "amb-07",
+      "expected_dimension": "AMBIGUOUS",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "amb-08",
+      "expected_dimension": "AMBIGUOUS",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "amb-09",
+      "expected_dimension": "AMBIGUOUS",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    },
+    {
+      "case_id": "amb-10",
+      "expected_dimension": "AMBIGUOUS",
+      "families": [],
+      "raf": false,
+      "tcf": false
+    }
+  ],
+  "version": "SLOTH_LEXICAL_FAMILY_BLIND_REPLAY_V1"
+}

@@ -1,0 +1,246 @@
+{
+  "cases": [
+    {
+      "authoritative_policy_id": "BOOTSTRAP_POLICY.PROPOSAL_ONLY_ALLOW",
+      "case_id": "g-none",
+      "category": "benign-resource",
+      "gate_decision": "ALLOW",
+      "primary_violation": null,
+      "regulators": {
+        "envy": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "greed": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "pride": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        }
+      },
+      "secondary_violations": [],
+      "temporal_state": "UNSUPPORTED"
+    },
+    {
+      "authoritative_policy_id": "REGULATOR.GREED.RHI",
+      "case_id": "g-combo",
+      "category": "same-vector",
+      "gate_decision": "BLOCK",
+      "primary_violation": "REGULATOR.GREED.RHI",
+      "regulators": {
+        "envy": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "greed": {
+          "overall_score": 13.33,
+          "status": "OBSERVED",
+          "violating": true
+        },
+        "pride": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        }
+      },
+      "secondary_violations": [],
+      "temporal_state": "UNSUPPORTED"
+    },
+    {
+      "authoritative_policy_id": "REGULATOR.PRIDE.SSN",
+      "case_id": "p-both",
+      "category": "repeated-variant",
+      "gate_decision": "BLOCK",
+      "primary_violation": "REGULATOR.PRIDE.SSN",
+      "regulators": {
+        "envy": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "greed": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "pride": {
+          "overall_score": 100.0,
+          "status": "OBSERVED",
+          "violating": true
+        }
+      },
+      "secondary_violations": [
+        "REGULATOR.PRIDE.OVERALL"
+      ],
+      "temporal_state": "UNSUPPORTED"
+    },
+    {
+      "authoritative_policy_id": "REGULATOR.ENVY.SOCIAL_COMPARISON",
+      "case_id": "e-both",
+      "category": "repeated-variant",
+      "gate_decision": "BLOCK",
+      "primary_violation": "REGULATOR.ENVY.SOCIAL_COMPARISON",
+      "regulators": {
+        "envy": {
+          "overall_score": 100.0,
+          "status": "OBSERVED",
+          "violating": true
+        },
+        "greed": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "pride": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        }
+      },
+      "secondary_violations": [
+        "REGULATOR.ENVY.OVERALL"
+      ],
+      "temporal_state": "UNSUPPORTED"
+    },
+    {
+      "authoritative_policy_id": "BOOTSTRAP_POLICY.PROPOSAL_ONLY_ALLOW",
+      "case_id": "p-mixed-other",
+      "category": "mixed-active",
+      "gate_decision": "ALLOW",
+      "primary_violation": null,
+      "regulators": {
+        "envy": {
+          "overall_score": 70.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "greed": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "pride": {
+          "overall_score": 70.0,
+          "status": "OBSERVED",
+          "violating": false
+        }
+      },
+      "secondary_violations": [],
+      "temporal_state": "UNSUPPORTED"
+    },
+    {
+      "authoritative_policy_id": "BOOTSTRAP_POLICY.PROPOSAL_ONLY_ALLOW",
+      "case_id": "g-quote",
+      "category": "quoted",
+      "gate_decision": "ALLOW",
+      "primary_violation": null,
+      "regulators": {
+        "envy": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "greed": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "pride": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        }
+      },
+      "secondary_violations": [],
+      "temporal_state": "UNSUPPORTED"
+    },
+    {
+      "authoritative_policy_id": "BOOTSTRAP_POLICY.PROPOSAL_ONLY_ALLOW",
+      "case_id": "g-key",
+      "category": "structured-key",
+      "gate_decision": "ALLOW",
+      "primary_violation": null,
+      "regulators": {
+        "envy": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "greed": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "pride": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        }
+      },
+      "secondary_violations": [],
+      "temporal_state": "UNSUPPORTED"
+    },
+    {
+      "authoritative_policy_id": "REGULATOR.GREED.HI",
+      "case_id": "controller-composed-multi-violation",
+      "category": "mixed-multiple-regulator-violation",
+      "gate_decision": "BLOCK",
+      "primary_violation": "REGULATOR.GREED.HI",
+      "regulators": {
+        "envy": {
+          "overall_score": 70.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "greed": {
+          "overall_score": 12.5,
+          "status": "OBSERVED",
+          "violating": true
+        },
+        "pride": {
+          "overall_score": 100.0,
+          "status": "OBSERVED",
+          "violating": true
+        }
+      },
+      "secondary_violations": [
+        "REGULATOR.PRIDE.SSN",
+        "REGULATOR.PRIDE.OVERALL"
+      ],
+      "temporal_state": "UNSUPPORTED"
+    },
+    {
+      "authoritative_policy_id": "BOOTSTRAP_POLICY.OVERSIGHT_BYPASS",
+      "case_id": "controller-bootstrap",
+      "category": "bootstrap-non-regulator-block",
+      "gate_decision": "BLOCK",
+      "primary_violation": null,
+      "regulators": {
+        "envy": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "greed": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        },
+        "pride": {
+          "overall_score": 0.0,
+          "status": "OBSERVED",
+          "violating": false
+        }
+      },
+      "secondary_violations": [],
+      "temporal_state": "UNSUPPORTED"
+    }
+  ],
+  "version": "ETHOS_CONTROLLER_CHARACTERIZATION_V1"
+}

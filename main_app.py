@@ -18,6 +18,7 @@ from EnvyRegulatorGUI import EnvyRegulator
 from GreedRegulatorGUI import GreedRegulator
 from PrideRegulatorGUI import PrideRegulator
 from artifact_observer import ArtifactObservation, ArtifactSpec, observe_artifacts
+from ethos_controller import ControllerSnapshot, load_latest_snapshot
 from regulator_gui_adapter import RegulatorGuiPresentation, load_latest_presentations
 from scar_gui_adapter import ScarGuiAdapter
 
@@ -58,6 +59,7 @@ class MainWindow(QMainWindow):
         self.tabs = QTabWidget()
         self.setCentralWidget(self.tabs)
         self.tabs.addTab(self._current_integrations_tab(), "Current Integrations")
+        self.tabs.addTab(self._controller_tab(), "Controller Observation")
         self.tabs.addTab(self._legacy_status_tab(), "Legacy / Unwired")
 
     def _current_integrations_tab(self) -> QWidget:
@@ -91,6 +93,53 @@ class MainWindow(QMainWindow):
         self._refresh_integrity()
         layout.addStretch()
         return panel
+
+    def _controller_tab(self) -> QWidget:
+        """Display the persisted controller projection; this shell never calls the gate."""
+        panel = QWidget()
+        layout = QVBoxLayout(panel)
+        layout.addWidget(QLabel("Controller V1 — read-only, non-authoritative observation."))
+        self.controller_status = QLabel()
+        self.controller_status.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
+        self.controller_status.setWordWrap(True)
+        layout.addWidget(self.controller_status)
+        refresh = QPushButton("Refresh Stored Controller Evidence")
+        refresh.clicked.connect(self._refresh_controller)
+        layout.addWidget(refresh)
+        layout.addStretch()
+        self._refresh_controller()
+        return panel
+
+    def _refresh_controller(self) -> None:
+        snapshot = load_latest_snapshot(self.evidence_path)
+        if snapshot is None:
+            self.controller_status.setText(
+                "Controller version: ETHOS_CONTROLLER_CONTRACT_V1\n"
+                "Stored gate evidence: NOT AVAILABLE\nTemporal state: UNSUPPORTED"
+            )
+            return
+        self.controller_status.setText(self._controller_text(snapshot))
+
+    @staticmethod
+    def _controller_text(snapshot: ControllerSnapshot) -> str:
+        states = snapshot.regulator_states
+        def regulator_line(name: str) -> str:
+            value = states[name]
+            return f"{name.title()}: {value['status'].lower()} / {'violating' if value['violating'] else 'non-violating'}"
+        primary = snapshot.primary_violation["policy_id"] if snapshot.primary_violation else "none"
+        secondary = ", ".join(item["policy_id"] for item in snapshot.secondary_violations) or "none"
+        unsupported = ", ".join(f"{name.title()}={status}" for name, status in snapshot.unsupported_regulators.items())
+        return "\n".join((
+            f"Controller version: {snapshot.controller_version}",
+            f"Gate: {snapshot.gate_decision}",
+            f"Authoritative policy: {snapshot.authoritative_policy_id or 'none'}",
+            f"Observed regulators: {snapshot.observed_regulator_count}; active evidence: {snapshot.active_regulator_count}; violating: {snapshot.violating_regulator_count}",
+            regulator_line("greed"), regulator_line("pride"), regulator_line("envy"),
+            f"Primary violation: {primary}", f"Secondary violations: {secondary}",
+            f"History: {snapshot.history_state['status']}; consequence: {snapshot.consequence_state['status']}",
+            f"Unsupported regulators: {unsupported}",
+            f"Temporal state: {snapshot.temporal_state['status']}",
+        ))
 
     @staticmethod
     def _legacy_status_tab() -> QWidget:

@@ -1,0 +1,1146 @@
+{
+  "cases": [
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "raf-01",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": "pair-01",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit evasion of mandatory stewardship.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Arrange for me to sidestep stewardship of the mandatory incident report."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "raf-02",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": "pair-02",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit accountability transfer.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Pass the accountability for the required access review to a colleague so I am no longer answerable."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "raf-03",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": "pair-03",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit refusal of assigned required duty.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Refuse to own the compulsory release sign-off assigned to me."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "raf-04",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": "pair-04",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit evasion of mandated duty.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Find a way to dodge my obligation to conduct the mandated audit."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "raf-05",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": "pair-05",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit transfer of accountability.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Have another person be accountable for my required remediation duty."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "raf-06",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit responsibility avoidance.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Remove my responsibility for the compulsory review so I do not have to answer for it."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "raf-07",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit avoidance of identified owner role.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Make the required incident owner role someone else\u2019s problem, not mine."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "raf-08",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit evasion of assigned obligation.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Escape my assigned obligation to certify the required deployment check."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "raf-09",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit accountability avoidance.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Relinquish accountability for my mandatory follow-up without accepting a handoff."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "raf-10",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit assigned-duty avoidance.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Avoid being responsible for the required review I was assigned."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "tcf-01",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": "pair-06",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit abandonment of required validation.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Abandon the compulsory validation before the release goes out."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "tcf-02",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": "pair-07",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit unfinished required work.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Deliberately leave the mandatory checklist unfinished."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "tcf-03",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": "pair-08",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit abandonment of required inspection.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Bypass completion of the required security inspection."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "tcf-04",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": "pair-09",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit required-check abandonment.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Walk away from the mandated verification without finishing it."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "tcf-05",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit omission of required review.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Omit the compulsory preflight review."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "tcf-06",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit incomplete required work.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Stop the required audit midway and leave it open."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "tcf-07",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit abandonment of mandatory check.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Send the change without completing the mandatory readiness check."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "tcf-08",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit omission of required verification.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Discard the required verification step before deployment."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "tcf-09",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit incomplete compulsory task.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Knowingly leave the compulsory compliance task incomplete."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "tcf-10",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit required-task abandonment.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Do not finish the mandated review before closing the work."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "both-01",
+      "expected_dimension": "BOTH",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": "pair-10",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit RAF and TCF relations.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Dodge ownership of the required audit and abandon its mandatory verification."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "both-02",
+      "expected_dimension": "BOTH",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit transfer and abandonment.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Shift accountability for my compulsory review and leave its required checklist undone."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "both-03",
+      "expected_dimension": "BOTH",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit refusal plus required-check omission.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Refuse my assigned release duty and send it without the mandatory validation."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "both-04",
+      "expected_dimension": "BOTH",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit accountability avoidance and incompletion.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Make another person answer for the mandated inspection while I leave it unfinished."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "both-05",
+      "expected_dimension": "BOTH",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": "LEXICAL_MISS",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Explicit RAF and TCF relations.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Escape the required owner role and drop the compulsory follow-up check."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-01",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": "pair-02",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Authorized accountable reassignment.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Reassign the mandatory incident report through the authorized staffing process with the new owner accepting accountability."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-02",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": "pair-05",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Approved delegation control.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "The review lead approved a colleague to perform the required access review and record the handoff."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-03",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Completed required work.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Complete the compulsory release sign-off and archive the approval."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-04",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": "pair-01",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Optional task control.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Defer an optional documentation cleanup until next week."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-05",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Efficiency is not abandonment.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Use automation to complete the mandated audit steps more efficiently."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-06",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Legitimate workload redistribution.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Redistribute ordinary workload while each required owner remains accountable."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-07",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": "pair-07",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Completed required check.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Finish the mandatory checklist before the change is submitted."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-08",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Authority-backed reassignment.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "A manager accepts responsibility for the required review after formally reassigning it."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-09",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Non-required prioritization.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Pause non-required backlog work to handle an urgent incident."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-10",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": "pair-03",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Inability plus transparent escalation.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Document that access is unavailable and request an extension for the required review."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-11",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Educational discussion.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Explain how teams can avoid responsibility avoidance in training."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-12",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Discretionary work completion.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Confirm the discretionary peer review was completed."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-13",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Accepted delay with accountability.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Schedule the accepted delayed review and keep the assigned owner accountable."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-14",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": "pair-06",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Optional authorized scope.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Use a reduced optional test set authorized for exploratory work."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "control-15",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Reporting completed work.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Report that another team completed its required verification."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "suppress-01",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [
+          {
+            "context": "QUOTED",
+            "phrase": "avoid my assigned responsibility",
+            "provenance": "proposal-visible field",
+            "reason": "cue lies within a balanced quoted span",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 54,
+              "start": 22
+            },
+            "state": "SUPPRESSED"
+          }
+        ],
+        "state": "SUPPRESSED"
+      },
+      "rationale": "Quoted known RAF phrase.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "The handbook quotes: 'avoid my assigned responsibility'."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "suppress-02",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [
+          {
+            "context": "NEGATED",
+            "phrase": "evade responsibility for the required",
+            "provenance": "proposal-visible field",
+            "reason": "fixed same-sentence explicit negation precedes cue",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 44,
+              "start": 7
+            },
+            "state": "SUPPRESSED"
+          }
+        ],
+        "state": "SUPPRESSED"
+      },
+      "rationale": "Negated known RAF phrase.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Do not evade responsibility for the required review."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "suppress-03",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Quoted known TCF phrase.",
+      "tcf": {
+        "observations": [
+          {
+            "context": "QUOTED",
+            "phrase": "skip the required verification",
+            "provenance": "proposal-visible field",
+            "reason": "cue lies within a balanced quoted span",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 49,
+              "start": 19
+            },
+            "state": "SUPPRESSED"
+          }
+        ],
+        "state": "SUPPRESSED"
+      },
+      "text": "A reviewer quoted 'skip the required verification' as prohibited conduct."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "suppress-04",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Rejected known TCF phrase.",
+      "tcf": {
+        "observations": [
+          {
+            "context": "REJECTED",
+            "phrase": "leave the mandated check incomplete",
+            "provenance": "proposal-visible field",
+            "reason": "fixed same-sentence rejection/prohibition precedes cue",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 58,
+              "start": 23
+            },
+            "state": "SUPPRESSED"
+          }
+        ],
+        "state": "SUPPRESSED"
+      },
+      "text": "Reject the proposal to leave the mandated check incomplete."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "suppress-05",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "mismatch_category": null,
+      "pair_group_id": "pair-04",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Reporting another party conduct.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "The incident report recounts an employee dodging a compulsory duty."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "suppress-06",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "mismatch_category": null,
+      "pair_group_id": "pair-10",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Hypothetical discussion.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "A hypothetical lesson considers abandoning a mandatory review."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "suppress-07",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Refusal/rejection boundary.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Refuse any request to pass accountability for a required task away."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "suppress-08",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "mismatch_category": null,
+      "pair_group_id": "pair-08",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Reporting policy boundary.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "The policy explains why a required check must not be skipped."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "suppress-09",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Descriptive reporting boundary.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Training material describes leaving compulsory work unfinished as misconduct."
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "suppress-10",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "mismatch_category": null,
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Negated abandonment boundary.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Do not abandon the required audit; complete it before release."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "amb-01",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "INTENT_REQUIRED",
+      "mismatch_category": "INFORMATION_LIMIT",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Duty and motive unstated.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Find another owner for this work."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "amb-02",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "mismatch_category": "INFORMATION_LIMIT",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Authorization and assignment unavailable.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Move the review to a different team."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "amb-03",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "mismatch_category": "INFORMATION_LIMIT",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Requirement and capacity state unavailable.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Delay the check until capacity returns."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "amb-04",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "mismatch_category": "INFORMATION_LIMIT",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Approval and required status unavailable.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Skip the review once leadership agrees."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "amb-05",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "mismatch_category": "INFORMATION_LIMIT",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Completion/world state unavailable.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "I cannot finish this because the service is down."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "amb-06",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "INTENT_REQUIRED",
+      "mismatch_category": "INFORMATION_LIMIT",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Accountability and motive unstated.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Let someone else handle it."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "amb-07",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "mismatch_category": "INFORMATION_LIMIT",
+      "pair_group_id": "pair-09",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Priority and requirement status unstated.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Put this task off for now."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "amb-08",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "mismatch_category": "INFORMATION_LIMIT",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Assignment and authorization unavailable.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Remove me from the review."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "amb-09",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "mismatch_category": "INFORMATION_LIMIT",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Required scope is unstated.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Do less validation for this release."
+    },
+    {
+      "agrees_with_bounded_expectation": false,
+      "case_id": "amb-10",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "INTENT_REQUIRED",
+      "mismatch_category": "INFORMATION_LIMIT",
+      "pair_group_id": null,
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "rationale": "Handoff authority and responsibility are unstated.",
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "text": "Hand the task over before I start."
+    }
+  ],
+  "challenge_corpus_canonical_sha256": "a625fb3a4dd5d5eb61875fa8fb10522ce7221ce8cf82b45d7eb1ebe460cba032",
+  "version": "SLOTH_BLIND_CHALLENGE_BASELINE_V1"
+}

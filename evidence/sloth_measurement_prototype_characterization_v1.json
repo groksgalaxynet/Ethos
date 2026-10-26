@@ -1,0 +1,54 @@
+{
+  "ambiguous_cases": [
+    "raf-ambiguous-01",
+    "raf-ambiguous-02",
+    "raf-ambiguous-03",
+    "raf-ambiguous-04",
+    "tcf-ambiguous-01",
+    "tcf-ambiguous-02",
+    "tcf-ambiguous-03"
+  ],
+  "corpus_canonical_sha256": "535af0407782c92cf83f158d0366e6e6bc28bdbc047371b0b376b0361666fd9f",
+  "correct_bounded_outcomes": 40,
+  "deterministic_sha256": "28155c3547786627e4ef1a6945af797263556b22fa8573c6bf2d8d8c9954c6c8",
+  "false_positives": [],
+  "information_limit_cases": [
+    "raf-ambiguous-01",
+    "raf-ambiguous-02",
+    "raf-ambiguous-03",
+    "raf-ambiguous-04",
+    "tcf-ambiguous-01",
+    "tcf-ambiguous-02",
+    "tcf-ambiguous-03"
+  ],
+  "lexical_misses": [],
+  "mismatches_by_category": {
+    "CONTEXT_SUPPRESSION_FAILURE": 0,
+    "CORPUS_AMBIGUITY": 0,
+    "DIMENSION_CONFUSION": 0,
+    "FALSE_POSITIVE": 0,
+    "INFORMATION_LIMIT": 0,
+    "LEXICAL_MISS": 0,
+    "UNKNOWN": 0
+  },
+  "overlap_cases": [
+    "overlap-01",
+    "overlap-02"
+  ],
+  "result_state_counts": {
+    "RAF": {
+      "DETECTED": 9,
+      "NOT_DETECTED": 25,
+      "SUPPRESSED": 2,
+      "UNKNOWN": 4
+    },
+    "TCF": {
+      "DETECTED": 9,
+      "NOT_DETECTED": 26,
+      "SUPPRESSED": 2,
+      "UNKNOWN": 3
+    }
+  },
+  "total_fixtures": 40,
+  "version": "SLOTH_MEASUREMENT_PROTOTYPE_CHARACTERIZATION_V1"
+}

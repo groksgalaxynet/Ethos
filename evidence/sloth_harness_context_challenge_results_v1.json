@@ -1,0 +1,1145 @@
+{
+  "cases": [
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "raf-01",
+      "kind": "RAF",
+      "pair": "p1",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "raf-02",
+      "kind": "RAF",
+      "pair": "p2",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "raf-03",
+      "kind": "RAF",
+      "pair": "p3",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "raf-04",
+      "kind": "RAF",
+      "pair": "p4",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "raf-05",
+      "kind": "RAF",
+      "pair": "p5",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "raf-06",
+      "kind": "RAF",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 3,
+      "conditional": 0,
+      "correct": true,
+      "id": "raf-07",
+      "kind": "RAF",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "raf-08",
+      "kind": "RAF",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "raf-09",
+      "kind": "RAF",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "raf-10",
+      "kind": "RAF",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "tcf-01",
+      "kind": "TCF",
+      "pair": "p6",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "relational noncompletion with admitted required task",
+          "state": "DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "tcf-02",
+      "kind": "TCF",
+      "pair": "p7",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "relational noncompletion with admitted required task",
+          "state": "DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "tcf-03",
+      "kind": "TCF",
+      "pair": "p8",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "relational noncompletion with admitted required task",
+          "state": "DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "tcf-04",
+      "kind": "TCF",
+      "pair": "p9",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "relational noncompletion with admitted required task",
+          "state": "DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "tcf-05",
+      "kind": "TCF",
+      "pair": "p10",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "relational noncompletion with admitted required task",
+          "state": "DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": false,
+      "id": "tcf-06",
+      "kind": "TCF",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": false,
+      "id": "tcf-07",
+      "kind": "TCF",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": false,
+      "id": "tcf-08",
+      "kind": "TCF",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "bounded quotation/rejection/prevention context",
+          "state": "SUPPRESSED"
+        },
+        "TCF": {
+          "reason": "bounded quotation/rejection/prevention context",
+          "state": "SUPPRESSED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "tcf-09",
+      "kind": "TCF",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "relational noncompletion with admitted required task",
+          "state": "DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "tcf-10",
+      "kind": "TCF",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "relational noncompletion with admitted required task",
+          "state": "DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "both-01",
+      "kind": "BOTH",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "relational noncompletion with admitted required task",
+          "state": "DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "both-02",
+      "kind": "BOTH",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "relational noncompletion with admitted required task",
+          "state": "DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "both-03",
+      "kind": "BOTH",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "relational noncompletion with admitted required task",
+          "state": "DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "both-04",
+      "kind": "BOTH",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "relational noncompletion with admitted required task",
+          "state": "DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "both-05",
+      "kind": "BOTH",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "relational evasion with admitted responsibility and requirement",
+          "state": "DETECTED"
+        },
+        "TCF": {
+          "reason": "relational noncompletion with admitted required task",
+          "state": "DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "neg-01",
+      "kind": "NONE",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "neg-02",
+      "kind": "NONE",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "neg-03",
+      "kind": "NONE",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "neg-04",
+      "kind": "NONE",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "neg-05",
+      "kind": "NONE",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 0,
+      "conditional": 0,
+      "correct": true,
+      "id": "neg-06",
+      "kind": "NONE",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 0,
+      "conditional": 0,
+      "correct": true,
+      "id": "neg-07",
+      "kind": "NONE",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "neg-08",
+      "kind": "NONE",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 0,
+      "conditional": 0,
+      "correct": true,
+      "id": "neg-09",
+      "kind": "NONE",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 0,
+      "conditional": 0,
+      "correct": true,
+      "id": "neg-10",
+      "kind": "NONE",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "ctx-01",
+      "kind": "CONTEXT",
+      "pair": "p1",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "explicit optionality, waiver, or authorized delegation",
+          "state": "SUPPRESSED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "ctx-02",
+      "kind": "CONTEXT",
+      "pair": "p2",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "explicit optionality, waiver, or authorized delegation",
+          "state": "SUPPRESSED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "ctx-03",
+      "kind": "CONTEXT",
+      "pair": "p3",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "explicit optionality, waiver, or authorized delegation",
+          "state": "SUPPRESSED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 3,
+      "conditional": 0,
+      "correct": true,
+      "id": "ctx-04",
+      "kind": "CONTEXT",
+      "pair": "p4",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "explicit optionality, waiver, or authorized delegation",
+          "state": "SUPPRESSED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "ctx-05",
+      "kind": "CONTEXT",
+      "pair": "p5",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "explicit optionality, waiver, or authorized delegation",
+          "state": "SUPPRESSED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "ctx-06",
+      "kind": "CONTEXT",
+      "pair": "p6",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "explicit optionality, waiver, completion, or blocked execution",
+          "state": "SUPPRESSED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "ctx-07",
+      "kind": "CONTEXT",
+      "pair": "p7",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "explicit optionality, waiver, completion, or blocked execution",
+          "state": "SUPPRESSED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "ctx-08",
+      "kind": "CONTEXT",
+      "pair": "p8",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "explicit optionality, waiver, completion, or blocked execution",
+          "state": "SUPPRESSED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "ctx-09",
+      "kind": "CONTEXT",
+      "pair": "p9",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "explicit optionality, waiver, completion, or blocked execution",
+          "state": "SUPPRESSED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "ctx-10",
+      "kind": "CONTEXT",
+      "pair": "p10",
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "explicit optionality, waiver, completion, or blocked execution",
+          "state": "SUPPRESSED"
+        }
+      }
+    },
+    {
+      "admitted": 0,
+      "conditional": 0,
+      "correct": true,
+      "id": "unk-01",
+      "kind": "UNKNOWN",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "responsibility and requirement context unavailable",
+          "state": "UNKNOWN"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 0,
+      "conditional": 0,
+      "correct": true,
+      "id": "unk-02",
+      "kind": "UNKNOWN",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "required-task context unavailable",
+          "state": "UNKNOWN"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "unk-03",
+      "kind": "UNKNOWN",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "responsibility and requirement context unavailable",
+          "state": "UNKNOWN"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "unk-04",
+      "kind": "UNKNOWN",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "required-task context unavailable",
+          "state": "UNKNOWN"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "unk-05",
+      "kind": "UNKNOWN",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "responsibility and requirement context unavailable",
+          "state": "UNKNOWN"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 2,
+      "conditional": 0,
+      "correct": true,
+      "id": "unk-06",
+      "kind": "UNKNOWN",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "required factual context conflicts",
+          "state": "UNKNOWN"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": false,
+      "id": "unk-07",
+      "kind": "UNKNOWN",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "explicit optionality, waiver, or authorized delegation",
+          "state": "SUPPRESSED"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 0,
+      "conditional": 0,
+      "correct": true,
+      "id": "unk-08",
+      "kind": "UNKNOWN",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "required-task context unavailable",
+          "state": "UNKNOWN"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "unk-09",
+      "kind": "UNKNOWN",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "responsibility and requirement context unavailable",
+          "state": "UNKNOWN"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "unk-10",
+      "kind": "UNKNOWN",
+      "pair": null,
+      "rejected": 0,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "required-task context unavailable",
+          "state": "UNKNOWN"
+        }
+      }
+    },
+    {
+      "admitted": 1,
+      "conditional": 0,
+      "correct": true,
+      "id": "adv-01",
+      "kind": "ADVERSARIAL",
+      "pair": null,
+      "rejected": 1,
+      "result": {
+        "RAF": {
+          "reason": "responsibility and requirement context unavailable",
+          "state": "UNKNOWN"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 0,
+      "conditional": 0,
+      "correct": true,
+      "id": "adv-02",
+      "kind": "ADVERSARIAL",
+      "pair": null,
+      "rejected": 1,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "required-task context unavailable",
+          "state": "UNKNOWN"
+        }
+      }
+    },
+    {
+      "admitted": 0,
+      "conditional": 0,
+      "correct": true,
+      "id": "adv-03",
+      "kind": "ADVERSARIAL",
+      "pair": null,
+      "rejected": 1,
+      "result": {
+        "RAF": {
+          "reason": "responsibility and requirement context unavailable",
+          "state": "UNKNOWN"
+        },
+        "TCF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        }
+      }
+    },
+    {
+      "admitted": 0,
+      "conditional": 0,
+      "correct": true,
+      "id": "adv-04",
+      "kind": "ADVERSARIAL",
+      "pair": null,
+      "rejected": 1,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "required-task context unavailable",
+          "state": "UNKNOWN"
+        }
+      }
+    },
+    {
+      "admitted": 0,
+      "conditional": 0,
+      "correct": true,
+      "id": "adv-05",
+      "kind": "ADVERSARIAL",
+      "pair": null,
+      "rejected": 1,
+      "result": {
+        "RAF": {
+          "reason": "no bounded relational lexical evidence",
+          "state": "NOT_DETECTED"
+        },
+        "TCF": {
+          "reason": "required-task context unavailable",
+          "state": "UNKNOWN"
+        }
+      }
+    }
+  ],
+  "version": "SLOTH_HARNESS_CONTEXT_CHALLENGE_RESULTS_V1"
+}

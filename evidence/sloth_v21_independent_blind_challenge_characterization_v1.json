@@ -1,0 +1,55 @@
+{
+  "admitted_context_records": 120,
+  "candidate_context_records": 122,
+  "category_counts": {
+    "ADVERSARIAL": 10,
+    "CONTEXTUAL_CONTROL": 10,
+    "NEGATIVE_CONTROL": 10,
+    "OVERLAP_POSITIVE": 10,
+    "RAF_POSITIVE": 15,
+    "TCF_POSITIVE": 15,
+    "UNKNOWN_LIMIT": 10
+  },
+  "conditional_context_records": 1,
+  "conformance_counts": {
+    "CONDITIONAL": 1,
+    "CONFORMING": 120,
+    "NONCONFORMING": 1
+  },
+  "corpus_sha256": "c4abe59511bef86956a3edce50bf8b5bfdea97d7f3ad2dfb96a352052820c548",
+  "deterministic_result_fingerprint": "5ab171e3dd82d46d8349f06dd4d30bbc0634eaf86c313d3ab6c12559458c5739",
+  "failure_taxonomy_counts": {
+    "LEXICAL_RELATION_MISSING": 16,
+    "SUPPRESSION_BOUNDARY": 3
+  },
+  "frozen_v21_sha256": "bff933de8a5095410e38b17053b2d158d5db0df1c9a7f56abdcca3c1ccace3f7",
+  "metrics": {
+    "adversarial_cases_correct": 10,
+    "adversarial_cases_total": 10,
+    "contextual_controls_preserved": 9,
+    "contextual_controls_total": 10,
+    "contextual_failures": 3,
+    "false_negatives": 13,
+    "false_positives": 0,
+    "lexical_failures": 16,
+    "negative_controls_preserved": 10,
+    "negative_controls_total": 10,
+    "overlap_full_recovery": 5,
+    "overlap_raf_recovery": 5,
+    "overlap_tcf_recovery": 9,
+    "overlap_total": 10,
+    "raf_positive_recovery": 8,
+    "raf_positive_total": 15,
+    "semantic_pairs_distinguished": 10,
+    "semantic_pairs_total": 15,
+    "tcf_positive_recovery": 10,
+    "tcf_positive_total": 15,
+    "trust_admission_failures": 0,
+    "unexpected_behavior": 0,
+    "unknown_cases_correct": 10,
+    "unknown_cases_total": 10
+  },
+  "rejected_context_records": 1,
+  "total_cases": 80,
+  "version": "SLOTH_V21_INDEPENDENT_BLIND_CHALLENGE_CHARACTERIZATION_V1"
+}

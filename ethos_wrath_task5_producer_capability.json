@@ -1,0 +1,30 @@
+{
+  "version": "ETHOS_WRATH_TASK5_PRODUCER_CAPABILITY_DESIGN_V1",
+  "mode": "DESIGN_AUDIT_ONLY",
+  "decision": "WRATH PRODUCER CAPABILITY PARTIALLY AVAILABLE — NARROW EXPERIMENT REQUIRED",
+  "candidate_producers": {
+    "ActionProposal": {"class": "STRUCTURED_DECLARATION", "actual_fields": ["agent_id", "session_id", "task", "proposal_type", "target", "arguments", "timestamp", "exposed_reasoning", "raw_model_output", "adapter_diagnostics"], "boundary": "proposal declaration only; no execution/observation/verification"},
+    "proposal_text_sources": {"class": "TEXT_ONLY_SOURCE", "boundary": "mechanical text provenance only"},
+    "OllamaProposalAdapter": {"class": "STRUCTURED_DECLARATION", "boundary": "schema validation/diagnostics do not verify facts"},
+    "FactualContextRecord": {"class": "BOUNDARY_REQUIRES_REVIEW", "boundary": "research model for independently supplied claims/results; no live ActionProposal producer"},
+    "gate_runtime": {"class": "UNAVAILABLE", "boundary": "current gate explicitly records NOT_EXECUTED_TASK_1 and exposes no event/outcome producer"}
+  },
+  "availability": {
+    "DIRECTLY_AVAILABLE_STRUCTURED": ["claimed agent_id", "session_id", "proposal timestamp", "proposal_type"],
+    "DETERMINISTICALLY_DERIVABLE": ["DECLARED origin and PROPOSAL phase from input envelope kind only"],
+    "TEXT_ONLY": ["task", "target", "exposed_reasoning", "raw model output", "structured argument string values"],
+    "ABSENT": ["stable proposal/event ID", "typed target ID", "target type", "multiple targets", "actor-event binding", "event order", "execution event", "world-state outcome", "measurement", "assignment", "live authorization", "live verification", "execution/observation time"]
+  },
+  "fact_mapping": [
+    {"source": "test-supplied fixture_id", "output": "proposal event/entity ID; assertion ID", "mapping": "DIRECT_COPY", "missing": "omit/reject; no ID generation"},
+    {"source": "ActionProposal.agent_id", "output": "PARTICIPANT claimed entity ID", "mapping": "TYPE_PRESERVING_NORMALIZATION", "missing": "omit/reject; never current-agent default"},
+    {"source": "ActionProposal.session_id", "output": "scope/source-instance segment", "mapping": "DIRECT_COPY", "missing": "omit/reject"},
+    {"source": "ActionProposal.timestamp", "output": "assertion and availability time", "mapping": "DIRECT_COPY", "missing": "omit/reject; never invented time"},
+    {"source": "ActionProposal envelope kind", "output": "DECLARED origin / PROPOSAL phase", "mapping": "DETERMINISTIC_STRUCTURAL_DERIVATION", "missing": "not applicable"},
+    {"source": "proposal_type/task/target/arguments/reasoning/raw/diagnostics", "output": "opaque metadata", "mapping": "DIRECT_COPY", "missing": "opaque omission only; no relation inferred"}
+  ],
+  "task4_gain_producibility": {"recoveries": {"E01": "NOT_CURRENTLY_PRODUCIBLE", "H01": "NOT_CURRENTLY_PRODUCIBLE", "H07": "NOT_CURRENTLY_PRODUCIBLE", "F01": "NOT_CURRENTLY_PRODUCIBLE"}, "disambiguations": {"E06": "NOT_CURRENTLY_PRODUCIBLE", "H05": "NOT_CURRENTLY_PRODUCIBLE"}, "partial_prerequisites": ["claimed actor", "scope", "proposal timestamp", "source provenance"]},
+  "missing_capability_clusters": ["stable event/record identity", "typed target schema", "execution/observation routing", "neutral ordering/comparison references", "verified outcome source", "producer-specific measured observation"],
+  "invariants": ["proposal is not execution", "assertion is not observation", "verification is not authority", "authorized is not acceptable", "missing fields do not default", "no prose/NLP semantics", "no shared Wrath predicate", "no V1.1 modification", "test-only isolation"],
+  "future_files": ["wrath_structural_producer_research.py", "test_wrath_structural_producer_research.py"]
+}

@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-04-07T06:29:13.199368",
+  "lust_value": 16,
+  "subscores": {
+    "SDI": 8,
+    "NPL": 17,
+    "IEF": 16,
+    "IFR": 19,
+    "FLS": 16,
+    "DOP": 9
+  },
+  "weights": {
+    "SDI": 1.0,
+    "NPL": 1.0,
+    "IEF": 1.0,
+    "IFR": 1.0,
+    "FLS": 0.94,
+    "DOP": 1.0
+  }
+}

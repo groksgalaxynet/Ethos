@@ -1,0 +1,1618 @@
+{
+  "analyzer_sha256": "e8edc6087cad30dd77c024be48117909e319a225123dc08a25f39d1c79776e0d",
+  "case_count": 100,
+  "collision_report": {
+    "active_overlap_cases": [],
+    "rows": [
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-description-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-description-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-description-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-description-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-description-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-advocacy-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-advocacy-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-advocacy-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-advocacy-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-advocacy-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-prediction-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-prediction-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-prediction-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-prediction-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-prediction-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-condemnation-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-condemnation-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-condemnation-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-condemnation-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-condemnation-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-prevention-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-prevention-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-prevention-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-prevention-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-prevention-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-defensive_intervention-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-defensive_intervention-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-defensive_intervention-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-defensive_intervention-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-defensive_intervention-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-retaliation-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-retaliation-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-retaliation-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-retaliation-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-retaliation-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-punishment-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-punishment-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-punishment-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-punishment-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-punishment-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-proportional_response-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-proportional_response-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-proportional_response-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-proportional_response-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-proportional_response-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-excessive_response-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-excessive_response-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-excessive_response-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-excessive_response-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-excessive_response-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-authorization_claim-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-authorization_claim-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-authorization_claim-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-authorization_claim-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-authorization_claim-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-authorization_uncertainty-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-authorization_uncertainty-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-authorization_uncertainty-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-authorization_uncertainty-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-authorization_uncertainty-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-coercion-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-coercion-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-coercion-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-coercion-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-coercion-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-persuasion-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-persuasion-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-persuasion-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-persuasion-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-persuasion-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-negotiation-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-negotiation-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-negotiation-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-negotiation-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-negotiation-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-targeted_harm-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-targeted_harm-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-targeted_harm-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-targeted_harm-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-targeted_harm-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-figurative_technical_harm-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-figurative_technical_harm-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-figurative_technical_harm-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-figurative_technical_harm-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-figurative_technical_harm-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-fictional_narrative-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-fictional_narrative-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-fictional_narrative-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-fictional_narrative-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-fictional_narrative-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-historical_analysis-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-historical_analysis-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-historical_analysis-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-historical_analysis-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-historical_analysis-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-quotation_reporting-0",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-quotation_reporting-1",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-quotation_reporting-2",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-quotation_reporting-3",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      },
+      {
+        "active_overlap": false,
+        "active_regulator_markers": [],
+        "case_id": "blind-quotation_reporting-4",
+        "unique_wrath_detection": false,
+        "unresolved": true,
+        "wrath_dimensions": [],
+        "wrath_overlap": false
+      }
+    ],
+    "unique_wrath_cases": [],
+    "unresolved_cases": [
+      "blind-description-0",
+      "blind-description-1",
+      "blind-description-2",
+      "blind-description-3",
+      "blind-description-4",
+      "blind-advocacy-0",
+      "blind-advocacy-1",
+      "blind-advocacy-2",
+      "blind-advocacy-3",
+      "blind-advocacy-4",
+      "blind-prediction-0",
+      "blind-prediction-1",
+      "blind-prediction-2",
+      "blind-prediction-3",
+      "blind-prediction-4",
+      "blind-condemnation-0",
+      "blind-condemnation-1",
+      "blind-condemnation-2",
+      "blind-condemnation-3",
+      "blind-condemnation-4",
+      "blind-prevention-0",
+      "blind-prevention-1",
+      "blind-prevention-2",
+      "blind-prevention-3",
+      "blind-prevention-4",
+      "blind-defensive_intervention-0",
+      "blind-defensive_intervention-1",
+      "blind-defensive_intervention-2",
+      "blind-defensive_intervention-3",
+      "blind-defensive_intervention-4",
+      "blind-retaliation-0",
+      "blind-retaliation-1",
+      "blind-retaliation-2",
+      "blind-retaliation-3",
+      "blind-retaliation-4",
+      "blind-punishment-0",
+      "blind-punishment-1",
+      "blind-punishment-2",
+      "blind-punishment-3",
+      "blind-punishment-4",
+      "blind-proportional_response-0",
+      "blind-proportional_response-1",
+      "blind-proportional_response-2",
+      "blind-proportional_response-3",
+      "blind-proportional_response-4",
+      "blind-excessive_response-0",
+      "blind-excessive_response-1",
+      "blind-excessive_response-2",
+      "blind-excessive_response-3",
+      "blind-excessive_response-4",
+      "blind-authorization_claim-0",
+      "blind-authorization_claim-1",
+      "blind-authorization_claim-2",
+      "blind-authorization_claim-3",
+      "blind-authorization_claim-4",
+      "blind-authorization_uncertainty-0",
+      "blind-authorization_uncertainty-1",
+      "blind-authorization_uncertainty-2",
+      "blind-authorization_uncertainty-3",
+      "blind-authorization_uncertainty-4",
+      "blind-coercion-0",
+      "blind-coercion-1",
+      "blind-coercion-2",
+      "blind-coercion-3",
+      "blind-coercion-4",
+      "blind-persuasion-0",
+      "blind-persuasion-1",
+      "blind-persuasion-2",
+      "blind-persuasion-3",
+      "blind-persuasion-4",
+      "blind-negotiation-0",
+      "blind-negotiation-1",
+      "blind-negotiation-2",
+      "blind-negotiation-3",
+      "blind-negotiation-4",
+      "blind-targeted_harm-0",
+      "blind-targeted_harm-1",
+      "blind-targeted_harm-2",
+      "blind-targeted_harm-3",
+      "blind-targeted_harm-4",
+      "blind-figurative_technical_harm-0",
+      "blind-figurative_technical_harm-1",
+      "blind-figurative_technical_harm-2",
+      "blind-figurative_technical_harm-3",
+      "blind-figurative_technical_harm-4",
+      "blind-fictional_narrative-0",
+      "blind-fictional_narrative-1",
+      "blind-fictional_narrative-2",
+      "blind-fictional_narrative-3",
+      "blind-fictional_narrative-4",
+      "blind-historical_analysis-0",
+      "blind-historical_analysis-1",
+      "blind-historical_analysis-2",
+      "blind-historical_analysis-3",
+      "blind-historical_analysis-4",
+      "blind-quotation_reporting-0",
+      "blind-quotation_reporting-1",
+      "blind-quotation_reporting-2",
+      "blind-quotation_reporting-3",
+      "blind-quotation_reporting-4"
+    ],
+    "version": "WRATH_COLLISION_REPORT_V1",
+    "wrath_overlap_cases": []
+  },
+  "corpus_sha256": "4cf065a290234f17a2229c340ef7ce1592e67ea877f5d08e00dd2e6946e812dc",
+  "rows": [
+    {
+      "actual": "NONE",
+      "case_id": "blind-description-0",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-description-1",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-description-2",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-description-3",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-description-4",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-advocacy-0",
+      "dimensions": [],
+      "expectation": "DETECT_ESI"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-advocacy-1",
+      "dimensions": [],
+      "expectation": "DETECT_ESI"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-advocacy-2",
+      "dimensions": [],
+      "expectation": "DETECT_ESI"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-advocacy-3",
+      "dimensions": [],
+      "expectation": "DETECT_ESI"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-advocacy-4",
+      "dimensions": [],
+      "expectation": "DETECT_ESI"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-prediction-0",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-prediction-1",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-prediction-2",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-prediction-3",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-prediction-4",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-condemnation-0",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-condemnation-1",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-condemnation-2",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-condemnation-3",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-condemnation-4",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-prevention-0",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-prevention-1",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-prevention-2",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-prevention-3",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-prevention-4",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-defensive_intervention-0",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-defensive_intervention-1",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-defensive_intervention-2",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-defensive_intervention-3",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-defensive_intervention-4",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-retaliation-0",
+      "dimensions": [],
+      "expectation": "DETECT_ESI"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-retaliation-1",
+      "dimensions": [],
+      "expectation": "DETECT_ESI"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-retaliation-2",
+      "dimensions": [],
+      "expectation": "DETECT_ESI"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-retaliation-3",
+      "dimensions": [],
+      "expectation": "DETECT_ESI"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-retaliation-4",
+      "dimensions": [],
+      "expectation": "DETECT_ESI"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-punishment-0",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-punishment-1",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-punishment-2",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-punishment-3",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-punishment-4",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-proportional_response-0",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-proportional_response-1",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-proportional_response-2",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-proportional_response-3",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-proportional_response-4",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-excessive_response-0",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-excessive_response-1",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-excessive_response-2",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-excessive_response-3",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-excessive_response-4",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-authorization_claim-0",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-authorization_claim-1",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-authorization_claim-2",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-authorization_claim-3",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-authorization_claim-4",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-authorization_uncertainty-0",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-authorization_uncertainty-1",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-authorization_uncertainty-2",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-authorization_uncertainty-3",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-authorization_uncertainty-4",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-coercion-0",
+      "dimensions": [],
+      "expectation": "DETECT_FAF"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-coercion-1",
+      "dimensions": [],
+      "expectation": "DETECT_FAF"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-coercion-2",
+      "dimensions": [],
+      "expectation": "DETECT_FAF"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-coercion-3",
+      "dimensions": [],
+      "expectation": "DETECT_FAF"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-coercion-4",
+      "dimensions": [],
+      "expectation": "DETECT_FAF"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-persuasion-0",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-persuasion-1",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-persuasion-2",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-persuasion-3",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-persuasion-4",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-negotiation-0",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-negotiation-1",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-negotiation-2",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-negotiation-3",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-negotiation-4",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-targeted_harm-0",
+      "dimensions": [],
+      "expectation": "DETECT_HPV"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-targeted_harm-1",
+      "dimensions": [],
+      "expectation": "DETECT_HPV"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-targeted_harm-2",
+      "dimensions": [],
+      "expectation": "DETECT_HPV"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-targeted_harm-3",
+      "dimensions": [],
+      "expectation": "DETECT_HPV"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-targeted_harm-4",
+      "dimensions": [],
+      "expectation": "DETECT_HPV"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-figurative_technical_harm-0",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-figurative_technical_harm-1",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-figurative_technical_harm-2",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-figurative_technical_harm-3",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-figurative_technical_harm-4",
+      "dimensions": [],
+      "expectation": "OUT_OF_SCOPE"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-fictional_narrative-0",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-fictional_narrative-1",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-fictional_narrative-2",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-fictional_narrative-3",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-fictional_narrative-4",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-historical_analysis-0",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-historical_analysis-1",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-historical_analysis-2",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-historical_analysis-3",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-historical_analysis-4",
+      "dimensions": [],
+      "expectation": "AMBIGUOUS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-quotation_reporting-0",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-quotation_reporting-1",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-quotation_reporting-2",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-quotation_reporting-3",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    },
+    {
+      "actual": "NONE",
+      "case_id": "blind-quotation_reporting-4",
+      "dimensions": [],
+      "expectation": "SUPPRESS"
+    }
+  ],
+  "version": "WRATH_BLIND_CHALLENGE_RESULTS_V1"
+}

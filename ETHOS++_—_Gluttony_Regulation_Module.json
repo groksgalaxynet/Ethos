@@ -1,0 +1,19 @@
+{
+  "main": 4,
+  "subscores": {
+    "COI": 7,
+    "RDF": 2,
+    "EED": 9,
+    "STB": 0,
+    "RFL": 6,
+    "SDEI": 6
+  },
+  "weights": {
+    "COI": 1.0,
+    "RDF": 0.85,
+    "EED": 1.0,
+    "STB": 1.0,
+    "RFL": 1.0,
+    "SDEI": 1.0
+  }
+}

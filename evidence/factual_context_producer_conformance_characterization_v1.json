@@ -1,0 +1,91 @@
+{
+  "conflict_examples": [
+    "39-harness-required-conflict",
+    "40-system-optional-conflict"
+  ],
+  "constructed_records": 36,
+  "deterministic_sha256": "85087a7fa3d2d30906bc78fe0303f7717dc06c2fdbf5b4055e9c8feab34cde89",
+  "field_source_violations": 2,
+  "fixture_count": 40,
+  "malformed_fixture_ids": [
+    "34-malformed-field",
+    "35-malformed-source",
+    "36-malformed-phase",
+    "37-malformed-value"
+  ],
+  "malformed_records": 4,
+  "reference_violations": 2,
+  "results_by_field": {
+    "AUTHORIZATION_RELATION": {
+      "CONDITIONAL": 1,
+      "CONFORMING": 5,
+      "NONCONFORMING": 3
+    },
+    "COMPLETION_STATE": {
+      "CONDITIONAL": 4,
+      "CONFORMING": 3,
+      "NONCONFORMING": 2
+    },
+    "RESPONSIBILITY_RELATION": {
+      "CONDITIONAL": 1,
+      "CONFORMING": 4,
+      "NONCONFORMING": 1
+    },
+    "TASK_REQUIREMENT_RELATION": {
+      "CONDITIONAL": 2,
+      "CONFORMING": 6,
+      "NONCONFORMING": 4
+    }
+  },
+  "results_by_producer": {
+    "AUTHORITY_ADAPTER": {
+      "CONFORMING": 4,
+      "NONCONFORMING": 2
+    },
+    "ENVIRONMENT_STATE": {
+      "CONDITIONAL": 2
+    },
+    "EXECUTION_RESULT": {
+      "CONDITIONAL": 1,
+      "CONFORMING": 2,
+      "NONCONFORMING": 2
+    },
+    "HARNESS_ASSERTION": {
+      "CONFORMING": 4,
+      "NONCONFORMING": 1
+    },
+    "MODEL_ASSERTION": {
+      "CONDITIONAL": 1,
+      "CONFORMING": 2,
+      "NONCONFORMING": 1
+    },
+    "SYSTEM_ASSERTION": {
+      "CONFORMING": 3,
+      "NONCONFORMING": 1
+    },
+    "TOOL_STATE": {
+      "CONDITIONAL": 2
+    },
+    "UNKNOWN_SOURCE": {
+      "CONDITIONAL": 1,
+      "NONCONFORMING": 1
+    },
+    "USER_ASSERTION": {
+      "CONFORMING": 2,
+      "NONCONFORMING": 1
+    },
+    "VERIFIED_EXTERNAL_EVIDENCE": {
+      "CONDITIONAL": 1,
+      "CONFORMING": 1,
+      "NONCONFORMING": 1
+    }
+  },
+  "status_counts": {
+    "CONDITIONAL": 8,
+    "CONFORMING": 18,
+    "NONCONFORMING": 10
+  },
+  "temporal_violations": 3,
+  "verification_violations": 5,
+  "version": "FACTUAL_CONTEXT_PRODUCER_CONFORMANCE_CHARACTERIZATION_V1"
+}

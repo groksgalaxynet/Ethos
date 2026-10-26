@@ -1,0 +1,63 @@
+{
+  "blind_replay": {
+    "contextual_controls_preserved": 2,
+    "controls_preserved": 15,
+    "false_positives": [
+      "control-01",
+      "control-08",
+      "suppress-01",
+      "suppress-02",
+      "suppress-03",
+      "suppress-04",
+      "suppress-06",
+      "suppress-07",
+      "suppress-08",
+      "suppress-10"
+    ],
+    "information_limit_cases": [
+      "amb-01",
+      "amb-02",
+      "amb-03",
+      "amb-04",
+      "amb-05",
+      "amb-06",
+      "amb-07",
+      "amb-08",
+      "amb-09",
+      "amb-10"
+    ],
+    "overlap_recovered": 3,
+    "raf_recovered": 4,
+    "remaining_misses": [
+      "raf-01",
+      "raf-04",
+      "raf-05",
+      "raf-06",
+      "raf-07",
+      "raf-09",
+      "tcf-04",
+      "tcf-06",
+      "tcf-09",
+      "tcf-10",
+      "both-03",
+      "both-04"
+    ],
+    "semantic_pairs_distinguished": 0,
+    "tcf_recovered": 6
+  },
+  "deterministic_sha256": "a1ef043afd23a3145a4d5d20f2d0a1e48fa77695c6a537b495f88c28162ead25",
+  "fixture_correct": 34,
+  "fixture_count": 50,
+  "partial_families": [
+    "RAF_ASSIGNED_EVASION",
+    "RAF_ACCOUNTABILITY_TRANSFER",
+    "TCF_REQUIRED_ABANDONMENT",
+    "TCF_INCOMPLETE_CHECK"
+  ],
+  "rejected_families": [
+    "RAF_OWNER_REMOVAL"
+  ],
+  "relational_evidence": "BOTH_REQUIRED_REDUCES_SINGLE_TRIGGER_FALSE_POSITIVES",
+  "supported_families": [],
+  "version": "SLOTH_LEXICAL_FAMILY_CHARACTERIZATION_V1"
+}

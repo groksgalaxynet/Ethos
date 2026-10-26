@@ -1,0 +1,27 @@
+{
+  "version": "ETHOS_WRATH_TASK1_BASELINE_AUDIT_V1",
+  "mode": "READ_ONLY",
+  "status": "RESEARCH_ONLY_PARTIALLY_IMPLEMENTED_WITH_LEGACY_GUI",
+  "production": {
+    "gate_invokes_wrath": false,
+    "controller_status": "UNSUPPORTED",
+    "main_app_status": "NOT_WIRED",
+    "legacy_gui": "WrathRegulatorGUI.py is random simulation/provenance only"
+  },
+  "research_artifacts": {
+    "code": ["wrath_measurement_research.py", "wrath_context_research.py", "wrath_blind_challenge_study.py"],
+    "tests": ["test_wrath_measurement_research.py"],
+    "contracts": ["ETHOS_WRATH_MEASUREMENT_CONTRACT_V1.md", "ETHOS_WRATH_CONTEXT_ENVELOPE_CONTRACT_V1.md", "ETHOS_WRATH_OBSERVABILITY_MAP_V1.md", "ETHOS_WRATH_VOCABULARY_REVIEW_V1.md", "ETHOS_WRATH_ADVERSARIAL_CHARACTERIZATION_V1.md", "ETHOS_WRATH_BLIND_CHALLENGE_REVIEW_V1.md"],
+    "baseline": ["evidence/wrath_measurement_corpus_v1.json", "evidence/wrath_measurement_corpus_v2.json", "evidence/wrath_measurement_corpus_v3.json", "evidence/wrath_measurement_characterization_v1.json", "evidence/wrath_measurement_characterization_v2.json", "evidence/wrath_measurement_characterization_v3_baseline.json", "evidence/wrath_measurement_characterization_v3.json"]
+  },
+  "dimensions": {
+    "ESI": {"meaning": "explicit escalation of a represented conflict response", "input": "closed proposal-visible phrase families", "behavior": "separate DETECTED/SUPPRESSED/NOT_DETECTED observation; no score or threshold", "undefined": ["intent", "prior conflict truth", "defense versus retaliation", "authorization"]},
+    "HPV": {"meaning": "explicit target-directed harm", "input": "closed proposal-visible phrase families", "behavior": "separate DETECTED/SUPPRESSED/NOT_DETECTED observation; may overlap other dimensions", "undefined": ["target identity/type", "figurative or technical harm", "advocacy versus report", "outcome"]},
+    "FAF": {"meaning": "explicit coercive/destructive force amplification", "input": "closed proposal-visible phrase families", "behavior": "separate DETECTED/SUPPRESSED/NOT_DETECTED observation; may overlap other dimensions", "undefined": ["consent", "authority", "proportionality", "legal meaning", "magnitude"]}
+  },
+  "suppression": {"fixed": ["quotation", "negation", "prevention", "provenance-ineligible structural key/duplicate context"], "unresolved": ["history", "fiction", "hypothetical", "description versus advocacy", "defensive force", "authorization", "consent", "proportionality"]},
+  "input_contract": {"structured_available": ["proposal-visible source/provenance and local cue context"], "structural_evidence_v1_1": ["scoped identity", "actor/event/target relations", "ordering", "state/outcome", "assignment/authorization relation", "observation/verification", "provenance/lineage", "availability time/phase", "multi-actor relations"], "wrath_local": ["ESI interpretation", "HPV interpretation", "FAF interpretation", "aggression/escalation/coercion semantics", "any score/threshold/violation"], "absent_or_unknown": ["authoritative world state", "verified authorization", "consent", "legal proportionality", "measured magnitude", "producer integration"]},
+  "semantic_boundary": {"shared_layer_semantic_leakage_found": false, "future_risk": "Producer-side Wrath labels or shared aggression/escalation predicates would be semantic leakage."},
+  "hashes": {"wrath_measurement_research.py": "e8edc6087cad30dd77c024be48117909e319a225123dc08a25f39d1c79776e0d", "test_wrath_measurement_research.py": "947aa9c6883bc938d5e6971ebf146211e6c18e23a341c896f02937c956595d8b", "evidence/wrath_measurement_corpus_v3.json": "a8037307b8768f96247d90ddae360ca23f2c6403a09c0e33a4249af7594c00e0", "evidence/wrath_measurement_characterization_v3_baseline.json": "b326437d8fd9d66b1060b68d95560fc951d477aa5bb325e1003ed15dfb597320", "ethos_structural_evidence.py": "6507e4ec3e0ed2898535e52dd15af1dffe8c7fa0a9bd8c33634f3868e8cbb2b3", "test_ethos_structural_evidence.py": "5ea43255794f9633214d8c6e91d1ee9b076bb9e3c634f2de0a76c4c857e1f8a9"},
+  "verification": {"focused_wrath_controller_gate_tests": "23 passed", "files_modified": [], "next_step": "WRATH READY FOR STRUCTURAL-EVIDENCE REQUIREMENTS DESIGN"}
+}

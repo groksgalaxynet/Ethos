@@ -33,10 +33,28 @@ ALLOWED_PROPOSAL_TYPES = {
     "unknown",
 }
 
+DECLARED_TARGET_TYPES = frozenset({
+    "TASK", "OBJECT", "PARTICIPANT", "RESOURCE", "SERVICE", "ENVIRONMENT", "UNKNOWN",
+})
+
 
 def utc_now() -> str:
     """Return a stable, UTC ISO-8601 timestamp for evidence."""
     return datetime.now(timezone.utc).isoformat()
+
+
+@dataclass(frozen=True)
+class DeclaredTarget:
+    """One explicit, neutral target declaration attached to a proposal."""
+
+    target_id: str
+    target_type: str
+
+    def __post_init__(self) -> None:
+        if not isinstance(self.target_id, str) or not self.target_id.strip():
+            raise ValueError("declared target_id must be a non-empty string")
+        if not isinstance(self.target_type, str) or self.target_type not in DECLARED_TARGET_TYPES:
+            raise ValueError("declared target_type is unsupported")
 
 
 @dataclass(frozen=True)
@@ -53,6 +71,23 @@ class ActionProposal:
     raw_model_output: str
     timestamp: str
     adapter_diagnostics: dict[str, Any] = field(default_factory=dict)
+    proposal_id: str | None = None
+    declared_targets: tuple[DeclaredTarget, ...] = ()
+
+    def __post_init__(self) -> None:
+        if self.proposal_id is not None:
+            if not isinstance(self.proposal_id, str) or not self.proposal_id.strip():
+                raise ValueError("proposal_id must be a non-empty string when supplied")
+        if not isinstance(self.declared_targets, tuple) or not all(
+            isinstance(target, DeclaredTarget) for target in self.declared_targets
+        ):
+            raise ValueError("declared_targets must be a tuple of DeclaredTarget values")
+        if self.proposal_id is not None or self.declared_targets:
+            if not all(isinstance(value, str) and value.strip() for value in (self.agent_id, self.session_id)):
+                raise ValueError("structured proposal identity requires non-empty agent_id and session_id")
+        target_ids = [target.target_id for target in self.declared_targets]
+        if len(target_ids) != len(set(target_ids)):
+            raise ValueError("declared target_id values must be unique within a proposal")
 
     @classmethod
     def from_mapping(cls, value: Mapping[str, Any]) -> "ActionProposal":
@@ -78,6 +113,19 @@ class ActionProposal:
         raw_diagnostics = value.get("adapter_diagnostics", {})
         if not isinstance(raw_diagnostics, Mapping):
             raw_diagnostics = {"invalid_adapter_diagnostics": True}
+        proposal_id = value.get("proposal_id")
+        if proposal_id is not None and (not isinstance(proposal_id, str) or not proposal_id.strip()):
+            raise ValueError("proposal_id must be a non-empty string when supplied")
+        raw_targets = value.get("declared_targets", ())
+        if not isinstance(raw_targets, (list, tuple)):
+            raise ValueError("declared_targets must be an array")
+        declared_targets: list[DeclaredTarget] = []
+        for raw_target in raw_targets:
+            if not isinstance(raw_target, Mapping):
+                raise ValueError("declared target must be an object")
+            if set(raw_target) != {"target_id", "target_type"}:
+                raise ValueError("declared target must contain exactly target_id and target_type")
+            declared_targets.append(DeclaredTarget(raw_target["target_id"], raw_target["target_type"]))
         return cls(
             agent_id=value["agent_id"].strip(),
             session_id=value["session_id"].strip(),
@@ -89,11 +137,20 @@ class ActionProposal:
             raw_model_output=value["raw_model_output"].strip(),
             timestamp=value["timestamp"].strip(),
             adapter_diagnostics=dict(raw_diagnostics),
+            proposal_id=proposal_id,
+            declared_targets=tuple(declared_targets),
         )
 
     def to_dict(self) -> dict[str, Any]:
-        """Return the complete, machine-readable proposal representation."""
-        return asdict(self)
+        """Return a machine-readable representation without changing legacy records."""
+        data = asdict(self)
+        if self.proposal_id is None:
+            data.pop("proposal_id")
+        if not self.declared_targets:
+            data.pop("declared_targets")
+        else:
+            data["declared_targets"] = [asdict(target) for target in self.declared_targets]
+        return data
 
 
 @dataclass(frozen=True)

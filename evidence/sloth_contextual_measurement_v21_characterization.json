@@ -1,0 +1,77 @@
+{
+  "accounting_defects_corrected": [
+    "family changes are classified from the authorized match mechanisms, not reason substrings",
+    "Task 12H RAF aggregation counts RAF detections, not TCF detections"
+  ],
+  "adversarial": {
+    "blocked_unavailable_failures": false,
+    "controls_preserved": 16,
+    "controls_total": 16,
+    "distance_boundary_failures": 0,
+    "false_negatives": 0,
+    "false_positives": 0,
+    "fixture_count": 24,
+    "optional_waived_failures": 0,
+    "positives_detected": 6,
+    "positives_total": 6,
+    "protective_negation_failures": 0,
+    "quotation_reporting_rejection_failures": 0
+  },
+  "context_trust_equivalence": {
+    "basis": "both versions receive the same admitted immutable pre-gate snapshot for every comparison",
+    "differences": 0
+  },
+  "deterministic_sha256": "a2d23830d7a912ca40e49df5c7ae67c7f605a266f9f8c36498fc504c80eced58",
+  "differential_counts": {
+    "expected_family_a_change": 23,
+    "expected_family_b_change": 23,
+    "unexpected_change": 0
+  },
+  "frozen_v2_sha256": "55f3f524e74aedd5080a17ee28244f58220dfeb28c70616d68c4e2301fb8d025",
+  "raf_equivalence": {
+    "mismatches": 0,
+    "total_compared": 132
+  },
+  "task_12h": {
+    "contextual_controls_preserved": 10,
+    "contextual_controls_total": 10,
+    "false_negatives": 0,
+    "false_positives": 0,
+    "negative_controls_preserved": 10,
+    "negative_controls_total": 10,
+    "original_tcf_misses_corrected": [
+      "tcf-06",
+      "tcf-07",
+      "tcf-08"
+    ],
+    "overlap_full_detected": 5,
+    "overlap_raf_detected": 5,
+    "overlap_tcf_detected": 5,
+    "overlap_total": 5,
+    "raf_positives_detected": 10,
+    "raf_positives_total": 10,
+    "semantic_pairs_distinguished": 10,
+    "semantic_pairs_total": 10,
+    "tcf_positives_detected": 10,
+    "tcf_positives_total": 10,
+    "unknown_cases_total": 10,
+    "unknown_cases_without_detection": 10
+  },
+  "task_12i": {
+    "controls_preserved": 20,
+    "controls_total": 20,
+    "family_a_detected": 7,
+    "family_a_total": 8,
+    "family_b_detected": 8,
+    "family_b_total": 8,
+    "positives_detected": 15,
+    "positives_total": 16,
+    "remaining_miss": {
+      "id": "p08",
+      "v21_tcf_state": "NOT_DETECTED",
+      "v2_tcf_state": "NOT_DETECTED"
+    }
+  },
+  "v21_sha256": "bff933de8a5095410e38b17053b2d158d5db0df1c9a7f56abdcca3c1ccace3f7",
+  "version": "SLOTH_CONTEXTUAL_MEASUREMENT_V21_CHARACTERIZATION"
+}

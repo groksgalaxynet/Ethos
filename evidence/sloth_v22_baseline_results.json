@@ -1,0 +1,4811 @@
+{
+  "case_results": [
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "raf-09",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "raf-10",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "raf-11",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RU",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "USER_ASSERTION",
+          "value": "ACCEPTED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "raf-12",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "raf-13",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "raf-14",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "raf-15",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "DETECTED"
+      },
+      "case_id": "tcf-08",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "tcf-11",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "tcf-12",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "tcf-13",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "tcf-14",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "tcf-15",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "DETECTED"
+      },
+      "case_id": "both-05",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "case_id": "both-06",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "both-07",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "case_id": "both-08",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "case_id": "both-10",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "ctx-09",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "A"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "neg-01",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "neg-02",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "neg-03",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "neg-04",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "neg-05",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "neg-06",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TOPT",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "OPTIONAL",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "neg-07",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "neg-08",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "AUTH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "delegation-register-17",
+          "field": "AUTHORIZATION_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "AUTHORITY_ADAPTER",
+          "value": "AUTHORIZED",
+          "verification_state": "VERIFIED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "neg-09",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "neg-10",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "ctx-01",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "ROPT",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "OPTIONAL",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "ctx-02",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "AUTH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "delegation-register-17",
+          "field": "AUTHORIZATION_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "AUTHORITY_ADAPTER",
+          "value": "AUTHORIZED",
+          "verification_state": "VERIFIED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "ctx-03",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TWAIVE",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "WAIVED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "ctx-04",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "BLOCK",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "COMPLETION_STATE",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "BLOCKED_OR_UNAVAILABLE",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "ctx-05",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "DONE",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "COMPLETION_STATE",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "COMPLETED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "ctx-06",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "ctx-07",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "ctx-08",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "ctx-10",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TOPT",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "OPTIONAL",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "UNKNOWN",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "unk-01",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "EMPTY",
+        "rejected": 0
+      },
+      "evidence_available": [],
+      "expected": {
+        "RAF": "UNKNOWN",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "UNKNOWN"
+      },
+      "case_id": "unk-02",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "EMPTY",
+        "rejected": 0
+      },
+      "evidence_available": [],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "UNKNOWN"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "UNKNOWN",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "unk-03",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "RUNKNOWN",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "UNKNOWN_SOURCE",
+          "value": "UNKNOWN",
+          "verification_state": "UNKNOWN"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "UNKNOWN",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "UNKNOWN"
+      },
+      "case_id": "unk-04",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TUNKNOWN",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "UNKNOWN_SOURCE",
+          "value": "UNKNOWN",
+          "verification_state": "UNKNOWN"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "UNKNOWN"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "UNKNOWN",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "unk-05",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [
+          "RESPONSIBILITY_RELATION"
+        ],
+        "context": "RCONFLICT",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "OPTIONAL",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "UNKNOWN",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "UNKNOWN"
+      },
+      "case_id": "unk-06",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [
+          "TASK_REQUIREMENT_RELATION"
+        ],
+        "context": "TCONFLICT",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "OPTIONAL",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "UNKNOWN"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "UNKNOWN",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "unk-07",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TUNKNOWN",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "UNKNOWN_SOURCE",
+          "value": "UNKNOWN",
+          "verification_state": "UNKNOWN"
+        }
+      ],
+      "expected": {
+        "RAF": "UNKNOWN",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "UNKNOWN"
+      },
+      "case_id": "unk-08",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "EMPTY",
+        "rejected": 0
+      },
+      "evidence_available": [],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "UNKNOWN"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "UNKNOWN",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "unk-09",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "EMPTY",
+        "rejected": 0
+      },
+      "evidence_available": [],
+      "expected": {
+        "RAF": "UNKNOWN",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "UNKNOWN"
+      },
+      "case_id": "unk-10",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [
+          "TASK_REQUIREMENT_RELATION"
+        ],
+        "context": "TCONFLICT",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "OPTIONAL",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "UNKNOWN"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "adv-06",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "adv-07",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "AUTH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "delegation-register-17",
+          "field": "AUTHORIZATION_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "AUTHORITY_ADAPTER",
+          "value": "AUTHORIZED",
+          "verification_state": "VERIFIED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "adv-08",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TOPT",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "OPTIONAL",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "case_id": "adv-09",
+      "contextual_state": {
+        "conditional": 1,
+        "conflicts": [],
+        "context": "ENVBLOCK",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "UNKNOWN",
+        "TCF": "DETECTED"
+      },
+      "case_id": "adv-10",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "TH",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "blind-v21",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-15T01:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "UNKNOWN",
+        "TCF": "DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": false,
+        "source": "Task12K"
+      },
+      "partition": "B"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-001",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-002",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-003",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "A",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-auth",
+          "field": "AUTHORIZATION_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "AUTHORITY_ADAPTER",
+          "value": "AUTHORIZED",
+          "verification_state": "VERIFIED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-004",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-005",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-006",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-007",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-008",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-009",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-010",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-011",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "UNKNOWN",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-012",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "E",
+        "rejected": 0
+      },
+      "evidence_available": [],
+      "expected": {
+        "RAF": "UNKNOWN",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-013",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-014",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-015",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-016",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-017",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-018",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "A",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-auth",
+          "field": "AUTHORIZATION_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "AUTHORITY_ADAPTER",
+          "value": "AUTHORIZED",
+          "verification_state": "VERIFIED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-019",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-020",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-021",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-022",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-023",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-024",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-025",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-026",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-027",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-028",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-029",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "O",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "OPTIONAL",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-030",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "W",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "WAIVED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-031",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "D",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "COMPLETION_STATE",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "COMPLETED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-032",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "B",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "COMPLETION_STATE",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "BLOCKED_OR_UNAVAILABLE",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-033",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-034",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-035",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-036",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-037",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-038",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-039",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-040",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "E",
+        "rejected": 0
+      },
+      "evidence_available": [],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "UNKNOWN"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-041",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-042",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-043",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-044",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-045",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-046",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-047",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-048",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-049",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-050",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-051",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-052",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-053",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-054",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "case_id": "b-055",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-056",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-057",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "UNKNOWN"
+      },
+      "case_id": "b-058",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "E",
+        "rejected": 0
+      },
+      "evidence_available": [],
+      "expected": {
+        "RAF": "UNKNOWN",
+        "TCF": "UNKNOWN"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "case_id": "b-059",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-060",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "A",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-auth",
+          "field": "AUTHORIZATION_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "AUTHORITY_ADAPTER",
+          "value": "AUTHORIZED",
+          "verification_state": "VERIFIED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-061",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-062",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": false,
+      "mismatch_status": "INHERITED_V21",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "case_id": "b-063",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "T",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "NOT_DETECTED",
+        "TCF": "NOT_DETECTED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    },
+    {
+      "active_experimental_mechanisms": [],
+      "actual": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "case_id": "b-064",
+      "contextual_state": {
+        "conditional": 0,
+        "conflicts": [],
+        "context": "R",
+        "rejected": 0
+      },
+      "evidence_available": [
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "HARNESS_ASSERTION",
+          "value": "ASSIGNED",
+          "verification_state": "ASSERTED"
+        },
+        {
+          "availability_phase": "PRE_GATE",
+          "evidence_reference": "v22-preimpl",
+          "field": "TASK_REQUIREMENT_RELATION",
+          "observation_time": "2026-09-16T00:00:00+00:00",
+          "source": "SYSTEM_ASSERTION",
+          "value": "REQUIRED",
+          "verification_state": "ASSERTED"
+        }
+      ],
+      "expected": {
+        "RAF": "SUPPRESSED",
+        "TCF": "SUPPRESSED"
+      },
+      "matched": true,
+      "mismatch_status": "NONE",
+      "oracle_metadata": {
+        "blind": true
+      },
+      "partition": "C"
+    }
+  ],
+  "corpus_sha256": "afc6dfc90f653c6166123e17378fcbb9082fbc9fd5750a59d939399a55440b88",
+  "deterministic_semantic_fingerprint": "308bdad3feaeeff8846064637483e57673c9f00c985de65a5bae55c37bff812d",
+  "frozen_v21_sha256": "bff933de8a5095410e38b17053b2d158d5db0df1c9a7f56abdcca3c1ccace3f7",
+  "mechanism_mode": "V21_BASELINE_NO_EXPERIMENTAL_HELPERS",
+  "partition_summary": {
+    "A": {
+      "by_expected": {
+        "DETECTED/DETECTED": 5,
+        "DETECTED/NOT_DETECTED": 7,
+        "NOT_DETECTED/DETECTED": 6,
+        "SUPPRESSED/SUPPRESSED": 1
+      },
+      "matched": 0,
+      "mismatched": 19,
+      "total": 19
+    },
+    "B": {
+      "by_expected": {
+        "NOT_DETECTED/DETECTED": 1,
+        "NOT_DETECTED/NOT_DETECTED": 10,
+        "NOT_DETECTED/SUPPRESSED": 4,
+        "NOT_DETECTED/UNKNOWN": 5,
+        "SUPPRESSED/NOT_DETECTED": 3,
+        "SUPPRESSED/SUPPRESSED": 5,
+        "UNKNOWN/DETECTED": 1,
+        "UNKNOWN/NOT_DETECTED": 5
+      },
+      "matched": 34,
+      "mismatched": 0,
+      "total": 34
+    },
+    "C": {
+      "by_expected": {
+        "DETECTED/DETECTED": 4,
+        "DETECTED/NOT_DETECTED": 8,
+        "DETECTED/SUPPRESSED": 3,
+        "NOT_DETECTED/DETECTED": 9,
+        "NOT_DETECTED/NOT_DETECTED": 13,
+        "NOT_DETECTED/SUPPRESSED": 6,
+        "NOT_DETECTED/UNKNOWN": 1,
+        "SUPPRESSED/DETECTED": 3,
+        "SUPPRESSED/NOT_DETECTED": 6,
+        "SUPPRESSED/SUPPRESSED": 9,
+        "UNKNOWN/NOT_DETECTED": 1,
+        "UNKNOWN/UNKNOWN": 1
+      },
+      "matched": 20,
+      "mismatched": 44,
+      "total": 64
+    }
+  },
+  "preflight": {
+    "task12l_clusters": 6,
+    "task12l_failure_cases": 19,
+    "task12m_candidate_mechanisms": 3
+  },
+  "version": "SLOTH_V22_PREIMPLEMENTATION_BASELINE_V1"
+}

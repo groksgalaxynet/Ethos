@@ -5,7 +5,7 @@ Paths below are relative to `linked/main` unless otherwise noted.
 ## ACTIVE CORE
 
 - `main_app.py` — integrated PyQt6 dashboard entry point.
-- `controller_integrated.py` — regulator launcher/radar and one current runtime ego check; it is not yet the intended central enforcement controller.
+- `controller_integrated.py` — retained regulator launcher/radar with a clearly non-authoritative visualization aggregate; it does not call the runtime kernel and is not a decision controller.
 - `ethos_runtime.py` — SQLite-backed enforcement-kernel singleton with basic checks and event logging; it does not yet wrap an AI or mediate real actions.
 - `ETHOS_Scar_Manager.py` — manual/import-driven scar ledger/payload lifecycle and GUI; its creation path is not connected to runtime enforcement.
 - `ethos_boundary_live_qt.py` — packet-driven boundary-monitor widget whose standalone entry sends a scripted demo sequence; it is not wired to the dashboard's kernel events.
@@ -27,7 +27,7 @@ Paths below are relative to `linked/main` unless otherwise noted.
 
 ## TESTS
 
-No test files or test-runner configuration were found in the active area or project-wide inventory.
+- `test_*.py` under this directory — V1 verification surface. From this active project root, run exactly `python3 -m unittest discover -v`; see `ETHOS_V1_VERIFICATION.md`.
 
 ## RESEARCH
 

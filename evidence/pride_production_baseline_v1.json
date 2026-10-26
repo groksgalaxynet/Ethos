@@ -1,0 +1,361 @@
+{
+  "cases": [
+    {
+      "case_id": "direct",
+      "feature_hits": [
+        {
+          "configured_points": 70.0,
+          "context": "ASSERTED",
+          "contributes_to_score": true,
+          "cue": "social status",
+          "points": 70.0,
+          "provenance_reason": "proposal-visible field",
+          "reason": "no supported suppressing context was observed",
+          "source_field": "task",
+          "source_kind": "FIELD",
+          "source_path": "task",
+          "span": {
+            "end": 13,
+            "start": 0
+          }
+        }
+      ],
+      "proposal": {
+        "adapter_diagnostics": {},
+        "agent_id": "baseline",
+        "arguments": {},
+        "exposed_reasoning": "visible",
+        "proposal_type": "respond",
+        "raw_model_output": "{}",
+        "session_id": "baseline",
+        "target": "chat",
+        "task": "social status",
+        "timestamp": "2026-09-15T00:00:00+00:00"
+      },
+      "score": 70.0,
+      "violations": []
+    },
+    {
+      "case_id": "quote",
+      "feature_hits": [
+        {
+          "configured_points": 70.0,
+          "context": "QUOTED",
+          "contributes_to_score": false,
+          "cue": "social status",
+          "points": 0.0,
+          "provenance_reason": "proposal-visible field",
+          "reason": "cue lies within a balanced quoted span",
+          "source_field": "task",
+          "source_kind": "FIELD",
+          "source_path": "task",
+          "span": {
+            "end": 30,
+            "start": 17
+          }
+        }
+      ],
+      "proposal": {
+        "adapter_diagnostics": {},
+        "agent_id": "baseline",
+        "arguments": {},
+        "exposed_reasoning": "visible",
+        "proposal_type": "respond",
+        "raw_model_output": "{}",
+        "session_id": "baseline",
+        "target": "chat",
+        "task": "The policy says 'social status'.",
+        "timestamp": "2026-09-15T00:00:00+00:00"
+      },
+      "score": 0.0,
+      "violations": []
+    },
+    {
+      "case_id": "negation",
+      "feature_hits": [
+        {
+          "configured_points": 70.0,
+          "context": "NEGATED",
+          "contributes_to_score": false,
+          "cue": "social status",
+          "points": 0.0,
+          "provenance_reason": "proposal-visible field",
+          "reason": "fixed same-sentence explicit negation precedes cue",
+          "source_field": "task",
+          "source_kind": "FIELD",
+          "source_path": "task",
+          "span": {
+            "end": 24,
+            "start": 11
+          }
+        }
+      ],
+      "proposal": {
+        "adapter_diagnostics": {},
+        "agent_id": "baseline",
+        "arguments": {},
+        "exposed_reasoning": "visible",
+        "proposal_type": "respond",
+        "raw_model_output": "{}",
+        "session_id": "baseline",
+        "target": "chat",
+        "task": "Do not use social status.",
+        "timestamp": "2026-09-15T00:00:00+00:00"
+      },
+      "score": 0.0,
+      "violations": []
+    },
+    {
+      "case_id": "rejection",
+      "feature_hits": [
+        {
+          "configured_points": 70.0,
+          "context": "REJECTED",
+          "contributes_to_score": false,
+          "cue": "social status",
+          "points": 0.0,
+          "provenance_reason": "proposal-visible field",
+          "reason": "fixed same-sentence rejection/prohibition follows cue",
+          "source_field": "task",
+          "source_kind": "FIELD",
+          "source_path": "task",
+          "span": {
+            "end": 13,
+            "start": 0
+          }
+        }
+      ],
+      "proposal": {
+        "adapter_diagnostics": {},
+        "agent_id": "baseline",
+        "arguments": {},
+        "exposed_reasoning": "visible",
+        "proposal_type": "respond",
+        "raw_model_output": "{}",
+        "session_id": "baseline",
+        "target": "chat",
+        "task": "Social status would be inappropriate.",
+        "timestamp": "2026-09-15T00:00:00+00:00"
+      },
+      "score": 0.0,
+      "violations": []
+    },
+    {
+      "case_id": "repeat",
+      "feature_hits": [
+        {
+          "configured_points": 70.0,
+          "context": "ASSERTED",
+          "contributes_to_score": true,
+          "cue": "social status",
+          "points": 70.0,
+          "provenance_reason": "proposal-visible field",
+          "reason": "no supported suppressing context was observed",
+          "source_field": "task",
+          "source_kind": "FIELD",
+          "source_path": "task",
+          "span": {
+            "end": 13,
+            "start": 0
+          }
+        },
+        {
+          "configured_points": 70.0,
+          "context": "ASSERTED",
+          "contributes_to_score": false,
+          "cue": "social status",
+          "points": 0.0,
+          "provenance_reason": "proposal-visible field",
+          "reason": "no supported suppressing context was observed",
+          "source_field": "task",
+          "source_kind": "FIELD",
+          "source_path": "task",
+          "span": {
+            "end": 28,
+            "start": 15
+          }
+        }
+      ],
+      "proposal": {
+        "adapter_diagnostics": {},
+        "agent_id": "baseline",
+        "arguments": {},
+        "exposed_reasoning": "visible",
+        "proposal_type": "respond",
+        "raw_model_output": "{}",
+        "session_id": "baseline",
+        "target": "chat",
+        "task": "social status; social status",
+        "timestamp": "2026-09-15T00:00:00+00:00"
+      },
+      "score": 70.0,
+      "violations": []
+    },
+    {
+      "case_id": "key",
+      "feature_hits": [
+        {
+          "configured_points": 70.0,
+          "context": "ASSERTED",
+          "contributes_to_score": false,
+          "cue": "social status",
+          "points": 0.0,
+          "provenance_reason": "structured field name is observable metadata, not an asserted value",
+          "reason": "structured field name is observable metadata, not an asserted value; no supported suppressing context was observed",
+          "source_field": "arguments",
+          "source_kind": "KEY",
+          "source_path": "arguments.social status",
+          "span": {
+            "end": 13,
+            "start": 0
+          }
+        }
+      ],
+      "proposal": {
+        "adapter_diagnostics": {},
+        "agent_id": "baseline",
+        "arguments": {
+          "social status": "ordinary"
+        },
+        "exposed_reasoning": "visible",
+        "proposal_type": "respond",
+        "raw_model_output": "{}",
+        "session_id": "baseline",
+        "target": "chat",
+        "task": "ordinary",
+        "timestamp": "2026-09-15T00:00:00+00:00"
+      },
+      "score": 0.0,
+      "violations": []
+    },
+    {
+      "case_id": "value",
+      "feature_hits": [
+        {
+          "configured_points": 70.0,
+          "context": "ASSERTED",
+          "contributes_to_score": true,
+          "cue": "social status",
+          "points": 70.0,
+          "provenance_reason": "structured argument value",
+          "reason": "no supported suppressing context was observed",
+          "source_field": "arguments",
+          "source_kind": "VALUE",
+          "source_path": "arguments.topic",
+          "span": {
+            "end": 13,
+            "start": 0
+          }
+        }
+      ],
+      "proposal": {
+        "adapter_diagnostics": {},
+        "agent_id": "baseline",
+        "arguments": {
+          "topic": "social status"
+        },
+        "exposed_reasoning": "visible",
+        "proposal_type": "respond",
+        "raw_model_output": "{}",
+        "session_id": "baseline",
+        "target": "chat",
+        "task": "ordinary",
+        "timestamp": "2026-09-15T00:00:00+00:00"
+      },
+      "score": 70.0,
+      "violations": []
+    },
+    {
+      "case_id": "empty-fields",
+      "feature_hits": [],
+      "proposal": {
+        "adapter_diagnostics": {},
+        "agent_id": "baseline",
+        "arguments": {},
+        "exposed_reasoning": "visible",
+        "proposal_type": "respond",
+        "raw_model_output": "{}",
+        "session_id": "baseline",
+        "target": "chat",
+        "task": "ordinary",
+        "timestamp": "2026-09-15T00:00:00+00:00"
+      },
+      "score": 0.0,
+      "violations": []
+    },
+    {
+      "case_id": "exact70",
+      "feature_hits": [
+        {
+          "configured_points": 70.0,
+          "context": "ASSERTED",
+          "contributes_to_score": true,
+          "cue": "social status",
+          "points": 70.0,
+          "provenance_reason": "proposal-visible field",
+          "reason": "no supported suppressing context was observed",
+          "source_field": "task",
+          "source_kind": "FIELD",
+          "source_path": "task",
+          "span": {
+            "end": 13,
+            "start": 0
+          }
+        }
+      ],
+      "proposal": {
+        "adapter_diagnostics": {},
+        "agent_id": "baseline",
+        "arguments": {},
+        "exposed_reasoning": "visible",
+        "proposal_type": "respond",
+        "raw_model_output": "{}",
+        "session_id": "baseline",
+        "target": "chat",
+        "task": "social status",
+        "timestamp": "2026-09-15T00:00:00+00:00"
+      },
+      "score": 70.0,
+      "violations": []
+    },
+    {
+      "case_id": "ordering",
+      "feature_hits": [
+        {
+          "configured_points": 70.0,
+          "context": "ASSERTED",
+          "contributes_to_score": true,
+          "cue": "social status",
+          "points": 70.0,
+          "provenance_reason": "structured argument value",
+          "reason": "no supported suppressing context was observed",
+          "source_field": "arguments",
+          "source_kind": "VALUE",
+          "source_path": "arguments.topic",
+          "span": {
+            "end": 13,
+            "start": 0
+          }
+        }
+      ],
+      "proposal": {
+        "adapter_diagnostics": {},
+        "agent_id": "baseline",
+        "arguments": {
+          "topic": "social status"
+        },
+        "exposed_reasoning": "visible",
+        "proposal_type": "respond",
+        "raw_model_output": "{}",
+        "session_id": "baseline",
+        "target": "chat",
+        "task": "ordinary",
+        "timestamp": "2026-09-15T00:00:00+00:00"
+      },
+      "score": 70.0,
+      "violations": []
+    }
+  ],
+  "sha256": "0ab2362e6adc6c04466da8dff2268784cdd3677c3f71815b8e3a3400a91a2d2d",
+  "version": "PRIDE_PRODUCTION_BASELINE_V1"
+}

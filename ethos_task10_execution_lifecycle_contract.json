@@ -1,0 +1,53 @@
+{
+  "task": "ETHOS++ Task 10",
+  "status": "design_only",
+  "existing_runtime": {
+    "gate": "proposal inspection and ALLOW/BLOCK only; no executor",
+    "execution": "no action runner, callback, or post-action return path",
+    "observation": "artifact_observer hashes selected artifacts only; not lifecycle-linked",
+    "verification": "V1.1 supports fact-specific verification; no runtime lifecycle verifier",
+    "persistence": ["proposal gate JSONL", "downstream violation/scar history"],
+    "factual_context": "research-only submitted-record model; not active lifecycle production"
+  },
+  "identities": {
+    "proposal": ["agent_id", "session_id", "proposal_id"],
+    "execution": ["execution_scope", "execution_id"],
+    "observation": "observation_id/assertion_id with observer, source instance, scope, and times",
+    "verification": "fact-specific verification_id"
+  },
+  "execution": {
+    "cardinality_per_proposal": "zero_or_many",
+    "actor": "explicit, independently scoped, or UNKNOWN",
+    "targets": "separate zero_or_many targets; never copied from proposal",
+    "status": "no new enum authorized; explicit source reports only may map to V1.1 STATE",
+    "outcome": "distinct from completion; source claim or later observation only"
+  },
+  "temporal_model": ["proposal_time", "gate_decision_time", "execution_start", "execution_end", "observation_time", "verification_time", "availability_time"],
+  "conflict_and_unknown": "retain conflicting attributed evidence; UNKNOWN and absence are not false",
+  "v11_adequacy": {
+    "decision": "V1.1 EXTENSION MAY BE REQUIRED",
+    "available": ["EVENT", "PARTICIPANT", "TARGETS", "PARTICIPATES_IN", "OBSERVED_BY", "HAS_STATE", "HAS_OUTCOME", "BEFORE", "AFTER", "verification", "lineage", "availability"],
+    "gap": "no neutral typed execution-to-originating-proposal relation; opaque metadata is not a consumable link"
+  },
+  "first_slice": "test-only caller-supplied execution record to neutral V1.1 evidence; no automatic gate conversion, observation, outcome, verification, or regulator consumer",
+  "task4": {
+    "H01": "STILL_REQUIRES_OBSERVATION",
+    "H07": "PARTIALLY_UNLOCKED",
+    "E06": "PARTIALLY_UNLOCKED_AND_STILL_REQUIRES_ORDERING",
+    "E01": "STILL_REQUIRES_ORDERING",
+    "F01": "STILL_REQUIRES_MEASUREMENT"
+  },
+  "candidate_producers": {
+    "qualifying_runtime_execution_producer": null,
+    "generic_runtime_log": "EthosRuntime.log_event; insufficiently typed",
+    "artifact_observer": "read-only artifact observation; not action-linked",
+    "research_factual_context": "not production runtime",
+    "recommended": "test-only explicit caller-supplied execution-record adapter"
+  },
+  "frozen_hashes": {
+    "ethos_structural_evidence.py": "6507e4ec3e0ed2898535e52dd15af1dffe8c7fa0a9bd8c33634f3868e8cbb2b3",
+    "test_ethos_structural_evidence.py": "5ea43255794f9633214d8c6e91d1ee9b076bb9e3c634f2de0a76c4c857e1f8a9"
+  },
+  "decision": "EXECUTION LIFECYCLE CONTRACT READY FOR ISOLATED IMPLEMENTATION"
+}
+

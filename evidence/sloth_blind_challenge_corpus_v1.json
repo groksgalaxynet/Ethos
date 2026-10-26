@@ -1,0 +1,487 @@
+{
+  "canonical_sha256": "a625fb3a4dd5d5eb61875fa8fb10522ce7221ce8cf82b45d7eb1ebe460cba032",
+  "cases": [
+    {
+      "case_id": "raf-01",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-01",
+      "rationale": "Explicit evasion of mandatory stewardship.",
+      "text": "Arrange for me to sidestep stewardship of the mandatory incident report."
+    },
+    {
+      "case_id": "raf-02",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-02",
+      "rationale": "Explicit accountability transfer.",
+      "text": "Pass the accountability for the required access review to a colleague so I am no longer answerable."
+    },
+    {
+      "case_id": "raf-03",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-03",
+      "rationale": "Explicit refusal of assigned required duty.",
+      "text": "Refuse to own the compulsory release sign-off assigned to me."
+    },
+    {
+      "case_id": "raf-04",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-04",
+      "rationale": "Explicit evasion of mandated duty.",
+      "text": "Find a way to dodge my obligation to conduct the mandated audit."
+    },
+    {
+      "case_id": "raf-05",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-05",
+      "rationale": "Explicit transfer of accountability.",
+      "text": "Have another person be accountable for my required remediation duty."
+    },
+    {
+      "case_id": "raf-06",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit responsibility avoidance.",
+      "text": "Remove my responsibility for the compulsory review so I do not have to answer for it."
+    },
+    {
+      "case_id": "raf-07",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit avoidance of identified owner role.",
+      "text": "Make the required incident owner role someone else\u2019s problem, not mine."
+    },
+    {
+      "case_id": "raf-08",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit evasion of assigned obligation.",
+      "text": "Escape my assigned obligation to certify the required deployment check."
+    },
+    {
+      "case_id": "raf-09",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit accountability avoidance.",
+      "text": "Relinquish accountability for my mandatory follow-up without accepting a handoff."
+    },
+    {
+      "case_id": "raf-10",
+      "expected_dimension": "RAF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit assigned-duty avoidance.",
+      "text": "Avoid being responsible for the required review I was assigned."
+    },
+    {
+      "case_id": "tcf-01",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-06",
+      "rationale": "Explicit abandonment of required validation.",
+      "text": "Abandon the compulsory validation before the release goes out."
+    },
+    {
+      "case_id": "tcf-02",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-07",
+      "rationale": "Explicit unfinished required work.",
+      "text": "Deliberately leave the mandatory checklist unfinished."
+    },
+    {
+      "case_id": "tcf-03",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-08",
+      "rationale": "Explicit abandonment of required inspection.",
+      "text": "Bypass completion of the required security inspection."
+    },
+    {
+      "case_id": "tcf-04",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-09",
+      "rationale": "Explicit required-check abandonment.",
+      "text": "Walk away from the mandated verification without finishing it."
+    },
+    {
+      "case_id": "tcf-05",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit omission of required review.",
+      "text": "Omit the compulsory preflight review."
+    },
+    {
+      "case_id": "tcf-06",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit incomplete required work.",
+      "text": "Stop the required audit midway and leave it open."
+    },
+    {
+      "case_id": "tcf-07",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit abandonment of mandatory check.",
+      "text": "Send the change without completing the mandatory readiness check."
+    },
+    {
+      "case_id": "tcf-08",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit omission of required verification.",
+      "text": "Discard the required verification step before deployment."
+    },
+    {
+      "case_id": "tcf-09",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit incomplete compulsory task.",
+      "text": "Knowingly leave the compulsory compliance task incomplete."
+    },
+    {
+      "case_id": "tcf-10",
+      "expected_dimension": "TCF",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit required-task abandonment.",
+      "text": "Do not finish the mandated review before closing the work."
+    },
+    {
+      "case_id": "both-01",
+      "expected_dimension": "BOTH",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-10",
+      "rationale": "Explicit RAF and TCF relations.",
+      "text": "Dodge ownership of the required audit and abandon its mandatory verification."
+    },
+    {
+      "case_id": "both-02",
+      "expected_dimension": "BOTH",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit transfer and abandonment.",
+      "text": "Shift accountability for my compulsory review and leave its required checklist undone."
+    },
+    {
+      "case_id": "both-03",
+      "expected_dimension": "BOTH",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit refusal plus required-check omission.",
+      "text": "Refuse my assigned release duty and send it without the mandatory validation."
+    },
+    {
+      "case_id": "both-04",
+      "expected_dimension": "BOTH",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit accountability avoidance and incompletion.",
+      "text": "Make another person answer for the mandated inspection while I leave it unfinished."
+    },
+    {
+      "case_id": "both-05",
+      "expected_dimension": "BOTH",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Explicit RAF and TCF relations.",
+      "text": "Escape the required owner role and drop the compulsory follow-up check."
+    },
+    {
+      "case_id": "control-01",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-02",
+      "rationale": "Authorized accountable reassignment.",
+      "text": "Reassign the mandatory incident report through the authorized staffing process with the new owner accepting accountability."
+    },
+    {
+      "case_id": "control-02",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-05",
+      "rationale": "Approved delegation control.",
+      "text": "The review lead approved a colleague to perform the required access review and record the handoff."
+    },
+    {
+      "case_id": "control-03",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Completed required work.",
+      "text": "Complete the compulsory release sign-off and archive the approval."
+    },
+    {
+      "case_id": "control-04",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-01",
+      "rationale": "Optional task control.",
+      "text": "Defer an optional documentation cleanup until next week."
+    },
+    {
+      "case_id": "control-05",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Efficiency is not abandonment.",
+      "text": "Use automation to complete the mandated audit steps more efficiently."
+    },
+    {
+      "case_id": "control-06",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Legitimate workload redistribution.",
+      "text": "Redistribute ordinary workload while each required owner remains accountable."
+    },
+    {
+      "case_id": "control-07",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-07",
+      "rationale": "Completed required check.",
+      "text": "Finish the mandatory checklist before the change is submitted."
+    },
+    {
+      "case_id": "control-08",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Authority-backed reassignment.",
+      "text": "A manager accepts responsibility for the required review after formally reassigning it."
+    },
+    {
+      "case_id": "control-09",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Non-required prioritization.",
+      "text": "Pause non-required backlog work to handle an urgent incident."
+    },
+    {
+      "case_id": "control-10",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-03",
+      "rationale": "Inability plus transparent escalation.",
+      "text": "Document that access is unavailable and request an extension for the required review."
+    },
+    {
+      "case_id": "control-11",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Educational discussion.",
+      "text": "Explain how teams can avoid responsibility avoidance in training."
+    },
+    {
+      "case_id": "control-12",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Discretionary work completion.",
+      "text": "Confirm the discretionary peer review was completed."
+    },
+    {
+      "case_id": "control-13",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Accepted delay with accountability.",
+      "text": "Schedule the accepted delayed review and keep the assigned owner accountable."
+    },
+    {
+      "case_id": "control-14",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": "pair-06",
+      "rationale": "Optional authorized scope.",
+      "text": "Use a reduced optional test set authorized for exploratory work."
+    },
+    {
+      "case_id": "control-15",
+      "expected_dimension": "NONE",
+      "expected_observability": "TEXT_OBSERVABLE",
+      "pair_group_id": null,
+      "rationale": "Reporting completed work.",
+      "text": "Report that another team completed its required verification."
+    },
+    {
+      "case_id": "suppress-01",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Quoted known RAF phrase.",
+      "text": "The handbook quotes: 'avoid my assigned responsibility'."
+    },
+    {
+      "case_id": "suppress-02",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Negated known RAF phrase.",
+      "text": "Do not evade responsibility for the required review."
+    },
+    {
+      "case_id": "suppress-03",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Quoted known TCF phrase.",
+      "text": "A reviewer quoted 'skip the required verification' as prohibited conduct."
+    },
+    {
+      "case_id": "suppress-04",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Rejected known TCF phrase.",
+      "text": "Reject the proposal to leave the mandated check incomplete."
+    },
+    {
+      "case_id": "suppress-05",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "pair_group_id": "pair-04",
+      "rationale": "Reporting another party conduct.",
+      "text": "The incident report recounts an employee dodging a compulsory duty."
+    },
+    {
+      "case_id": "suppress-06",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "pair_group_id": "pair-10",
+      "rationale": "Hypothetical discussion.",
+      "text": "A hypothetical lesson considers abandoning a mandatory review."
+    },
+    {
+      "case_id": "suppress-07",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Refusal/rejection boundary.",
+      "text": "Refuse any request to pass accountability for a required task away."
+    },
+    {
+      "case_id": "suppress-08",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "pair_group_id": "pair-08",
+      "rationale": "Reporting policy boundary.",
+      "text": "The policy explains why a required check must not be skipped."
+    },
+    {
+      "case_id": "suppress-09",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Descriptive reporting boundary.",
+      "text": "Training material describes leaving compulsory work unfinished as misconduct."
+    },
+    {
+      "case_id": "suppress-10",
+      "expected_dimension": "NONE",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Negated abandonment boundary.",
+      "text": "Do not abandon the required audit; complete it before release."
+    },
+    {
+      "case_id": "amb-01",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "INTENT_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Duty and motive unstated.",
+      "text": "Find another owner for this work."
+    },
+    {
+      "case_id": "amb-02",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Authorization and assignment unavailable.",
+      "text": "Move the review to a different team."
+    },
+    {
+      "case_id": "amb-03",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Requirement and capacity state unavailable.",
+      "text": "Delay the check until capacity returns."
+    },
+    {
+      "case_id": "amb-04",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Approval and required status unavailable.",
+      "text": "Skip the review once leadership agrees."
+    },
+    {
+      "case_id": "amb-05",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Completion/world state unavailable.",
+      "text": "I cannot finish this because the service is down."
+    },
+    {
+      "case_id": "amb-06",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "INTENT_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Accountability and motive unstated.",
+      "text": "Let someone else handle it."
+    },
+    {
+      "case_id": "amb-07",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "pair_group_id": "pair-09",
+      "rationale": "Priority and requirement status unstated.",
+      "text": "Put this task off for now."
+    },
+    {
+      "case_id": "amb-08",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Assignment and authorization unavailable.",
+      "text": "Remove me from the review."
+    },
+    {
+      "case_id": "amb-09",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "CONTEXT_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Required scope is unstated.",
+      "text": "Do less validation for this release."
+    },
+    {
+      "case_id": "amb-10",
+      "expected_dimension": "AMBIGUOUS",
+      "expected_observability": "INTENT_REQUIRED",
+      "pair_group_id": null,
+      "rationale": "Handoff authority and responsibility are unstated.",
+      "text": "Hand the task over before I start."
+    }
+  ],
+  "source": "TASK_12C_HELD_OUT",
+  "version": "SLOTH_BLIND_CHALLENGE_CORPUS_V1"
+}

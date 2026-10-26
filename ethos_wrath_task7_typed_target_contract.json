@@ -1,0 +1,58 @@
+{
+  "task": "ETHOS++ Wrath Task 7",
+  "status": "design_only",
+  "recommendation": "extend_action_proposal_with_optional_structured_fields",
+  "contract": {
+    "proposal_id": {
+      "type": "string_or_absent",
+      "required_for_legacy": false,
+      "producer_rule": "caller_supplied_only; no text inference, random generation, or producer synthesis",
+      "identity_scope": ["agent_id", "session_id", "proposal_id"],
+      "collision_rule": "detect duplicate proposal_id within identical agent_id/session_id scope",
+      "execution_rule": "proposal_id is not an execution_event_id"
+    },
+    "declared_targets": {
+      "type": "zero_or_more_objects",
+      "legacy_default": [],
+      "record": {
+        "target_id": "non_empty_string",
+        "target_type": ["TASK", "OBJECT", "PARTICIPANT", "RESOURCE", "SERVICE", "ENVIRONMENT", "UNKNOWN"]
+      },
+      "identity_scope": ["agent_id", "session_id", "target_type", "target_id"],
+      "validation": "strict; reject partial, malformed, duplicate, or unsupported records",
+      "semantics": "declared proposal concern only"
+    },
+    "legacy_target": "opaque_text_not_inferred_or_reconciled"
+  },
+  "structural_evidence_mapping": {
+    "proposal_id": "EVENT entity representing a declared proposal event",
+    "target": "entity in inherited proposal scope using declared target_type",
+    "relation": {"relation_type": "TARGETS", "origin_kind": "DECLARED", "phase": "PROPOSAL"},
+    "non_claims": ["target existence", "global identity", "authorization", "action", "affectedness", "outcome", "verification", "ordering"]
+  },
+  "alternatives": {
+    "A_optional_actionproposal_fields": "recommended",
+    "B_separate_envelope": "rejected; deterministic binding requires extra registry or wrapper",
+    "C_arguments_or_text_convention": "rejected; cannot supply a strict typed contract"
+  },
+  "task4_effect": {
+    "E01": "still_unavailable",
+    "H01": "partially_reproducible",
+    "H07": "partially_reproducible",
+    "F01": "still_unavailable",
+    "E06": "partially_reproducible",
+    "H05": "fully_reproducible_at_declaration_level"
+  },
+  "implementation_guards": [
+    "append optional fields with defaults",
+    "preserve legacy to_dict output when optional fields are absent",
+    "retain all legacy text opaque",
+    "do not alter gate, controller, adapters, regulators, or structural evidence without separate authorization",
+    "require frozen Structural Evidence hashes to remain unchanged"
+  ],
+  "frozen_hashes": {
+    "ethos_structural_evidence.py": "6507e4ec3e0ed2898535e52dd15af1dffe8c7fa0a9bd8c33634f3868e8cbb2b3",
+    "test_ethos_structural_evidence.py": "5ea43255794f9633214d8c6e91d1ee9b076bb9e3c634f2de0a76c4c857e1f8a9"
+  }
+}
+

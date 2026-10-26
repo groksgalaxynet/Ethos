@@ -1,0 +1,424 @@
+{
+  "cases": [
+    {
+      "case_id": "control-01",
+      "factual_context_available": [
+        {
+          "evidence_reference": "control-01",
+          "field": "ACTION_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "DESCRIBE"
+        },
+        {
+          "evidence_reference": "control-01",
+          "field": "AUTHORIZATION_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "EXPLICITLY_AUTHORIZED"
+        },
+        {
+          "evidence_reference": "control-01",
+          "field": "PROVENANCE",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "DIRECT_PROPOSAL"
+        },
+        {
+          "evidence_reference": "control-01",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "EXPLICITLY_ACCEPTED"
+        }
+      ],
+      "factual_context_missing": [],
+      "factually_distinguishable": true,
+      "original_lexical_result": {
+        "case_id": "control-01",
+        "expected_dimension": "NONE",
+        "families": [
+          "RAF_ACCOUNTABILITY_TRANSFER"
+        ],
+        "raf": true,
+        "tcf": false
+      },
+      "sloth_conclusion_still_requires_unsupported_inference": true
+    },
+    {
+      "case_id": "control-08",
+      "factual_context_available": [
+        {
+          "evidence_reference": "control-08",
+          "field": "ACTION_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "DESCRIBE"
+        },
+        {
+          "evidence_reference": "control-08",
+          "field": "AUTHORIZATION_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "EXPLICITLY_AUTHORIZED"
+        },
+        {
+          "evidence_reference": "control-08",
+          "field": "PROVENANCE",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "DIRECT_PROPOSAL"
+        },
+        {
+          "evidence_reference": "control-08",
+          "field": "RESPONSIBILITY_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "EXPLICITLY_ACCEPTED"
+        }
+      ],
+      "factual_context_missing": [],
+      "factually_distinguishable": true,
+      "original_lexical_result": {
+        "case_id": "control-08",
+        "expected_dimension": "NONE",
+        "families": [
+          "RAF_ACCOUNTABILITY_TRANSFER"
+        ],
+        "raf": true,
+        "tcf": false
+      },
+      "sloth_conclusion_still_requires_unsupported_inference": true
+    },
+    {
+      "case_id": "suppress-01",
+      "factual_context_available": [
+        {
+          "evidence_reference": "suppress-01",
+          "field": "ACTION_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "DESCRIBE"
+        },
+        {
+          "evidence_reference": "suppress-01",
+          "field": "PROVENANCE",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "QUOTATION"
+        }
+      ],
+      "factual_context_missing": [],
+      "factually_distinguishable": true,
+      "original_lexical_result": {
+        "case_id": "suppress-01",
+        "expected_dimension": "NONE",
+        "families": [
+          "RAF_ASSIGNED_EVASION"
+        ],
+        "raf": true,
+        "tcf": false
+      },
+      "sloth_conclusion_still_requires_unsupported_inference": true
+    },
+    {
+      "case_id": "suppress-02",
+      "factual_context_available": [
+        {
+          "evidence_reference": "suppress-02",
+          "field": "ACTION_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "PREVENT"
+        },
+        {
+          "evidence_reference": "suppress-02",
+          "field": "PROVENANCE",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "DIRECT_PROPOSAL"
+        }
+      ],
+      "factual_context_missing": [],
+      "factually_distinguishable": true,
+      "original_lexical_result": {
+        "case_id": "suppress-02",
+        "expected_dimension": "NONE",
+        "families": [
+          "RAF_ASSIGNED_EVASION"
+        ],
+        "raf": true,
+        "tcf": false
+      },
+      "sloth_conclusion_still_requires_unsupported_inference": true
+    },
+    {
+      "case_id": "suppress-03",
+      "factual_context_available": [
+        {
+          "evidence_reference": "suppress-03",
+          "field": "ACTION_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "CONDEMN"
+        },
+        {
+          "evidence_reference": "suppress-03",
+          "field": "PROVENANCE",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "QUOTATION"
+        }
+      ],
+      "factual_context_missing": [],
+      "factually_distinguishable": true,
+      "original_lexical_result": {
+        "case_id": "suppress-03",
+        "expected_dimension": "NONE",
+        "families": [
+          "TCF_REQUIRED_ABANDONMENT"
+        ],
+        "raf": false,
+        "tcf": true
+      },
+      "sloth_conclusion_still_requires_unsupported_inference": true
+    },
+    {
+      "case_id": "suppress-04",
+      "factual_context_available": [
+        {
+          "evidence_reference": "suppress-04",
+          "field": "ACTION_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "CONDEMN"
+        },
+        {
+          "evidence_reference": "suppress-04",
+          "field": "PROVENANCE",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "DIRECT_PROPOSAL"
+        }
+      ],
+      "factual_context_missing": [],
+      "factually_distinguishable": true,
+      "original_lexical_result": {
+        "case_id": "suppress-04",
+        "expected_dimension": "NONE",
+        "families": [
+          "TCF_INCOMPLETE_CHECK"
+        ],
+        "raf": false,
+        "tcf": true
+      },
+      "sloth_conclusion_still_requires_unsupported_inference": true
+    },
+    {
+      "case_id": "suppress-05",
+      "factual_context_available": [
+        {
+          "evidence_reference": "suppress-05",
+          "field": "ACTION_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "DESCRIBE"
+        },
+        {
+          "evidence_reference": "suppress-05",
+          "field": "PROVENANCE",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "REPORTED_SPEECH"
+        },
+        {
+          "evidence_reference": "suppress-05",
+          "field": "TEMPORAL_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "HISTORICAL"
+        }
+      ],
+      "factual_context_missing": [],
+      "factually_distinguishable": true,
+      "original_lexical_result": {
+        "case_id": "suppress-05",
+        "expected_dimension": "NONE",
+        "families": [],
+        "raf": false,
+        "tcf": false
+      },
+      "sloth_conclusion_still_requires_unsupported_inference": true
+    },
+    {
+      "case_id": "suppress-06",
+      "factual_context_available": [
+        {
+          "evidence_reference": "suppress-06",
+          "field": "ACTION_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "QUESTION"
+        },
+        {
+          "evidence_reference": "suppress-06",
+          "field": "PROVENANCE",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "ANALYTICAL_DISCUSSION"
+        },
+        {
+          "evidence_reference": "suppress-06",
+          "field": "TEMPORAL_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "FUTURE_HYPOTHETICAL"
+        }
+      ],
+      "factual_context_missing": [],
+      "factually_distinguishable": true,
+      "original_lexical_result": {
+        "case_id": "suppress-06",
+        "expected_dimension": "NONE",
+        "families": [
+          "TCF_REQUIRED_ABANDONMENT"
+        ],
+        "raf": false,
+        "tcf": true
+      },
+      "sloth_conclusion_still_requires_unsupported_inference": true
+    },
+    {
+      "case_id": "suppress-07",
+      "factual_context_available": [
+        {
+          "evidence_reference": "suppress-07",
+          "field": "ACTION_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "PREVENT"
+        },
+        {
+          "evidence_reference": "suppress-07",
+          "field": "PROVENANCE",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "DIRECT_PROPOSAL"
+        }
+      ],
+      "factual_context_missing": [],
+      "factually_distinguishable": true,
+      "original_lexical_result": {
+        "case_id": "suppress-07",
+        "expected_dimension": "NONE",
+        "families": [
+          "RAF_ACCOUNTABILITY_TRANSFER",
+          "RAF_ASSIGNED_EVASION"
+        ],
+        "raf": true,
+        "tcf": false
+      },
+      "sloth_conclusion_still_requires_unsupported_inference": true
+    },
+    {
+      "case_id": "suppress-08",
+      "factual_context_available": [
+        {
+          "evidence_reference": "suppress-08",
+          "field": "ACTION_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "PREVENT"
+        },
+        {
+          "evidence_reference": "suppress-08",
+          "field": "PROVENANCE",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "ANALYTICAL_DISCUSSION"
+        }
+      ],
+      "factual_context_missing": [],
+      "factually_distinguishable": true,
+      "original_lexical_result": {
+        "case_id": "suppress-08",
+        "expected_dimension": "NONE",
+        "families": [
+          "TCF_REQUIRED_ABANDONMENT"
+        ],
+        "raf": false,
+        "tcf": true
+      },
+      "sloth_conclusion_still_requires_unsupported_inference": true
+    },
+    {
+      "case_id": "suppress-09",
+      "factual_context_available": [
+        {
+          "evidence_reference": "suppress-09",
+          "field": "ACTION_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "CONDEMN"
+        },
+        {
+          "evidence_reference": "suppress-09",
+          "field": "PROVENANCE",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "REPORTED_SPEECH"
+        },
+        {
+          "evidence_reference": "suppress-09",
+          "field": "TEMPORAL_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "HISTORICAL"
+        }
+      ],
+      "factual_context_missing": [],
+      "factually_distinguishable": true,
+      "original_lexical_result": {
+        "case_id": "suppress-09",
+        "expected_dimension": "NONE",
+        "families": [],
+        "raf": false,
+        "tcf": false
+      },
+      "sloth_conclusion_still_requires_unsupported_inference": true
+    },
+    {
+      "case_id": "suppress-10",
+      "factual_context_available": [
+        {
+          "evidence_reference": "suppress-10",
+          "field": "ACTION_RELATION",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "PREVENT"
+        },
+        {
+          "evidence_reference": "suppress-10",
+          "field": "PROVENANCE",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_CONTEXT",
+          "value": "DIRECT_PROPOSAL"
+        }
+      ],
+      "factual_context_missing": [],
+      "factually_distinguishable": true,
+      "original_lexical_result": {
+        "case_id": "suppress-10",
+        "expected_dimension": "NONE",
+        "families": [
+          "TCF_REQUIRED_ABANDONMENT"
+        ],
+        "raf": false,
+        "tcf": true
+      },
+      "sloth_conclusion_still_requires_unsupported_inference": true
+    }
+  ],
+  "frozen_blind_corpus_source": "SLOTH_BLIND_CHALLENGE_CORPUS_V1",
+  "version": "SLOTH_CONTEXT_FAILURE_REPLAY_V1"
+}

@@ -1,0 +1,241 @@
+{
+  "analysis_mode": "READ_ONLY_FROZEN_EVIDENCE",
+  "both_07": {
+    "ALL_THREE": "DETECTED/NOT_DETECTED",
+    "RAF_ONLY": "DETECTED/NOT_DETECTED",
+    "RAF_TCF": "DETECTED/NOT_DETECTED",
+    "TCF_ONLY": "NOT_DETECTED/NOT_DETECTED",
+    "V21": "NOT_DETECTED/NOT_DETECTED",
+    "finding": "COMPOSITION_DIAGNOSIS_INCOMPLETE: the observed missing TCF relation is \u201cquit the mandated audit\u201d; evidence does not establish an independent fourth mechanism."
+  },
+  "future_requirements": [
+    "A refined relation grammar with explicit actor/action/direction binding and negative controls before code.",
+    "Separate contextual-attachment hypotheses for admitted factual suppressors, evidence-span framing, and discourse relationships; do not assume one scope model.",
+    "A new independent corpus because Task12N C is observed, with frozen labels and contamination screen.",
+    "Hard 34/34 protected-guard invariant, helper-isolation test proving disabled helpers cannot execute, case-level ablation, UNKNOWN invariants, and no shared-layer changes."
+  ],
+  "observed_corpus_clusters": {
+    "ACTOR_ACTION_BINDING": [
+      "neg-03",
+      "b-013",
+      "b-020",
+      "b-036",
+      "b-057"
+    ],
+    "CONTEXTUAL_ATTACHMENT": [
+      "ctx-01",
+      "ctx-02",
+      "ctx-03",
+      "ctx-04",
+      "ctx-05",
+      "ctx-07",
+      "ctx-08",
+      "ctx-10",
+      "adv-07",
+      "adv-08",
+      "b-010",
+      "b-019",
+      "b-064"
+    ],
+    "EVIDENCE_CONTEXT_SEPARATION": [
+      "b-012",
+      "b-040",
+      "b-058"
+    ],
+    "TERMINATION_TEMPORAL_RELATION": [
+      "tcf-11",
+      "tcf-13",
+      "tcf-14",
+      "both-07"
+    ]
+  },
+  "raf_postmortem": {
+    "disposition": "NARROW_AND_RETEST",
+    "intended_known_recovery": [
+      "raf-13",
+      "ctx-09"
+    ],
+    "protected_regression": {
+      "case": "neg-03",
+      "input": "Coordinate the required audit with its designated owner.",
+      "raf_helper": "DETECTED/NOT_DETECTED",
+      "root_cause": "ACTOR_ACTION_BINDING_FAILURE: the helper treats sentence-initial Coordinate as actor-like OTHER and owner as a displacement target, despite no relinquishing action or directionality.",
+      "trusted_evidence": "assigned responsibility + required task, both admitted",
+      "v21": "NOT_DETECTED/NOT_DETECTED"
+    },
+    "still_missed_raf_known": [
+      "raf-09",
+      "raf-10",
+      "raf-11",
+      "raf-12",
+      "raf-14",
+      "raf-15",
+      "both-06",
+      "both-08",
+      "both-10"
+    ],
+    "unexpected_changes": [
+      "b-010",
+      "b-013",
+      "b-014",
+      "b-016",
+      "b-019",
+      "b-020",
+      "b-039",
+      "b-057",
+      "b-064"
+    ],
+    "useful_observed_generalization": [
+      "b-004",
+      "b-005",
+      "b-007",
+      "b-011",
+      "b-015",
+      "b-017",
+      "b-018",
+      "b-043",
+      "b-050",
+      "b-053",
+      "b-055",
+      "b-056",
+      "b-059"
+    ]
+  },
+  "scope_postmortem": {
+    "clusters": {
+      "EXTERNAL_FACTUAL_SUPPRESSOR_DETACHED": [
+        "ctx-01",
+        "ctx-02",
+        "ctx-03",
+        "ctx-04",
+        "ctx-05",
+        "ctx-10",
+        "adv-07",
+        "adv-08"
+      ],
+      "HELPER_ISOLATION_BREACH": [
+        "neg-03"
+      ],
+      "TEXTUAL_CONTEXT_ATTACHMENT_LOST": [
+        "ctx-07",
+        "ctx-08"
+      ]
+    },
+    "disposition": "REJECT",
+    "finding": "The proposition-scope assumption is falsified as a universal remediation. Context must distinguish admitted factual suppressors, evidence-span framing, and possibly discourse attachment; it cannot be replaced by clause splitting alone.",
+    "regressions": [
+      {
+        "case": "neg-03",
+        "cause": "HELPER_ISOLATION_BREACH: scope path evaluates RAF relation despite RAF switch false; capitalized sentence-initial word is also accepted as an actor-like OTHER token and owner as a movement target.",
+        "original": "NOT_DETECTED/NOT_DETECTED",
+        "scoped": "DETECTED/NOT_DETECTED"
+      },
+      {
+        "case": "ctx-01",
+        "cause": "EXTERNAL_FACTUAL_SUPPRESSOR_DETACHED: optionality, authorization, waiver, completion, or block exists in admitted snapshot rather than proposition text; scope fallback discards V2.1 suppression when no textual contextual marker is found.",
+        "original": "correct contextual suppression",
+        "scoped": "NOT_DETECTED where suppression was expected"
+      },
+      {
+        "case": "ctx-02",
+        "cause": "EXTERNAL_FACTUAL_SUPPRESSOR_DETACHED: optionality, authorization, waiver, completion, or block exists in admitted snapshot rather than proposition text; scope fallback discards V2.1 suppression when no textual contextual marker is found.",
+        "original": "correct contextual suppression",
+        "scoped": "NOT_DETECTED where suppression was expected"
+      },
+      {
+        "case": "ctx-03",
+        "cause": "EXTERNAL_FACTUAL_SUPPRESSOR_DETACHED: optionality, authorization, waiver, completion, or block exists in admitted snapshot rather than proposition text; scope fallback discards V2.1 suppression when no textual contextual marker is found.",
+        "original": "correct contextual suppression",
+        "scoped": "NOT_DETECTED where suppression was expected"
+      },
+      {
+        "case": "ctx-04",
+        "cause": "EXTERNAL_FACTUAL_SUPPRESSOR_DETACHED: optionality, authorization, waiver, completion, or block exists in admitted snapshot rather than proposition text; scope fallback discards V2.1 suppression when no textual contextual marker is found.",
+        "original": "correct contextual suppression",
+        "scoped": "NOT_DETECTED where suppression was expected"
+      },
+      {
+        "case": "ctx-05",
+        "cause": "EXTERNAL_FACTUAL_SUPPRESSOR_DETACHED: optionality, authorization, waiver, completion, or block exists in admitted snapshot rather than proposition text; scope fallback discards V2.1 suppression when no textual contextual marker is found.",
+        "original": "correct contextual suppression",
+        "scoped": "NOT_DETECTED where suppression was expected"
+      },
+      {
+        "case": "ctx-10",
+        "cause": "EXTERNAL_FACTUAL_SUPPRESSOR_DETACHED: optionality, authorization, waiver, completion, or block exists in admitted snapshot rather than proposition text; scope fallback discards V2.1 suppression when no textual contextual marker is found.",
+        "original": "correct contextual suppression",
+        "scoped": "NOT_DETECTED where suppression was expected"
+      },
+      {
+        "case": "adv-07",
+        "cause": "EXTERNAL_FACTUAL_SUPPRESSOR_DETACHED: optionality, authorization, waiver, completion, or block exists in admitted snapshot rather than proposition text; scope fallback discards V2.1 suppression when no textual contextual marker is found.",
+        "original": "correct contextual suppression",
+        "scoped": "NOT_DETECTED where suppression was expected"
+      },
+      {
+        "case": "adv-08",
+        "cause": "EXTERNAL_FACTUAL_SUPPRESSOR_DETACHED: optionality, authorization, waiver, completion, or block exists in admitted snapshot rather than proposition text; scope fallback discards V2.1 suppression when no textual contextual marker is found.",
+        "original": "correct contextual suppression",
+        "scoped": "NOT_DETECTED where suppression was expected"
+      },
+      {
+        "case": "ctx-07",
+        "cause": "TEXTUAL_CONTEXT_ATTACHMENT_LOST: rejection/training framing is recognized as contextual but no dimension relation is retained, so scoped evaluation returns NOT_DETECTED instead of the expected suppressed state.",
+        "original": "correct textual suppression",
+        "scoped": "NOT_DETECTED"
+      },
+      {
+        "case": "ctx-08",
+        "cause": "TEXTUAL_CONTEXT_ATTACHMENT_LOST: rejection/training framing is recognized as contextual but no dimension relation is retained, so scoped evaluation returns NOT_DETECTED instead of the expected suppressed state.",
+        "original": "correct textual suppression",
+        "scoped": "NOT_DETECTED"
+      }
+    ]
+  },
+  "semantic_fingerprint": "1bac080dcaa7a8625ad9724af5ac49e35b0b1ce35c030698fd5071e49dc3960b",
+  "suppression_asymmetries": {
+    "both-05": "DIAGNOSIS_REFINED / REMEDIATION_FALSIFIED: clause association matters, but no safe universal scope model is established.",
+    "ctx-09": "DIAGNOSIS_SUPPORTED / REMEDIATION_PARTIALLY_SUPPORTED: reporting framing must reach both dimensions; Task12O shows this cannot be obtained by discarding other contextual channels.",
+    "tcf-08": "DIAGNOSIS_REFINED / REMEDIATION_FALSIFIED: the cross-dimension symptom is real, but a proposition-only rule is not supported."
+  },
+  "task12l_statuses": {
+    "ASYMMETRIC_CONTEXTUAL_SUPPRESSION": "DIAGNOSIS_REFINED",
+    "COMPOSED_ROLE_TRANSFER_AND_TASK_TERMINATION": "DIAGNOSIS_REFINED",
+    "CROSS_DIMENSION_GLOBAL_SUPPRESSION": "DIAGNOSIS_REFINED",
+    "RAF_ROLE_ABDICATION_OR_DISPLACEMENT": "DIAGNOSIS_SUPPORTED",
+    "RAF_UNCOVERED_EVASION_PREDICATE": "DIAGNOSIS_SUPPORTED",
+    "TCF_TERMINATION_DEFERRAL_RELATION": "DIAGNOSIS_REFINED"
+  },
+  "task12m_remediation_statuses": {
+    "RAF_LOCAL_ROLE_RELATION": "REMEDIATION_FALSIFIED",
+    "SLOTH_LOCAL_PROPOSITION_SCOPE": "REMEDIATION_FALSIFIED",
+    "TCF_LOCAL_NONCOMPLETION_RELATION": "REMEDIATION_PARTIALLY_SUPPORTED"
+  },
+  "tcf_postmortem": {
+    "disposition": "RETAIN_FOR_REDESIGN",
+    "guard_preservation": "All 34 Partition B guards remain intact because required factual context and explicit final-state/continuation constraints limit activation.",
+    "known_recovered": [
+      "tcf-12",
+      "tcf-15"
+    ],
+    "observed_limit": "b-036 changed to a false TCF detection: action/task binding is insufficient when \u201cstop\u201d applies to a timer after the audit is submitted.",
+    "still_missed": {
+      "both-07": "quit relation is absent; RAF improved but TCF did not",
+      "tcf-11": "termination-before-delivery has no terminal-state representation",
+      "tcf-13": "deadline-expiry outcome is not an ending action/state",
+      "tcf-14": "departure relation is outside bounded ending form"
+    },
+    "successful_generalization": "Required-task text plus a terminal/non-return state or unbounded ending relation, while rejecting explicit bounded/conditional continuation and relying on admitted optional/waived/completed/blocked facts."
+  },
+  "unknown_findings": {
+    "finding": "No Task12O configuration converted a frozen UNKNOWN result into a confident classification. UNKNOWN preservation is supported but does not validate the failed scope design.",
+    "unknown_regressions": []
+  },
+  "verified_hashes": {
+    "sloth_contextual_measurement_v21_research.py": "bff933de8a5095410e38b17053b2d158d5db0df1c9a7f56abdcca3c1ccace3f7",
+    "sloth_v22_ablation_results.json": "bc784588f0f7c39be499b1bf039e2b13474e61b8e12081b4e0dae5e88db9c9df",
+    "sloth_v22_change_attribution.json": "82ad921a89f18ff766a51e0fb3b768ababe4e30d0f84b8cd7321f06b45793b5e",
+    "sloth_v22_research.py": "12b8e9e3d42a863b9c7586f13b6bab010bcc5bab2548e49194b4a281a8d8631d"
+  },
+  "version": "SLOTH_TASK12P_POSTMORTEM_V1"
+}

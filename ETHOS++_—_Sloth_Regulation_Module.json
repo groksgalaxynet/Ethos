@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-04-07T06:29:35.411376",
+  "sloth_value": 17,
+  "subscores": {
+    "CWI": 12,
+    "EDR": 8,
+    "RAF": 20,
+    "TCF": 16,
+    "ISL": 10,
+    "EAD": 14
+  },
+  "weights": {
+    "CWI": 0.82,
+    "EDR": 1.0,
+    "RAF": 0.85,
+    "TCF": 1.0,
+    "ISL": 1.0,
+    "EAD": 0.97
+  }
+}

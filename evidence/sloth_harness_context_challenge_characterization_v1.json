@@ -1,0 +1,31 @@
+{
+  "admitted_records": 74,
+  "candidate_context_records": 79,
+  "case_counts": {
+    "ADVERSARIAL": 5,
+    "BOTH": 5,
+    "CONTEXT": 10,
+    "NONE": 10,
+    "RAF": 10,
+    "TCF": 10,
+    "UNKNOWN": 10
+  },
+  "conditional_records": 0,
+  "contextual_controls_preserved": 10,
+  "corpus_sha256": "4f3651331baa9b4329fc07c2bff8916dd693ea69d7b9afa0dd654a8f11830b31",
+  "deterministic_sha256": "1b17d30d4b9aac7aa1f119793541bef28f07205bc0acd858c2b3bdf480b26d18",
+  "failure_categories": {
+    "LEXICAL_RELATION_MISSING": 4
+  },
+  "false_negatives": 3,
+  "false_positives": 0,
+  "negative_controls_preserved": 10,
+  "overlap_detection": 5,
+  "raf_detection": 10,
+  "rejected_records": 5,
+  "semantic_pairs_distinguished": 10,
+  "tcf_detection": 7,
+  "trust_attacks_blocked": 5,
+  "unknown_behavior": 9,
+  "version": "SLOTH_HARNESS_CONTEXT_CHALLENGE_CHARACTERIZATION_V1"
+}

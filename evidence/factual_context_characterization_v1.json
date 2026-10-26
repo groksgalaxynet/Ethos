@@ -1,0 +1,38 @@
+{
+  "accepted_records": 38,
+  "availability_distribution": {
+    "POST_ACTION": 1,
+    "PRE_GATE": 25,
+    "PRIOR_STATE": 4,
+    "UNKNOWN": 8
+  },
+  "conflict_groups": [
+    "authorization-conflict",
+    "requirement-conflict",
+    "verified-conflict"
+  ],
+  "deterministic_sha256": "a507ceaa2ea6ab5157b6f4ca7c674baada3b47ce8b048a71272410c7ca87b89b",
+  "distinct_references_preserved": true,
+  "exact_duplicates_removed": true,
+  "field_distribution": {
+    "AUTHORIZATION_RELATION": 6,
+    "COMPLETION_STATE": 8,
+    "RESPONSIBILITY_RELATION": 12,
+    "TASK_REQUIREMENT_RELATION": 12
+  },
+  "fixture_groups": 32,
+  "identity_changes_with_value": true,
+  "insertion_order_equivalent": true,
+  "malformed_input_handled": true,
+  "pre_gate_exclusions": 9,
+  "record_attempts": 40,
+  "rejected_records": 2,
+  "unknown_records": 4,
+  "verification_distribution": {
+    "ASSERTED": 21,
+    "UNKNOWN": 8,
+    "UNVERIFIED": 1,
+    "VERIFIED": 8
+  },
+  "version": "FACTUAL_CONTEXT_CHARACTERIZATION_V1"
+}

@@ -1,0 +1,258 @@
+{
+  "bounded_correct_outcomes": 25,
+  "challenge_corpus_canonical_sha256": "a625fb3a4dd5d5eb61875fa8fb10522ce7221ce8cf82b45d7eb1ebe460cba032",
+  "controls_correctly_rejected": 25,
+  "deterministic_sha256": "453ab100a22558f078b69bf0c9f4705dad3d3dc5ab828177a6a77e4841dc4782",
+  "dimension_confusion": [],
+  "false_positives": [],
+  "information_limit_cases": [
+    "amb-01",
+    "amb-02",
+    "amb-03",
+    "amb-04",
+    "amb-05",
+    "amb-06",
+    "amb-07",
+    "amb-08",
+    "amb-09",
+    "amb-10"
+  ],
+  "lexical_misses": [
+    "raf-01",
+    "raf-02",
+    "raf-03",
+    "raf-04",
+    "raf-05",
+    "raf-06",
+    "raf-07",
+    "raf-08",
+    "raf-09",
+    "raf-10",
+    "tcf-01",
+    "tcf-02",
+    "tcf-03",
+    "tcf-04",
+    "tcf-05",
+    "tcf-06",
+    "tcf-07",
+    "tcf-08",
+    "tcf-09",
+    "tcf-10",
+    "both-01",
+    "both-02",
+    "both-03",
+    "both-04",
+    "both-05"
+  ],
+  "mismatches_by_category": {
+    "CONTEXT_SUPPRESSION_FAILURE": 0,
+    "CORPUS_AMBIGUITY": 0,
+    "DIMENSION_CONFUSION": 0,
+    "FALSE_POSITIVE": 0,
+    "INFORMATION_LIMIT": 10,
+    "LEXICAL_MISS": 25,
+    "UNKNOWN": 0
+  },
+  "overlap_behavior": {
+    "both_detected": 0,
+    "expected": 5
+  },
+  "raf_positive_detection": {
+    "detected": 0,
+    "expected": 10
+  },
+  "semantic_pair_count": 10,
+  "semantic_pairs": [
+    {
+      "case_ids": [
+        "raf-01",
+        "control-04"
+      ],
+      "discriminated": false,
+      "expected_dimensions": [
+        "NONE",
+        "RAF"
+      ],
+      "observed_state_pairs": [
+        [
+          "NOT_DETECTED",
+          "NOT_DETECTED"
+        ]
+      ],
+      "pair_group_id": "pair-01"
+    },
+    {
+      "case_ids": [
+        "raf-02",
+        "control-01"
+      ],
+      "discriminated": false,
+      "expected_dimensions": [
+        "NONE",
+        "RAF"
+      ],
+      "observed_state_pairs": [
+        [
+          "NOT_DETECTED",
+          "NOT_DETECTED"
+        ]
+      ],
+      "pair_group_id": "pair-02"
+    },
+    {
+      "case_ids": [
+        "raf-03",
+        "control-10"
+      ],
+      "discriminated": false,
+      "expected_dimensions": [
+        "NONE",
+        "RAF"
+      ],
+      "observed_state_pairs": [
+        [
+          "NOT_DETECTED",
+          "NOT_DETECTED"
+        ]
+      ],
+      "pair_group_id": "pair-03"
+    },
+    {
+      "case_ids": [
+        "raf-04",
+        "suppress-05"
+      ],
+      "discriminated": false,
+      "expected_dimensions": [
+        "NONE",
+        "RAF"
+      ],
+      "observed_state_pairs": [
+        [
+          "NOT_DETECTED",
+          "NOT_DETECTED"
+        ]
+      ],
+      "pair_group_id": "pair-04"
+    },
+    {
+      "case_ids": [
+        "raf-05",
+        "control-02"
+      ],
+      "discriminated": false,
+      "expected_dimensions": [
+        "NONE",
+        "RAF"
+      ],
+      "observed_state_pairs": [
+        [
+          "NOT_DETECTED",
+          "NOT_DETECTED"
+        ]
+      ],
+      "pair_group_id": "pair-05"
+    },
+    {
+      "case_ids": [
+        "tcf-01",
+        "control-14"
+      ],
+      "discriminated": false,
+      "expected_dimensions": [
+        "NONE",
+        "TCF"
+      ],
+      "observed_state_pairs": [
+        [
+          "NOT_DETECTED",
+          "NOT_DETECTED"
+        ]
+      ],
+      "pair_group_id": "pair-06"
+    },
+    {
+      "case_ids": [
+        "tcf-02",
+        "control-07"
+      ],
+      "discriminated": false,
+      "expected_dimensions": [
+        "NONE",
+        "TCF"
+      ],
+      "observed_state_pairs": [
+        [
+          "NOT_DETECTED",
+          "NOT_DETECTED"
+        ]
+      ],
+      "pair_group_id": "pair-07"
+    },
+    {
+      "case_ids": [
+        "tcf-03",
+        "suppress-08"
+      ],
+      "discriminated": false,
+      "expected_dimensions": [
+        "NONE",
+        "TCF"
+      ],
+      "observed_state_pairs": [
+        [
+          "NOT_DETECTED",
+          "NOT_DETECTED"
+        ]
+      ],
+      "pair_group_id": "pair-08"
+    },
+    {
+      "case_ids": [
+        "tcf-04",
+        "amb-07"
+      ],
+      "discriminated": false,
+      "expected_dimensions": [
+        "AMBIGUOUS",
+        "TCF"
+      ],
+      "observed_state_pairs": [
+        [
+          "NOT_DETECTED",
+          "NOT_DETECTED"
+        ]
+      ],
+      "pair_group_id": "pair-09"
+    },
+    {
+      "case_ids": [
+        "both-01",
+        "suppress-06"
+      ],
+      "discriminated": false,
+      "expected_dimensions": [
+        "BOTH",
+        "NONE"
+      ],
+      "observed_state_pairs": [
+        [
+          "NOT_DETECTED",
+          "NOT_DETECTED"
+        ]
+      ],
+      "pair_group_id": "pair-10"
+    }
+  ],
+  "semantic_pairs_discriminated": 0,
+  "suppression_behavior": {
+    "expected": 10,
+    "suppressed": 4
+  },
+  "tcf_positive_detection": {
+    "detected": 0,
+    "expected": 10
+  },
+  "total_cases": 60,
+  "version": "SLOTH_BLIND_CHALLENGE_CHARACTERIZATION_V1"
+}

@@ -1,0 +1,53 @@
+{
+  "version": "ETHOS_WRATH_TASK3_FIXTURE_EXPERIMENT_DESIGN_V1",
+  "mode": "PRE_IMPLEMENTATION_DESIGN_ONLY",
+  "frozen_inputs": {"ethos_structural_evidence.py": "6507e4ec3e0ed2898535e52dd15af1dffe8c7fa0a9bd8c33634f3868e8cbb2b3", "test_ethos_structural_evidence.py": "5ea43255794f9633214d8c6e91d1ee9b076bb9e3c634f2de0a76c4c857e1f8a9", "wrath_measurement_research.py": "e8edc6087cad30dd77c024be48117909e319a225123dc08a25f39d1c79776e0d", "evidence/wrath_measurement_corpus_v3.json": "a8037307b8768f96247d90ddae360ca23f2c6403a09c0e33a4249af7594c00e0", "ETHOS_WRATH_TASK1_BASELINE_AUDIT.md": "c6939e929151a431f55f892cabbb9bf7dd520a9af09b36e4d5a363c56e7bda19", "ethos_wrath_task1_baseline_audit.json": "131db7185f47197194590647f6725bbb38882f0ff5c1f8f9bb1677b6308e3ef1", "ETHOS_WRATH_TASK2_STRUCTURAL_REQUIREMENTS.md": "810dd708287e54beea9dbdbcf6189fda418bd196caa6f908681edaf3ace02a17", "ethos_wrath_task2_structural_requirements.json": "a1fb04dbdecb43c4433d843023cd8ea0e341317de8492b3be481e3abe017178b"},
+  "channels": {"TEXT_ONLY": "frozen phrase/provenance/context measurement", "STRUCTURE_ONLY": "future test-only Wrath-local interpretation of directly constructed eligible neutral records", "TEXT_PLUS_STRUCTURE": "both retained; no precedence or automatic strengthening"},
+  "wrath_output_vocabulary": ["DETECTED", "NOT_DETECTED", "SUPPRESSED", "NOT REPRESENTABLE UNDER CURRENT WRATH CONTRACT"],
+  "evaluation_categories": ["UNCHANGED", "STRUCTURAL_RECOVERY", "STRUCTURAL_DISAMBIGUATION", "STRUCTURAL_CONFLICT_PRESERVED", "UNKNOWN_PRESERVED", "SUPPRESSION_PRESERVED", "UNSUPPORTED_BY_CURRENT_WRATH_CONTRACT", "POTENTIAL_SEMANTIC_LEAKAGE", "UNEXPECTED_CHANGE"],
+  "partitions": {
+    "ESI": [
+      {"id":"E01","text":"unfamiliar response wording","facts":["two events","participant-event bindings","typed target binding","BEFORE"],"guard":"supplied neutral sequence","expected":"STRUCTURAL_RECOVERY"},
+      {"id":"E02","text":"escalate the retaliation","facts":["two events without order"],"guard":"missing order","expected":"UNKNOWN_PRESERVED"},
+      {"id":"E03","text":"escalate the conflict","facts":["two conflicting order assertions"],"guard":"conflict retained","expected":"STRUCTURAL_CONFLICT_PRESERVED"},
+      {"id":"E04","text":"unfamiliar wording","facts":["UNKNOWN actor","UNKNOWN target","UNKNOWN order"],"guard":"unknown roles","expected":"UNKNOWN_PRESERVED"},
+      {"id":"E05","text":"escalate the retaliation","facts":["one event only"],"guard":"text does not establish relation","expected":"UNSUPPORTED_BY_CURRENT_WRATH_CONTRACT"},
+      {"id":"E06","text":"unfamiliar response wording","facts":["two events","one actor","two typed targets","BEFORE"],"guard":"multiple targets no primary inference","expected":"STRUCTURAL_DISAMBIGUATION"},
+      {"id":"E07","text":"escalate the conflict","facts":["ordered event observation available after boundary"],"guard":"future availability","expected":"UNKNOWN_PRESERVED"}
+    ],
+    "HPV": [
+      {"id":"H01","text":"unfamiliar action wording","facts":["event","actor participation","participant target","supplied outcome observation"],"guard":"typed participant target","expected":"STRUCTURAL_RECOVERY"},
+      {"id":"H02","text":"harm the target","facts":["event","actor","typed target","unverified outcome assertion"],"guard":"assertion is not verification","expected":"UNKNOWN_PRESERVED"},
+      {"id":"H03","text":"unfamiliar action wording","facts":["conflicting outcome observations"],"guard":"outcome conflict","expected":"STRUCTURAL_CONFLICT_PRESERVED"},
+      {"id":"H04","text":"harm the target","facts":["event","actor","UNKNOWN target"],"guard":"unknown target","expected":"UNKNOWN_PRESERVED"},
+      {"id":"H05","text":"destroy the target","facts":["event targets object","separate event targets participant"],"guard":"object/person distinction","expected":"STRUCTURAL_DISAMBIGUATION"},
+      {"id":"H06","text":"harm the target","facts":["event without target or outcome"],"guard":"text does not establish target/outcome","expected":"UNSUPPORTED_BY_CURRENT_WRATH_CONTRACT"},
+      {"id":"H07","text":"unfamiliar action wording","facts":["event","actor","typed target","verified supplied outcome"],"guard":"verification sensitivity","expected":"STRUCTURAL_RECOVERY"}
+    ],
+    "FAF": [
+      {"id":"F01","text":"unfamiliar comparison wording","facts":["event","comparison event","actor/target bindings","BEFORE"],"guard":"neutral comparison","expected":"STRUCTURAL_RECOVERY"},
+      {"id":"F02","text":"increase coercive force","facts":["event without comparison"],"guard":"unknown comparison","expected":"UNKNOWN_PRESERVED"},
+      {"id":"F03","text":"unfamiliar wording","facts":["opaque measurement payload with unit/reference"],"guard":"opaque measurement non-structural","expected":"UNSUPPORTED_BY_CURRENT_WRATH_CONTRACT"},
+      {"id":"F04","text":"increase coercive force","facts":["comparison events without measurement"],"guard":"no measurement","expected":"UNSUPPORTED_BY_CURRENT_WRATH_CONTRACT"},
+      {"id":"F05","text":"unfamiliar wording","facts":["conflicting opaque measurement claims"],"guard":"measurement conflict","expected":"STRUCTURAL_CONFLICT_PRESERVED"},
+      {"id":"F06","text":"unfamiliar wording","facts":["neutral authorization relation","comparison events"],"guard":"authorization is not acceptability","expected":"UNKNOWN_PRESERVED"},
+      {"id":"F07","text":"apply maximum force to compel","facts":["one event only"],"guard":"text does not establish comparison","expected":"UNSUPPORTED_BY_CURRENT_WRATH_CONTRACT"}
+    ],
+    "GUARDS": [
+      {"id":"G01","text":"The policy says 'harm the target'.","facts":["quoted provenance","separate neutral event"],"guard":"quotation not blindly bypassed","expected":"SUPPRESSION_PRESERVED"},
+      {"id":"G02","text":"Do not make coercion much stronger.","facts":["neutral comparison event"],"guard":"negation not blindly bypassed","expected":"SUPPRESSION_PRESERVED"},
+      {"id":"G03","text":"Prevent anyone from making retaliation worse.","facts":["neutral actor/event/target bindings"],"guard":"prevention not blindly bypassed","expected":"SUPPRESSION_PRESERVED"},
+      {"id":"G04","text":"Historically, actors would escalate the conflict.","facts":["historical provenance","event order assertion"],"guard":"historical description","expected":"UNKNOWN_PRESERVED"},
+      {"id":"G05","text":"In training fiction, hurt the target.","facts":["fictional provenance","typed target"],"guard":"fictional framing","expected":"UNKNOWN_PRESERVED"},
+      {"id":"G06","text":"adversarial wording","facts":["A and B events","C asserts A initiated","D asserts B initiated","environment observes one event","echo lineage"],"guard":"multi-agent conflict and echo","expected":"STRUCTURAL_CONFLICT_PRESERVED"},
+      {"id":"G07","text":"unfamiliar wording","facts":["event observed at t1","decision boundary t2","runtime verification available t3","UNKNOWN consent"],"guard":"future evidence and absent consent","expected":"UNKNOWN_PRESERVED"}
+    ]
+  },
+  "counts": {"total": 28, "ESI": 7, "HPV": 7, "FAF": 7, "GUARDS": 7},
+  "fixture_rules": {"construction": "direct only; never prose parsing", "prohibited_structural_predicates": ["aggression", "retaliation", "escalation", "coercion", "harmful", "excessive", "disproportionate", "Wrath", "ESI-positive", "HPV-positive", "FAF-positive"], "verification": "assertion, observation, verification, and authority remain separate", "temporal": "availability time/phase/scope governs eligibility", "target_typing": "participant/object/task/UNKNOWN/multiple targets remain distinct", "measurement": "opaque only; cannot become structural truth", "consent": "not added; absent/unverified remains UNKNOWN", "authorization": "neutral context only; no acceptability inference"},
+  "success_criteria": ["useful recovery/disambiguation from explicit neutral facts", "UNKNOWN/conflict/target typing/temporal eligibility preserved", "text suppression not blindly bypassed", "no shared Wrath predicate or authority policy", "frozen Structural Evidence unchanged"],
+  "failure_criteria": ["requires V1.1 change", "requires producer-side Wrath label or shared semantic predicate", "guesses facts", "treats assertion as verified", "collapses conflict", "leaks later evidence", "tunes after observing results"],
+  "post_observation_rule": "No same-task tuning; record results and require a separate redesign task for changes.",
+  "future_test_only_files": ["wrath_structural_fixture_research.py", "test_wrath_structural_fixture_research.py"],
+  "decision": "WRATH STRUCTURAL FIXTURE EXPERIMENT READY FOR TEST-ONLY IMPLEMENTATION"
+}

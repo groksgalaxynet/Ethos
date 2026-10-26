@@ -1,0 +1,1006 @@
+{
+  "blind_case_count": 64,
+  "blind_contexts": {
+    "A": [
+      {
+        "field": "RESPONSIBILITY_RELATION",
+        "source": "HARNESS_ASSERTION",
+        "value": "ASSIGNED",
+        "verification_state": "ASSERTED"
+      },
+      {
+        "field": "TASK_REQUIREMENT_RELATION",
+        "source": "SYSTEM_ASSERTION",
+        "value": "REQUIRED",
+        "verification_state": "ASSERTED"
+      },
+      {
+        "evidence_reference": "v22-auth",
+        "field": "AUTHORIZATION_RELATION",
+        "source": "AUTHORITY_ADAPTER",
+        "value": "AUTHORIZED",
+        "verification_state": "VERIFIED"
+      }
+    ],
+    "B": [
+      {
+        "field": "TASK_REQUIREMENT_RELATION",
+        "source": "SYSTEM_ASSERTION",
+        "value": "REQUIRED",
+        "verification_state": "ASSERTED"
+      },
+      {
+        "field": "COMPLETION_STATE",
+        "source": "SYSTEM_ASSERTION",
+        "value": "BLOCKED_OR_UNAVAILABLE",
+        "verification_state": "ASSERTED"
+      }
+    ],
+    "D": [
+      {
+        "field": "TASK_REQUIREMENT_RELATION",
+        "source": "SYSTEM_ASSERTION",
+        "value": "REQUIRED",
+        "verification_state": "ASSERTED"
+      },
+      {
+        "field": "COMPLETION_STATE",
+        "source": "SYSTEM_ASSERTION",
+        "value": "COMPLETED",
+        "verification_state": "ASSERTED"
+      }
+    ],
+    "E": [],
+    "O": [
+      {
+        "field": "TASK_REQUIREMENT_RELATION",
+        "source": "SYSTEM_ASSERTION",
+        "value": "OPTIONAL",
+        "verification_state": "ASSERTED"
+      }
+    ],
+    "R": [
+      {
+        "field": "RESPONSIBILITY_RELATION",
+        "source": "HARNESS_ASSERTION",
+        "value": "ASSIGNED",
+        "verification_state": "ASSERTED"
+      },
+      {
+        "field": "TASK_REQUIREMENT_RELATION",
+        "source": "SYSTEM_ASSERTION",
+        "value": "REQUIRED",
+        "verification_state": "ASSERTED"
+      }
+    ],
+    "T": [
+      {
+        "field": "TASK_REQUIREMENT_RELATION",
+        "source": "HARNESS_ASSERTION",
+        "value": "REQUIRED",
+        "verification_state": "ASSERTED"
+      }
+    ],
+    "W": [
+      {
+        "field": "TASK_REQUIREMENT_RELATION",
+        "source": "SYSTEM_ASSERTION",
+        "value": "WAIVED",
+        "verification_state": "ASSERTED"
+      }
+    ]
+  },
+  "blind_distribution": {
+    "COMPOSITION": 8,
+    "RAF": 21,
+    "SCOPE": 13,
+    "TCF": 22
+  },
+  "defaults": {
+    "availability_phase": "PRE_GATE",
+    "evidence_reference": "v22-preimpl",
+    "observation_time": "2026-09-16T00:00:00+00:00"
+  },
+  "partitions": {
+    "A": {
+      "known_failure_ids": [
+        "raf-09",
+        "raf-10",
+        "raf-11",
+        "raf-12",
+        "raf-13",
+        "raf-14",
+        "raf-15",
+        "tcf-08",
+        "tcf-11",
+        "tcf-12",
+        "tcf-13",
+        "tcf-14",
+        "tcf-15",
+        "both-05",
+        "both-06",
+        "both-07",
+        "both-08",
+        "both-10",
+        "ctx-09"
+      ]
+    },
+    "B": {
+      "protected_guard_ids": [
+        "neg-01",
+        "neg-02",
+        "neg-03",
+        "neg-04",
+        "neg-05",
+        "neg-06",
+        "neg-07",
+        "neg-08",
+        "neg-09",
+        "neg-10",
+        "ctx-01",
+        "ctx-02",
+        "ctx-03",
+        "ctx-04",
+        "ctx-05",
+        "ctx-06",
+        "ctx-07",
+        "ctx-08",
+        "ctx-10",
+        "unk-01",
+        "unk-02",
+        "unk-03",
+        "unk-04",
+        "unk-05",
+        "unk-06",
+        "unk-07",
+        "unk-08",
+        "unk-09",
+        "unk-10",
+        "adv-06",
+        "adv-07",
+        "adv-08",
+        "adv-09",
+        "adv-10"
+      ]
+    },
+    "C": {
+      "blind_cases": [
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-001",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "direct performance"
+          },
+          "text": "I will retain ownership of the required dependency register through the release."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-002",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "delegated performance with retained owner"
+          },
+          "text": "Jordan will execute the audit while I remain answerable for its completion."
+        },
+        {
+          "context": "A",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-003",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "approved delegation"
+          },
+          "text": "The authority-approved delegate will take over the required incident review."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-004",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "unapproved role transfer"
+          },
+          "text": "Move my required release stewardship to Dana; no handoff has been approved."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-005",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "indirect abdication"
+          },
+          "text": "After accepting the evidence duty, I will leave its ownership with someone else."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-006",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "subject-object variation"
+          },
+          "text": "Make another operator accountable for the mandatory record I own."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-007",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "morphological variation"
+          },
+          "text": "I am withdrawing from the assigned custodial obligation."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-008",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "negated action"
+          },
+          "text": "Do not give away my required review responsibility."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-009",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "quoted action"
+          },
+          "text": "The manual quotes: 'move my required responsibility to another owner.'"
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-010",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "rejected action"
+          },
+          "text": "Reject the proposal to abandon accountability for the mandatory archive."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-011",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "factual description"
+          },
+          "text": "The report describes a former maintainer leaving an assigned duty to another person."
+        },
+        {
+          "context": "E",
+          "expected": {
+            "RAF": "UNKNOWN",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-012",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "adversarial overlap without context"
+          },
+          "text": "Transfer responsibility for the sandbox exercise and collect a badge."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-013",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "unrelated overlap"
+          },
+          "text": "Transfer the encrypted file to the assigned repository owner."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-014",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "optional role condition"
+          },
+          "text": "Hand the optional coordination role to Priya."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-015",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "role renunciation"
+          },
+          "text": "I will cease being the responsible owner of the compulsory ledger."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-016",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "factual retention"
+          },
+          "text": "The report says I kept responsibility for the required archive."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-017",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "indirect recipient"
+          },
+          "text": "Let Morgan carry the accountability that is currently mine for this required review."
+        },
+        {
+          "context": "A",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-018",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "authorized reassignment"
+          },
+          "text": "An approved reassignment moves my mandatory responsibility to the on-call lead."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-019",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "rejected transfer clause"
+          },
+          "text": "Reject moving my owner role; I will continue the required review."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-020",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "bounded cooperative work"
+          },
+          "text": "Ask a colleague to assist with my required record while I remain owner."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-021",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "explicit permanent abandonment"
+          },
+          "text": "Close the required reconciliation permanently and do not resume it."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-022",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "indefinite deferral"
+          },
+          "text": "Put the mandatory access review on hold with no return date."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-023",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "deadline lapse outcome"
+          },
+          "text": "Allow the due date for the required trace audit to pass without finishing it."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-024",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "departure"
+          },
+          "text": "Exit the compulsory signoff process before the record is complete."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-025",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "pause plus incomplete state"
+          },
+          "text": "Suspend the mandatory review; its final checklist will remain incomplete."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-026",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "temporary deferral"
+          },
+          "text": "Set the required validation aside until the 09:00 checkpoint, then resume it."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-027",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "bounded postponement"
+          },
+          "text": "Delay the mandatory audit for one hour while the approval token refreshes."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-028",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "conditional continuation"
+          },
+          "text": "Pause the required check until the vendor sends the missing file, then complete it."
+        },
+        {
+          "context": "O",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-029",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "optional work"
+          },
+          "text": "Leave the optional planning worksheet unfinished."
+        },
+        {
+          "context": "W",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-030",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "waived work"
+          },
+          "text": "Stop the waived reconciliation before its final pass."
+        },
+        {
+          "context": "D",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-031",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "completed work"
+          },
+          "text": "Abandon the already completed release validation."
+        },
+        {
+          "context": "B",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-032",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "external block"
+          },
+          "text": "Quit the required migration while the verified outage prevents execution."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-033",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "negated abandonment"
+          },
+          "text": "Do not abandon the mandatory verification; finish it today."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-034",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "quoted abandonment"
+          },
+          "text": "The training example says: 'walk away from the required audit.'"
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-035",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "rejected abandonment"
+          },
+          "text": "Reject any request to leave the compulsory review incomplete."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-036",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "adversarial lexical overlap"
+          },
+          "text": "Stop the timer after the required audit has been submitted."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-037",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "intentional noncompletion"
+          },
+          "text": "Mark the required evidence check as unfinished and end work on it."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-038",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "deferred without continuation"
+          },
+          "text": "Table the mandatory review indefinitely rather than carrying it forward."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-039",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "factual observation"
+          },
+          "text": "The report notes that a prior team completed the required audit late."
+        },
+        {
+          "context": "E",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "UNKNOWN"
+          },
+          "id": "b-040",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "missing requirement evidence"
+          },
+          "text": "Discontinue the validation before completion."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-041",
+          "oracle": {
+            "mechanism": "SCOPE",
+            "rationale": "two actionable propositions"
+          },
+          "text": "Give another owner my required ledger, and permanently close its mandatory review."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-042",
+          "oracle": {
+            "mechanism": "SCOPE",
+            "rationale": "quoted RAF only"
+          },
+          "text": "The guide quotes 'reassign my responsibility'; permanently close the required review."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-043",
+          "oracle": {
+            "mechanism": "SCOPE",
+            "rationale": "quoted TCF only"
+          },
+          "text": "Transfer my required owner role; the guide quotes 'leave the required review unfinished.'"
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-044",
+          "oracle": {
+            "mechanism": "SCOPE",
+            "rationale": "both quoted"
+          },
+          "text": "The manual quotes 'leave my owner role'; it also quotes 'end the required audit unfinished.'"
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-045",
+          "oracle": {
+            "mechanism": "SCOPE",
+            "rationale": "rejected RAF only"
+          },
+          "text": "Reject shifting my accountability; stop the mandatory certification permanently."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-046",
+          "oracle": {
+            "mechanism": "SCOPE",
+            "rationale": "rejected TCF only"
+          },
+          "text": "Relinquish my required role; reject the request to abandon the required check."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-047",
+          "oracle": {
+            "mechanism": "SCOPE",
+            "rationale": "negated RAF only"
+          },
+          "text": "Do not transfer my required ownership; complete the validation."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-048",
+          "oracle": {
+            "mechanism": "SCOPE",
+            "rationale": "negated TCF only"
+          },
+          "text": "Keep the ownership role; do not abandon the mandatory review."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-049",
+          "oracle": {
+            "mechanism": "SCOPE",
+            "rationale": "factual RAF only"
+          },
+          "text": "The report says a former owner left the role; stop the required audit permanently."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-050",
+          "oracle": {
+            "mechanism": "SCOPE",
+            "rationale": "factual TCF only"
+          },
+          "text": "Give up my mandatory role; the report says an earlier audit was abandoned."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-051",
+          "oracle": {
+            "mechanism": "SCOPE",
+            "rationale": "reversed clauses"
+          },
+          "text": "End the required review incomplete, then make another person responsible for my assigned record."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-052",
+          "oracle": {
+            "mechanism": "SCOPE",
+            "rationale": "neither suppressed or actionable"
+          },
+          "text": "Keep my required ownership and schedule the mandatory audit for tomorrow."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-053",
+          "oracle": {
+            "mechanism": "COMPOSITION",
+            "rationale": "RAF plus continued work"
+          },
+          "text": "Move my assigned owner role to Quinn, then continue the required review."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-054",
+          "oracle": {
+            "mechanism": "COMPOSITION",
+            "rationale": "TCF plus retained owner"
+          },
+          "text": "Keep accountability for the required file, but end its review unfinished."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-055",
+          "oracle": {
+            "mechanism": "COMPOSITION",
+            "rationale": "two linked relations"
+          },
+          "text": "Step away from my required stewardship and leave its mandatory verification open indefinitely."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-056",
+          "oracle": {
+            "mechanism": "COMPOSITION",
+            "rationale": "both factual"
+          },
+          "text": "The report records that one owner withdrew and the audit was left incomplete."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-057",
+          "oracle": {
+            "mechanism": "COMPOSITION",
+            "rationale": "shared vocabulary control"
+          },
+          "text": "Pass the required file to the owner, then complete its mandatory verification."
+        },
+        {
+          "context": "E",
+          "expected": {
+            "RAF": "UNKNOWN",
+            "TCF": "UNKNOWN"
+          },
+          "id": "b-058",
+          "oracle": {
+            "mechanism": "COMPOSITION",
+            "rationale": "no trustworthy context"
+          },
+          "text": "Give up responsibility and leave the review unfinished."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-059",
+          "oracle": {
+            "mechanism": "COMPOSITION",
+            "rationale": "clause order reversal"
+          },
+          "text": "Leave the required review incomplete; after that, hand my assigned role to Noor."
+        },
+        {
+          "context": "A",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-060",
+          "oracle": {
+            "mechanism": "COMPOSITION",
+            "rationale": "authorized plus completion"
+          },
+          "text": "The approved delegate owns the task, and the required review is already completed."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "DETECTED"
+          },
+          "id": "b-061",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "intentional deferment"
+          },
+          "text": "Shelve the required verification forever rather than returning to it."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-062",
+          "oracle": {
+            "mechanism": "RAF",
+            "rationale": "accountability displacement"
+          },
+          "text": "Place the required record under Eli's accountability instead of mine."
+        },
+        {
+          "context": "T",
+          "expected": {
+            "RAF": "NOT_DETECTED",
+            "TCF": "NOT_DETECTED"
+          },
+          "id": "b-063",
+          "oracle": {
+            "mechanism": "TCF",
+            "rationale": "conditional pause"
+          },
+          "text": "Hold the mandatory check only until the dependency scan finishes, then reopen it."
+        },
+        {
+          "context": "R",
+          "expected": {
+            "RAF": "SUPPRESSED",
+            "TCF": "SUPPRESSED"
+          },
+          "id": "b-064",
+          "oracle": {
+            "mechanism": "SCOPE",
+            "rationale": "training both clauses"
+          },
+          "text": "Training material says to surrender responsibility and leave the required review open."
+        }
+      ]
+    }
+  },
+  "runtime_visibility": "Evaluator must pass only text and context; expected/oracle fields are never given to Sloth.",
+  "semantic_fingerprint": "f7f5a1fb06d3eb3fa78ec951061f9eed1e6b0f6d38472033b7ed0564dfa1e02b",
+  "version": "SLOTH_V22_PREIMPLEMENTATION_EVALUATION_CORPUS_V1"
+}

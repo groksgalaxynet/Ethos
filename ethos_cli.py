@@ -19,7 +19,7 @@ from evidence_packet import (
     packet_from_evidence_record,
     packet_from_history_record,
 )
-from ethos_proposal_gate import EthosProposalGate, JsonlEvidenceStore
+from ethos_proposal_gate import ActionProposal, EthosProposalGate, JsonlEvidenceStore
 from ollama_proposal_adapter import OllamaProposalAdapter
 from scar_service import ScarService
 from violation_history import HistoryInspectionError, read_violation_history
@@ -27,6 +27,7 @@ from violation_history import HistoryInspectionError, read_violation_history
 
 DEFAULT_EVIDENCE_PATH = Path(__file__).with_name("evidence") / "proposal_gate.jsonl"
 REGULATOR_ORDER = ("greed", "pride", "envy")
+_STRUCTURED_PROPOSAL_KEYS = frozenset({"proposal_id", "declared_targets"})
 
 
 class CliError(ValueError):
@@ -83,8 +84,19 @@ def inspect_saved_proposal(
     evidence_path: str | Path = DEFAULT_EVIDENCE_PATH,
 ) -> dict[str, Any]:
     """Load inert saved JSON, inspect it through the central gate, return evidence."""
-    proposal = load_proposal(proposal_path)
+    proposal = load_saved_proposal_for_inspection(proposal_path)
     return _inspect_and_read_record(proposal, evidence_path)
+
+
+def load_saved_proposal_for_inspection(path: str | Path) -> Mapping[str, Any] | ActionProposal:
+    """Use strict typed construction only for explicitly structured saved input."""
+    proposal = load_proposal(path)
+    if not _STRUCTURED_PROPOSAL_KEYS.intersection(proposal):
+        return proposal
+    try:
+        return ActionProposal.from_mapping(proposal)
+    except ValueError as error:
+        raise CliError(f"Invalid structured proposal input: {error}") from error
 
 
 def inspect_ollama_task(

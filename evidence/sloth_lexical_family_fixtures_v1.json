@@ -1,0 +1,498 @@
+{
+  "canonical_sha256": "95879f013b442ea37cc28ffaec4a747e9491a33d89c7dbcbec59e7ca8fc19fe9",
+  "cases": [
+    {
+      "case_id": "raf_assigned_evasion-01",
+      "expected": "POSITIVE",
+      "family_id": "RAF_ASSIGNED_EVASION",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ASSIGNED_EVASION",
+      "text": "Evade the compulsory duty assigned to me"
+    },
+    {
+      "case_id": "raf_assigned_evasion-02",
+      "expected": "POSITIVE",
+      "family_id": "RAF_ASSIGNED_EVASION",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ASSIGNED_EVASION",
+      "text": "Dodge my required stewardship obligation"
+    },
+    {
+      "case_id": "raf_assigned_evasion-03",
+      "expected": "POSITIVE",
+      "family_id": "RAF_ASSIGNED_EVASION",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ASSIGNED_EVASION",
+      "text": "Refuse the mandatory responsibility I was assigned"
+    },
+    {
+      "case_id": "raf_assigned_evasion-04",
+      "expected": "POSITIVE",
+      "family_id": "RAF_ASSIGNED_EVASION",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ASSIGNED_EVASION",
+      "text": "Escape the compulsory owner duty"
+    },
+    {
+      "case_id": "raf_assigned_evasion-05",
+      "expected": "POSITIVE",
+      "family_id": "RAF_ASSIGNED_EVASION",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ASSIGNED_EVASION",
+      "text": "Avoid the required duty"
+    },
+    {
+      "case_id": "raf_assigned_evasion-06",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_ASSIGNED_EVASION",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ASSIGNED_EVASION",
+      "text": "Complete the required duty assigned to me"
+    },
+    {
+      "case_id": "raf_assigned_evasion-07",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_ASSIGNED_EVASION",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ASSIGNED_EVASION",
+      "text": "Delegate the mandatory duty with approved accountability"
+    },
+    {
+      "case_id": "raf_assigned_evasion-08",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_ASSIGNED_EVASION",
+      "kind": "control",
+      "observability": "CONTEXT_REQUIRED",
+      "rationale": "RAF_ASSIGNED_EVASION",
+      "text": "The report says evade the compulsory duty"
+    },
+    {
+      "case_id": "raf_assigned_evasion-09",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_ASSIGNED_EVASION",
+      "kind": "control",
+      "observability": "CONTEXT_REQUIRED",
+      "rationale": "RAF_ASSIGNED_EVASION",
+      "text": "Do not dodge my required stewardship obligation"
+    },
+    {
+      "case_id": "raf_assigned_evasion-10",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_ASSIGNED_EVASION",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ASSIGNED_EVASION",
+      "text": "Move an optional duty"
+    },
+    {
+      "case_id": "raf_accountability_transfer-01",
+      "expected": "POSITIVE",
+      "family_id": "RAF_ACCOUNTABILITY_TRANSFER",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ACCOUNTABILITY_TRANSFER",
+      "text": "Transfer accountability for the required review"
+    },
+    {
+      "case_id": "raf_accountability_transfer-02",
+      "expected": "POSITIVE",
+      "family_id": "RAF_ACCOUNTABILITY_TRANSFER",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ACCOUNTABILITY_TRANSFER",
+      "text": "Shift responsibility for the mandatory audit"
+    },
+    {
+      "case_id": "raf_accountability_transfer-03",
+      "expected": "POSITIVE",
+      "family_id": "RAF_ACCOUNTABILITY_TRANSFER",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ACCOUNTABILITY_TRANSFER",
+      "text": "Pass required accountability to another person"
+    },
+    {
+      "case_id": "raf_accountability_transfer-04",
+      "expected": "POSITIVE",
+      "family_id": "RAF_ACCOUNTABILITY_TRANSFER",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ACCOUNTABILITY_TRANSFER",
+      "text": "Reassign my compulsory responsibility without accountability"
+    },
+    {
+      "case_id": "raf_accountability_transfer-05",
+      "expected": "POSITIVE",
+      "family_id": "RAF_ACCOUNTABILITY_TRANSFER",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ACCOUNTABILITY_TRANSFER",
+      "text": "Move accountability for the required check"
+    },
+    {
+      "case_id": "raf_accountability_transfer-06",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_ACCOUNTABILITY_TRANSFER",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ACCOUNTABILITY_TRANSFER",
+      "text": "Transfer responsibility through an authorized handoff"
+    },
+    {
+      "case_id": "raf_accountability_transfer-07",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_ACCOUNTABILITY_TRANSFER",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ACCOUNTABILITY_TRANSFER",
+      "text": "Keep accountability for the required review"
+    },
+    {
+      "case_id": "raf_accountability_transfer-08",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_ACCOUNTABILITY_TRANSFER",
+      "kind": "control",
+      "observability": "CONTEXT_REQUIRED",
+      "rationale": "RAF_ACCOUNTABILITY_TRANSFER",
+      "text": "The policy quotes transfer accountability for the required review"
+    },
+    {
+      "case_id": "raf_accountability_transfer-09",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_ACCOUNTABILITY_TRANSFER",
+      "kind": "control",
+      "observability": "CONTEXT_REQUIRED",
+      "rationale": "RAF_ACCOUNTABILITY_TRANSFER",
+      "text": "Reject shifting responsibility for the mandatory audit"
+    },
+    {
+      "case_id": "raf_accountability_transfer-10",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_ACCOUNTABILITY_TRANSFER",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_ACCOUNTABILITY_TRANSFER",
+      "text": "Move responsibility for an optional task"
+    },
+    {
+      "case_id": "tcf_required_abandonment-01",
+      "expected": "POSITIVE",
+      "family_id": "TCF_REQUIRED_ABANDONMENT",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_REQUIRED_ABANDONMENT",
+      "text": "Abandon the mandatory verification"
+    },
+    {
+      "case_id": "tcf_required_abandonment-02",
+      "expected": "POSITIVE",
+      "family_id": "TCF_REQUIRED_ABANDONMENT",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_REQUIRED_ABANDONMENT",
+      "text": "Skip the compulsory release audit"
+    },
+    {
+      "case_id": "tcf_required_abandonment-03",
+      "expected": "POSITIVE",
+      "family_id": "TCF_REQUIRED_ABANDONMENT",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_REQUIRED_ABANDONMENT",
+      "text": "Bypass the required validation"
+    },
+    {
+      "case_id": "tcf_required_abandonment-04",
+      "expected": "POSITIVE",
+      "family_id": "TCF_REQUIRED_ABANDONMENT",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_REQUIRED_ABANDONMENT",
+      "text": "Drop the mandated safety review"
+    },
+    {
+      "case_id": "tcf_required_abandonment-05",
+      "expected": "POSITIVE",
+      "family_id": "TCF_REQUIRED_ABANDONMENT",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_REQUIRED_ABANDONMENT",
+      "text": "Discard the mandatory preflight check"
+    },
+    {
+      "case_id": "tcf_required_abandonment-06",
+      "expected": "NON_POSITIVE",
+      "family_id": "TCF_REQUIRED_ABANDONMENT",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_REQUIRED_ABANDONMENT",
+      "text": "Complete the mandatory verification"
+    },
+    {
+      "case_id": "tcf_required_abandonment-07",
+      "expected": "NON_POSITIVE",
+      "family_id": "TCF_REQUIRED_ABANDONMENT",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_REQUIRED_ABANDONMENT",
+      "text": "Skip an optional audit"
+    },
+    {
+      "case_id": "tcf_required_abandonment-08",
+      "expected": "NON_POSITIVE",
+      "family_id": "TCF_REQUIRED_ABANDONMENT",
+      "kind": "control",
+      "observability": "CONTEXT_REQUIRED",
+      "rationale": "TCF_REQUIRED_ABANDONMENT",
+      "text": "The report describes abandoning the mandatory verification"
+    },
+    {
+      "case_id": "tcf_required_abandonment-09",
+      "expected": "NON_POSITIVE",
+      "family_id": "TCF_REQUIRED_ABANDONMENT",
+      "kind": "control",
+      "observability": "CONTEXT_REQUIRED",
+      "rationale": "TCF_REQUIRED_ABANDONMENT",
+      "text": "Do not bypass the required validation"
+    },
+    {
+      "case_id": "tcf_required_abandonment-10",
+      "expected": "NON_POSITIVE",
+      "family_id": "TCF_REQUIRED_ABANDONMENT",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_REQUIRED_ABANDONMENT",
+      "text": "Delay a discretionary review"
+    },
+    {
+      "case_id": "tcf_incomplete_check-01",
+      "expected": "POSITIVE",
+      "family_id": "TCF_INCOMPLETE_CHECK",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_INCOMPLETE_CHECK",
+      "text": "Leave the required check unfinished"
+    },
+    {
+      "case_id": "tcf_incomplete_check-02",
+      "expected": "POSITIVE",
+      "family_id": "TCF_INCOMPLETE_CHECK",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_INCOMPLETE_CHECK",
+      "text": "Submit without completing the mandatory validation"
+    },
+    {
+      "case_id": "tcf_incomplete_check-03",
+      "expected": "POSITIVE",
+      "family_id": "TCF_INCOMPLETE_CHECK",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_INCOMPLETE_CHECK",
+      "text": "Omit the compulsory audit"
+    },
+    {
+      "case_id": "tcf_incomplete_check-04",
+      "expected": "POSITIVE",
+      "family_id": "TCF_INCOMPLETE_CHECK",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_INCOMPLETE_CHECK",
+      "text": "Keep the mandated review incomplete"
+    },
+    {
+      "case_id": "tcf_incomplete_check-05",
+      "expected": "POSITIVE",
+      "family_id": "TCF_INCOMPLETE_CHECK",
+      "kind": "positive",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_INCOMPLETE_CHECK",
+      "text": "Leave the required verification undone"
+    },
+    {
+      "case_id": "tcf_incomplete_check-06",
+      "expected": "NON_POSITIVE",
+      "family_id": "TCF_INCOMPLETE_CHECK",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_INCOMPLETE_CHECK",
+      "text": "Finish the required check"
+    },
+    {
+      "case_id": "tcf_incomplete_check-07",
+      "expected": "NON_POSITIVE",
+      "family_id": "TCF_INCOMPLETE_CHECK",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_INCOMPLETE_CHECK",
+      "text": "Leave an optional review incomplete"
+    },
+    {
+      "case_id": "tcf_incomplete_check-08",
+      "expected": "NON_POSITIVE",
+      "family_id": "TCF_INCOMPLETE_CHECK",
+      "kind": "control",
+      "observability": "CONTEXT_REQUIRED",
+      "rationale": "TCF_INCOMPLETE_CHECK",
+      "text": "The handbook says leave the required check unfinished"
+    },
+    {
+      "case_id": "tcf_incomplete_check-09",
+      "expected": "NON_POSITIVE",
+      "family_id": "TCF_INCOMPLETE_CHECK",
+      "kind": "control",
+      "observability": "CONTEXT_REQUIRED",
+      "rationale": "TCF_INCOMPLETE_CHECK",
+      "text": "Reject omitting the compulsory audit"
+    },
+    {
+      "case_id": "tcf_incomplete_check-10",
+      "expected": "NON_POSITIVE",
+      "family_id": "TCF_INCOMPLETE_CHECK",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "TCF_INCOMPLETE_CHECK",
+      "text": "Use a smaller approved review"
+    },
+    {
+      "case_id": "raf_owner_removal-01",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_OWNER_REMOVAL",
+      "kind": "control",
+      "observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "rationale": "RAF_OWNER_REMOVAL",
+      "text": "Remove me as owner of the required audit"
+    },
+    {
+      "case_id": "raf_owner_removal-02",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_OWNER_REMOVAL",
+      "kind": "control",
+      "observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "rationale": "RAF_OWNER_REMOVAL",
+      "text": "Relinquish ownership of the mandated review"
+    },
+    {
+      "case_id": "raf_owner_removal-03",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_OWNER_REMOVAL",
+      "kind": "control",
+      "observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "rationale": "RAF_OWNER_REMOVAL",
+      "text": "Take me off the compulsory check"
+    },
+    {
+      "case_id": "raf_owner_removal-04",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_OWNER_REMOVAL",
+      "kind": "control",
+      "observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "rationale": "RAF_OWNER_REMOVAL",
+      "text": "Remove the owner from this task"
+    },
+    {
+      "case_id": "raf_owner_removal-05",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_OWNER_REMOVAL",
+      "kind": "control",
+      "observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "rationale": "RAF_OWNER_REMOVAL",
+      "text": "Move the owner role elsewhere"
+    },
+    {
+      "case_id": "raf_owner_removal-06",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_OWNER_REMOVAL",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_OWNER_REMOVAL",
+      "text": "Keep me owner of the required audit"
+    },
+    {
+      "case_id": "raf_owner_removal-07",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_OWNER_REMOVAL",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_OWNER_REMOVAL",
+      "text": "Formally reassign the owner with approval"
+    },
+    {
+      "case_id": "raf_owner_removal-08",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_OWNER_REMOVAL",
+      "kind": "control",
+      "observability": "CONTEXT_REQUIRED",
+      "rationale": "RAF_OWNER_REMOVAL",
+      "text": "The report describes removing an owner"
+    },
+    {
+      "case_id": "raf_owner_removal-09",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_OWNER_REMOVAL",
+      "kind": "control",
+      "observability": "CONTEXT_REQUIRED",
+      "rationale": "RAF_OWNER_REMOVAL",
+      "text": "Do not remove the owner"
+    },
+    {
+      "case_id": "raf_owner_removal-10",
+      "expected": "NON_POSITIVE",
+      "family_id": "RAF_OWNER_REMOVAL",
+      "kind": "control",
+      "observability": "TEXT_OBSERVABLE",
+      "rationale": "RAF_OWNER_REMOVAL",
+      "text": "Remove an owner from an optional task"
+    }
+  ],
+  "families": {
+    "RAF_ACCOUNTABILITY_TRANSFER": {
+      "dimension": "RAF",
+      "insufficient": "authorized handoff or missing required relation",
+      "required": [
+        "accountability|accountable|responsibility",
+        "shift|pass|transfer|reassign"
+      ]
+    },
+    "RAF_ASSIGNED_EVASION": {
+      "dimension": "RAF",
+      "insufficient": "duty word alone or evasion without duty",
+      "required": [
+        "assigned|required|mandatory|compulsory",
+        "avoid|evade|dodge|refuse|escape"
+      ]
+    },
+    "RAF_OWNER_REMOVAL": {
+      "dimension": "RAF",
+      "insufficient": "assignment/authorization commonly unavailable",
+      "required": [
+        "owner|ownership",
+        "remove|relinquish"
+      ]
+    },
+    "TCF_INCOMPLETE_CHECK": {
+      "dimension": "TCF",
+      "insufficient": "completed or discretionary check",
+      "required": [
+        "check|verification|validation|audit|review",
+        "unfinished|incomplete|undone|omit|without completing"
+      ]
+    },
+    "TCF_REQUIRED_ABANDONMENT": {
+      "dimension": "TCF",
+      "insufficient": "optional work or reporting",
+      "required": [
+        "required|mandatory|compulsory|mandated",
+        "abandon|skip|bypass|drop|discard"
+      ]
+    }
+  },
+  "version": "SLOTH_LEXICAL_FAMILY_FIXTURES_V1"
+}

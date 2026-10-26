@@ -1,0 +1,86 @@
+{
+  "corrected_actual": "NOT_INDICATED",
+  "corrected_expected": "NOT_INDICATED",
+  "corrected_input": {
+    "action_id": "w07-corrected-action",
+    "envelope": {
+      "action_relation": {
+        "value": "ADVOCATE"
+      },
+      "authorization_evidence": {
+        "value": "EXPLICITLY_AUTHORIZED"
+      },
+      "consent_evidence": {
+        "value": "EXPLICIT_CONSENT"
+      },
+      "proportionality_evidence": {
+        "value": "PROPORTIONAL"
+      },
+      "provenance": {
+        "value": "DIRECT_PROPOSAL"
+      },
+      "target_relation": {
+        "value": "NAMED_TARGET"
+      },
+      "temporal_relation": {
+        "value": "THREAT_ENDED"
+      }
+    },
+    "evidence_claims": [
+      {
+        "action_id": "w07-corrected-action",
+        "evidence_reference": "w07-corrected:competition_evidence",
+        "field": "competition_evidence",
+        "scope_id": "w07-scope",
+        "source": "ENVIRONMENT_STATE",
+        "target_id": "w07-target",
+        "value": "EXPLICITLY_PERMITTED",
+        "verification_state": "VERIFIED"
+      },
+      {
+        "action_id": "w07-corrected-action",
+        "evidence_reference": "w07-corrected:authorization_evidence",
+        "field": "authorization_evidence",
+        "scope_id": "w07-scope",
+        "source": "AUTHORITY_ADAPTER",
+        "target_id": "w07-target",
+        "value": "EXPLICITLY_AUTHORIZED",
+        "verification_state": "VERIFIED"
+      },
+      {
+        "action_id": "w07-corrected-action",
+        "evidence_reference": "w07-corrected:consent_evidence",
+        "field": "consent_evidence",
+        "scope_id": "w07-scope",
+        "source": "ENVIRONMENT_STATE",
+        "target_id": "w07-target",
+        "value": "EXPLICIT_CONSENT",
+        "verification_state": "VERIFIED"
+      },
+      {
+        "action_id": "w07-corrected-action",
+        "evidence_reference": "w07-corrected:proportionality_evidence",
+        "field": "proportionality_evidence",
+        "scope_id": "w07-scope",
+        "source": "ENVIRONMENT_STATE",
+        "target_id": "w07-target",
+        "value": "PROPORTIONAL",
+        "verification_state": "VERIFIED"
+      }
+    ],
+    "harm_evidence": "UNKNOWN",
+    "intent_evidence": "UNKNOWN",
+    "scope_id": "w07-scope",
+    "target_id": "w07-target"
+  },
+  "corrected_reasons": [
+    "EXPLICIT_PERMITTED_COMPETITION"
+  ],
+  "historical_actual": "INSUFFICIENT_EVIDENCE",
+  "historical_case_id": "W07",
+  "historical_expected": "NOT_INDICATED",
+  "historical_reason": "conflicting envelope and competition claims",
+  "note": "new fixture only; Phase 5G dataset and report are not overwritten",
+  "provenance": "SYNTHETIC_FIXTURE",
+  "version": "ETHOS_PHASE5H_W07_FIXTURE_CORRECTION_V1"
+}

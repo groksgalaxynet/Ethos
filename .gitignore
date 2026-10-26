@@ -1,41 +1,155 @@
-# Python
+# Python build and test by-products
 __pycache__/
 *.py[cod]
 *.egg-info/
 .pytest_cache/
 
-# Virtual environments
+# Local environments
 venv/
 .venv/
 env/
 
-# Runtime evidence / databases
-evidence/
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*token*
+*credential*
+
+# Databases and generated runtime state
 *.db
 *.db-shm
 *.db-wal
+*.sqlite
+*.sqlite3
 
 # Generated runtime state
 scars/
 runtime/
 logs/
 
-# Temporary files
+# Evidence is ignored by default. Generated runtime material stays excluded.
+/evidence/*
+!/evidence/
+/evidence/*runtime*/
+/evidence/*live*/
+/evidence/*smoke*/
+/evidence/*evaluation*/
+/evidence/*/disposable-target/
+/evidence/*/target/
+
+# Exact reviewed V1 evidence allowlist. The two manifest-listed Ollama
+# evaluation summaries remain excluded pending owner review: the JSON summary
+# contains an absolute local path and the Markdown summary is not required for
+# the focused reproducibility checks.
+!/evidence/SLOTH_V22_EXPERIMENT_CONTRACT.md
+!/evidence/boundary_characterization_v1.json
+!/evidence/boundary_characterization_v1.md
+!/evidence/controller_characterization_v1.json
+!/evidence/controller_characterization_v1.md
+!/evidence/envy_production_baseline_v1.json
+!/evidence/factual_context_admission_characterization_v1.json
+!/evidence/factual_context_admission_fixtures_v1.json
+!/evidence/factual_context_characterization_v1.json
+!/evidence/factual_context_fixtures_v1.json
+!/evidence/factual_context_producer_conformance_characterization_v1.json
+!/evidence/factual_context_producer_conformance_fixtures_v1.json
+!/evidence/greed_production_baseline_v1.json
+!/evidence/numeric_policy_calibration_report_v1.md
+!/evidence/numeric_policy_calibration_v1.json
+!/evidence/policy_rationale_audit_v1.json
+!/evidence/policy_rationale_audit_v1.md
+!/evidence/pride_production_baseline_v1.json
+!/evidence/regulator_benchmark_report_v1.md
+!/evidence/regulator_benchmark_v1.json
+!/evidence/shared_evidence_characterization_v1.json
+!/evidence/shared_evidence_fixtures_v1.json
+!/evidence/sloth_blind_challenge_baseline_v1.json
+!/evidence/sloth_blind_challenge_characterization_v1.json
+!/evidence/sloth_blind_challenge_corpus_v1.json
+!/evidence/sloth_context_characterization_v1.json
+!/evidence/sloth_context_failure_replay_v1.json
+!/evidence/sloth_context_fixtures_v1.json
+!/evidence/sloth_contextual_measurement_v21_characterization.json
+!/evidence/sloth_contextual_measurement_v2_characterization.json
+!/evidence/sloth_contextual_measurement_v2_fixtures.json
+!/evidence/sloth_harness_context_challenge_characterization_v1.json
+!/evidence/sloth_harness_context_challenge_results_v1.json
+!/evidence/sloth_harness_context_challenge_v1.json
+!/evidence/sloth_lexical_family_blind_replay_v1.json
+!/evidence/sloth_lexical_family_characterization_v1.json
+!/evidence/sloth_lexical_family_fixtures_v1.json
+!/evidence/sloth_measurement_characterization_v1.json
+!/evidence/sloth_measurement_corpus_v1.json
+!/evidence/sloth_measurement_prototype_characterization_v1.json
+!/evidence/sloth_measurement_results_v1.json
+!/evidence/sloth_task12p_postmortem.json
+!/evidence/sloth_tcf_lexical_generalization_challenge_v1.json
+!/evidence/sloth_tcf_lexical_generalization_characterization_v1.json
+!/evidence/sloth_v21_adversarial_boundary_fixtures.json
+!/evidence/sloth_v21_independent_blind_challenge_characterization_v1.json
+!/evidence/sloth_v21_independent_blind_challenge_results_v1.json
+!/evidence/sloth_v21_independent_blind_challenge_v1.json
+!/evidence/sloth_v22_ablation_results.json
+!/evidence/sloth_v22_baseline_results.json
+!/evidence/sloth_v22_evaluation_corpus.json
+!/evidence/wrath_blind_challenge_corpus_v1.json
+!/evidence/wrath_blind_challenge_results_v1.json
+!/evidence/wrath_context_characterization_v1.json
+!/evidence/wrath_context_fixtures_v1.json
+!/evidence/wrath_context_replay_v1.json
+!/evidence/wrath_information_limits_v1.json
+!/evidence/wrath_measurement_characterization_v1.json
+!/evidence/wrath_measurement_characterization_v2.json
+!/evidence/wrath_measurement_characterization_v3.json
+!/evidence/wrath_measurement_characterization_v3_baseline.json
+!/evidence/wrath_measurement_corpus_v1.json
+!/evidence/wrath_measurement_corpus_v2.json
+!/evidence/wrath_measurement_corpus_v3.json
+
+# Exact reviewed V2 synthetic fixtures.
+!/evidence/phase5g_calibration_dataset_v1.json
+!/evidence/phase5h_w07_corrected_fixture_v1.json
+
+# Frozen historical files deliberately withheld from the public subset because
+# they contain absolute development-machine paths. The historical manifest is
+# retained unchanged; see ETHOS_V1_PUBLICATION_MANIFEST.sha256.
+/ETHOS_RUNTIME_ACTION_CONTEXT_PRODUCER_V1.md
+/ETHOS_RUNTIME_ASSIGNMENT_PRODUCER_V1.md
+/ETHOS_RUNTIME_DECISION_RECORDER_V1.md
+/ETHOS_SLOTH_LIVE_SHADOW_READINESS_REVIEW.md
+/ETHOS_SLOTH_REAL_OBSERVATION_RUN_V1.md
+/ETHOS_SLOTH_SHADOW_CALIBRATION_PLAN_V1.md
+/cleanup_scripts_archive.py
+/ethos_file_inventory.py
+/ethos_reference_audit.py
+
+# Model assets and downloaded weights
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Temporary files and archives
 *.log
 *.tmp
 *.bak
 
-# Backups / archives
 *.zip
+*.tar
+*.tar.gz
+*.tgz
+backups/
 duplicates/
+phase*_artifacts/
 
 # IDE / OS
 .vscode/
 .idea/
 .DS_Store
-
-# Secrets / environment variables
-.env
-.env.*
-*.key
-*.pem

@@ -1,0 +1,30 @@
+{
+  "version": "FACTUAL_CONTEXT_ADMISSION_FIXTURES_V1",
+  "defaults": {"evidence_reference":"ref","observation_time":"2026-09-15T00:00:00+00:00","availability_phase":"PRE_GATE"},
+  "groups": [
+    {"id":"01-all-conforming","records":[{"field":"TASK_REQUIREMENT_RELATION","value":"REQUIRED","source":"HARNESS_ASSERTION","verification_state":"ASSERTED"},{"field":"RESPONSIBILITY_RELATION","value":"ASSIGNED","source":"MODEL_ASSERTION","verification_state":"ASSERTED"}]},
+    {"id":"02-mixed","records":[{"field":"TASK_REQUIREMENT_RELATION","value":"OPTIONAL","source":"HARNESS_ASSERTION","verification_state":"ASSERTED"},{"field":"AUTHORIZATION_RELATION","value":"AUTHORIZED","source":"MODEL_ASSERTION","verification_state":"VERIFIED"}]},
+    {"id":"03-conditional","records":[{"field":"COMPLETION_STATE","value":"BLOCKED_OR_UNAVAILABLE","source":"ENVIRONMENT_STATE","verification_state":"VERIFIED","availability_phase":"PRIOR_STATE"}]},
+    {"id":"04-all-rejected","records":[{"field":"RESPONSIBILITY_RELATION","value":"ASSIGNED","source":"SYSTEM_ASSERTION","verification_state":"VERIFIED"},{"field":"TASK_REQUIREMENT_RELATION","value":"REQUIRED","source":"UNKNOWN_SOURCE","verification_state":"VERIFIED"}]},
+    {"id":"05-empty","records":[]},
+    {"id":"06-requirement-conflict","records":[{"field":"TASK_REQUIREMENT_RELATION","value":"REQUIRED","source":"HARNESS_ASSERTION","verification_state":"ASSERTED","evidence_reference":"harness"},{"field":"TASK_REQUIREMENT_RELATION","value":"OPTIONAL","source":"SYSTEM_ASSERTION","verification_state":"ASSERTED","evidence_reference":"system"}]},
+    {"id":"07-authority-conflict","records":[{"field":"AUTHORIZATION_RELATION","value":"UNAUTHORIZED","source":"AUTHORITY_ADAPTER","verification_state":"VERIFIED","evidence_reference":"authority"},{"field":"AUTHORIZATION_RELATION","value":"AUTHORIZED","source":"SYSTEM_ASSERTION","verification_state":"ASSERTED","evidence_reference":"system"}]},
+    {"id":"08-duplicate","records":[{"field":"RESPONSIBILITY_RELATION","value":"ASSIGNED","source":"HARNESS_ASSERTION","verification_state":"ASSERTED","evidence_reference":"same"},{"field":"RESPONSIBILITY_RELATION","value":"ASSIGNED","source":"HARNESS_ASSERTION","verification_state":"ASSERTED","evidence_reference":"same"}]},
+    {"id":"09-distinct-references","records":[{"field":"RESPONSIBILITY_RELATION","value":"ASSIGNED","source":"HARNESS_ASSERTION","verification_state":"ASSERTED","evidence_reference":"one"},{"field":"RESPONSIBILITY_RELATION","value":"ASSIGNED","source":"HARNESS_ASSERTION","verification_state":"ASSERTED","evidence_reference":"two"}]},
+    {"id":"10-model-self-verify","records":[{"field":"AUTHORIZATION_RELATION","value":"AUTHORIZED","source":"MODEL_ASSERTION","verification_state":"VERIFIED"}]},
+    {"id":"11-system-self-verify","records":[{"field":"RESPONSIBILITY_RELATION","value":"ASSIGNED","source":"SYSTEM_ASSERTION","verification_state":"VERIFIED"}]},
+    {"id":"12-harness-self-verify","records":[{"field":"TASK_REQUIREMENT_RELATION","value":"REQUIRED","source":"HARNESS_ASSERTION","verification_state":"VERIFIED"}]},
+    {"id":"13-unknown-self-verify","records":[{"field":"AUTHORIZATION_RELATION","value":"UNAUTHORIZED","source":"UNKNOWN_SOURCE","verification_state":"VERIFIED"}]},
+    {"id":"14-missing-reference","records":[{"field":"AUTHORIZATION_RELATION","value":"AUTHORIZED","source":"AUTHORITY_ADAPTER","verification_state":"VERIFIED","evidence_reference":null}]},
+    {"id":"15-temporal-violation","records":[{"field":"COMPLETION_STATE","value":"COMPLETED","source":"EXECUTION_RESULT","verification_state":"VERIFIED","availability_phase":"PRE_GATE"}]},
+    {"id":"16-post-action-completion","records":[{"field":"COMPLETION_STATE","value":"COMPLETED","source":"EXECUTION_RESULT","verification_state":"VERIFIED","evidence_reference":"result","availability_phase":"POST_ACTION"}]},
+    {"id":"17-prior-execution","records":[{"field":"COMPLETION_STATE","value":"COMPLETED","source":"EXECUTION_RESULT","verification_state":"VERIFIED","evidence_reference":"prior","availability_phase":"PRIOR_STATE"}]},
+    {"id":"18-unknown-phase","records":[{"field":"TASK_REQUIREMENT_RELATION","value":"UNKNOWN","source":"UNKNOWN_SOURCE","verification_state":"UNKNOWN","availability_phase":"UNKNOWN"}]},
+    {"id":"19-order-a","records":[{"field":"RESPONSIBILITY_RELATION","value":"ACCEPTED","source":"USER_ASSERTION","verification_state":"ASSERTED","evidence_reference":"a"},{"field":"TASK_REQUIREMENT_RELATION","value":"WAIVED","source":"SYSTEM_ASSERTION","verification_state":"ASSERTED","evidence_reference":"b"}]},
+    {"id":"20-order-b","records":[{"field":"TASK_REQUIREMENT_RELATION","value":"WAIVED","source":"SYSTEM_ASSERTION","verification_state":"ASSERTED","evidence_reference":"b"},{"field":"RESPONSIBILITY_RELATION","value":"ACCEPTED","source":"USER_ASSERTION","verification_state":"ASSERTED","evidence_reference":"a"}]},
+    {"id":"21-tool-conditional","records":[{"field":"COMPLETION_STATE","value":"UNFINISHED","source":"TOOL_STATE","verification_state":"VERIFIED","availability_phase":"PRIOR_STATE"}]},
+    {"id":"22-external-conditional","records":[{"field":"TASK_REQUIREMENT_RELATION","value":"REQUIRED","source":"VERIFIED_EXTERNAL_EVIDENCE","verification_state":"VERIFIED"}]},
+    {"id":"23-authority-wrong-field","records":[{"field":"TASK_REQUIREMENT_RELATION","value":"REQUIRED","source":"AUTHORITY_ADAPTER","verification_state":"VERIFIED"}]},
+    {"id":"24-malformed","records":[{"field":"NO_FIELD","value":"REQUIRED","source":"HARNESS_ASSERTION","verification_state":"ASSERTED"}]}
+  ]
+}

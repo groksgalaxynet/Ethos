@@ -1,4 +1,9 @@
-# ETHOS++ V1
-# Python 3.10+ recommended
+# ETHOS++ publication snapshot
+# Python 3.10+ recommended. V2 shadow research uses only the standard library.
 
+# Required by the maintained Qt interfaces and their focused tests.
 PyQt6>=6.5,<7
+
+# Optional: only `agent_sandbox.py` imports FastAPI. The production ProposalGate
+# and the V2 shadow runner do not start a web server or require this package.
+fastapi>=0.100,<1

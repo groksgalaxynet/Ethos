@@ -1,5 +1,9 @@
 # Ethos Runtime Contract
 
+## Controller observation boundary — CURRENTLY IMPLEMENTED
+
+EthosController V1 is a read-only aggregation contract, not a decision or execution authority. EthosProposalGate.inspect() remains authoritative for ALLOW/BLOCK; ControllerSnapshot may only be built after that existing result or from persisted evidence. It never reruns regulators, alters a decision, writes evidence/history/scars, or invokes tools/models/actions. No cross-regulator score exists. See ETHOS_CONTROLLER_CONTRACT_V1.md.
+
 ## Purpose
 
 This document defines the **architectural contract** between a monitored AI/runtime and Ethos. It is not production code and does not lock the project into a final JSON schema.
@@ -115,6 +119,18 @@ For valid proposals, evidence always contains independent `regulators.greed` and
 `EnvyConfig` has independent weights, per-vector tolerances, and optional overall tolerance; higher tolerance permits more expression and a score violates only when it is greater than tolerance. The default `SOCIAL_COMPARISON` and overall tolerances are 70 with an equal weight of 1.0. The central gate maps violations to `REGULATOR.ENVY.SOCIAL_COMPARISON` and/or `REGULATOR.ENVY.OVERALL`.
 
 All three analyzers use the small shared `RegulatorAnalysis` evidence result while retaining individual configurations and deterministic logic. For valid proposals, evidence now contains independent `regulators.greed`, `regulators.pride`, and `regulators.envy` blocks. Bootstrap checks have first precedence; regulator-only primary ordering is Greed, then Pride, then Envy, while every violation and evidence block is retained. There is no combined score or cross-regulator adjustment.
+
+### Contextual cue characterization — CURRENTLY IMPLEMENTED, BOUNDED
+
+The Greed, Pride, and Envy analyzers retain their existing proposal-visible fields and cue values. Before assigning an existing cue's once-per-cue contribution, they now emit an observation for every exact cue span. A span is suppressed only when it is inside balanced single or curly human quotation, has a fixed same-sentence explicit negation, has a fixed same-sentence rejection/prohibition, or uses the fixed safety form `detect attempts to …`. Evidence preserves the cue, offsets, configured points, context (`ASSERTED`, `QUOTED`, `NEGATED`, or `REJECTED`), whether it contributed, and a deterministic reason. Ordinary JSON double quotes are not human quotation.
+
+This is not intent or sentiment classification. Descriptive/historical wording, indirect quotation without a supported span, unusual punctuation, scope across sentences, and other ambiguous language remain asserted and visible for later research. Thresholds, weights, tolerances, policy ordering, `ALLOW`/`BLOCK`, and consequence behavior are unchanged.
+
+### Proposal source provenance — CURRENTLY IMPLEMENTED, MECHANICAL
+
+The three analyzers now receive stable proposal-text sources rather than one concatenated string: `task`, `proposal_type`, `target`, recursively path-addressed argument keys and string values, `exposed_reasoning`, and either recursively path-addressed raw JSON or unparsed raw model text. Agent/session identity, timestamp, adapter diagnostics, and non-string scalar values are not cue-text sources. Each cue observation records `source_field`, `source_path`, and `source_kind` (`FIELD`, `KEY`, `VALUE`, `RAW_TEXT`, or `RAW_JSON`) in addition to its contextual evidence.
+
+Structured keys are observed but are not scoring-eligible: a field name is mechanically structural metadata, not an asserted argument value. String argument values remain scoring-eligible. When `raw_model_output` parses as exactly the same four normalized adapter fields (`proposal_type`, `target`, `arguments`, `exposed_reasoning`), its keys and values remain evidence but are marked duplicate serialization and do not score again. Raw text, nonmatching raw JSON, and nonduplicate raw JSON values remain scoring-eligible. This is exact identity/path handling only—there is no semantic similarity or trust classification.
 
 ## Task 6 operator visibility subset — CURRENTLY IMPLEMENTED
 

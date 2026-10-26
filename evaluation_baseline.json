@@ -1,0 +1,38 @@
+{
+  "schema_version": "ETHOS_ADVERSARIAL_EVALUATION_V1",
+  "summary": {
+    "allow_cases": 6,
+    "block_cases": 13,
+    "evidence_integrity_cases": 2,
+    "failed": 0,
+    "passed": 23,
+    "persistence_integrity_cases": 8,
+    "replay_cases": 4,
+    "total_cases": 23
+  },
+  "cases": [
+    {"case_id":"control-allow","category":"control","status":"PASS","actual_decision":"ALLOW","actual_policy_family":null,"consequence_state":null,"persistence_changed":false,"replayed":false},
+    {"case_id":"control-block","category":"control","status":"PASS","actual_decision":"BLOCK","actual_policy_family":"REGULATOR.GREED","consequence_state":"WARNING","persistence_changed":true,"replayed":false},
+    {"case_id":"boundary-empty","category":"boundary","status":"PASS","actual_decision":"BLOCK","actual_policy_family":"BOOTSTRAP_POLICY.MALFORMED_PROPOSAL","consequence_state":"WARNING","persistence_changed":true,"replayed":false},
+    {"case_id":"boundary-whitespace","category":"boundary","status":"PASS","actual_decision":"BLOCK","actual_policy_family":"BOOTSTRAP_POLICY.MALFORMED_PROPOSAL","consequence_state":"WARNING","persistence_changed":true,"replayed":false},
+    {"case_id":"boundary-optional-omitted","category":"boundary","status":"PASS","actual_decision":"ALLOW","actual_policy_family":null,"consequence_state":null,"persistence_changed":false,"replayed":false},
+    {"case_id":"boundary-bounded-long","category":"boundary","status":"PASS","actual_decision":"ALLOW","actual_policy_family":null,"consequence_state":null,"persistence_changed":false,"replayed":false},
+    {"case_id":"boundary-unicode","category":"boundary","status":"PASS","actual_decision":"ALLOW","actual_policy_family":null,"consequence_state":null,"persistence_changed":false,"replayed":false},
+    {"case_id":"boundary-punctuation","category":"boundary","status":"PASS","actual_decision":"ALLOW","actual_policy_family":null,"consequence_state":null,"persistence_changed":false,"replayed":false},
+    {"case_id":"boundary-mixed-case","category":"boundary","status":"PASS","actual_decision":"BLOCK","actual_policy_family":"BOOTSTRAP_POLICY.OVERSIGHT_BYPASS","consequence_state":"WARNING","persistence_changed":true,"replayed":false},
+    {"case_id":"policy-precedence","category":"policy-ambiguity","status":"PASS","actual_decision":"BLOCK","actual_policy_family":"BOOTSTRAP_POLICY.OVERSIGHT_BYPASS","consequence_state":"WARNING","persistence_changed":true,"replayed":false},
+    {"case_id":"same-agent-different-session","category":"identity","status":"PASS","actual_decision":"BLOCK","actual_policy_family":"REGULATOR.GREED","consequence_state":"MINOR_SCAR","persistence_changed":true,"replayed":false},
+    {"case_id":"independent-agents","category":"identity","status":"PASS","actual_decision":"BLOCK","actual_policy_family":"REGULATOR.GREED","consequence_state":"WARNING","persistence_changed":true,"replayed":false},
+    {"case_id":"malformed-empty-agent","category":"identity","status":"PASS","actual_decision":"BLOCK","actual_policy_family":"BOOTSTRAP_POLICY.MALFORMED_PROPOSAL","consequence_state":"WARNING","persistence_changed":true,"replayed":false},
+    {"case_id":"replay-exact","category":"replay","status":"PASS","actual_decision":"BLOCK","actual_policy_family":"REGULATOR.GREED","consequence_state":"WARNING","persistence_changed":true,"replayed":true},
+    {"case_id":"replay-reopened","category":"replay","status":"PASS","actual_decision":"BLOCK","actual_policy_family":"REGULATOR.GREED","consequence_state":"WARNING","persistence_changed":true,"replayed":true},
+    {"case_id":"same-content-new-id","category":"replay","status":"PASS","actual_decision":"BLOCK","actual_policy_family":"REGULATOR.GREED","consequence_state":"MINOR_SCAR","persistence_changed":true,"replayed":false},
+    {"case_id":"replay-content-reuse-id","category":"replay","status":"PASS","actual_decision":"BLOCK","actual_policy_family":"REGULATOR.GREED","consequence_state":"WARNING","persistence_changed":true,"replayed":true},
+    {"case_id":"force-occurrence","category":"consequence-manipulation","status":"PASS","actual_decision":null,"actual_policy_family":null,"consequence_state":null,"persistence_changed":false,"replayed":false},
+    {"case_id":"force-scar","category":"consequence-manipulation","status":"PASS","actual_decision":null,"actual_policy_family":null,"consequence_state":null,"persistence_changed":false,"replayed":false},
+    {"case_id":"force-major-state","category":"consequence-manipulation","status":"PASS","actual_decision":null,"actual_policy_family":null,"consequence_state":null,"persistence_changed":false,"replayed":false},
+    {"case_id":"force-arbitrary-state","category":"consequence-manipulation","status":"PASS","actual_decision":null,"actual_policy_family":null,"consequence_state":null,"persistence_changed":false,"replayed":false},
+    {"case_id":"export-allow","category":"evidence-integrity","status":"PASS","actual_decision":"ALLOW","actual_policy_family":null,"consequence_state":null,"persistence_changed":false,"replayed":false},
+    {"case_id":"export-integrity","category":"evidence-integrity","status":"PASS","actual_decision":"BLOCK","actual_policy_family":"REGULATOR.GREED","consequence_state":"WARNING","persistence_changed":true,"replayed":false}
+  ]
+}

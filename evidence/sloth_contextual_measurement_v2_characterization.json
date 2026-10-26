@@ -1,0 +1,37 @@
+{
+  "admitted_context_records": 40,
+  "adversarial_context_records_rejected_or_quarantined": 5,
+  "blind_false_positives": 0,
+  "blind_lexical_misses": 25,
+  "blind_overlap_recovery": 0,
+  "blind_raf_recovery": 0,
+  "blind_tcf_recovery": 0,
+  "blind_unknown_missing_context": 19,
+  "candidate_context_records": 45,
+  "conditional_context_records": 2,
+  "contextual_controls_preserved": 10,
+  "controls_preserved": 25,
+  "deterministic_sha256": "3192b44792c1475abadfb4afa6264c14540bc36d2652cf5c2b4cd7c35dc499b7",
+  "fixture_count": 24,
+  "fixture_states": {
+    "RAF": {
+      "DETECTED": 5,
+      "NOT_DETECTED": 12,
+      "SUPPRESSED": 4,
+      "UNKNOWN": 3
+    },
+    "TCF": {
+      "DETECTED": 6,
+      "NOT_DETECTED": 10,
+      "SUPPRESSED": 5,
+      "UNKNOWN": 3
+    }
+  },
+  "rejected_context_records": 3,
+  "semantic_pairs_distinguished": 0,
+  "semantic_pairs_unresolved": 10,
+  "task_12d_false_positive_unknown": 1,
+  "task_12d_false_positives_corrected": 10,
+  "task_12d_false_positives_remaining": 0,
+  "version": "SLOTH_CONTEXTUAL_MEASUREMENT_V2_CHARACTERIZATION"
+}

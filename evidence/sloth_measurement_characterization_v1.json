@@ -1,0 +1,26 @@
+{
+  "ambiguous_count": 7,
+  "canonical_sha256": "535af0407782c92cf83f158d0366e6e6bc28bdbc047371b0b376b0361666fd9f",
+  "control_count": 17,
+  "corpus_version": "SLOTH_MEASUREMENT_CORPUS_V1",
+  "duplicate_ids": [],
+  "expectation_distribution": {
+    "AMBIGUOUS": 7,
+    "BOTH": 2,
+    "NONE": 17,
+    "RAF": 7,
+    "TCF": 7
+  },
+  "fixture_count": 40,
+  "malformed_fixtures": [],
+  "observability_distribution": {
+    "CONTEXT_REQUIRED": 9,
+    "EXTERNAL_EVIDENCE_REQUIRED": 4,
+    "INTENT_REQUIRED": 1,
+    "TEXT_OBSERVABLE": 26
+  },
+  "overlap_count": 2,
+  "raf_expectations": 7,
+  "tcf_expectations": 7,
+  "version": "SLOTH_MEASUREMENT_CHARACTERIZATION_V1"
+}

@@ -1,0 +1,491 @@
+{
+  "version": "SHARED_EVIDENCE_FIXTURES_V1",
+  "groups": [
+    {
+      "id": "fixture-00",
+      "atoms": [
+        {
+          "field": "PROVENANCE",
+          "value": "DIRECT_PROPOSAL",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-0"
+        }
+      ]
+    },
+    {
+      "id": "fixture-01",
+      "atoms": [
+        {
+          "field": "ACTION_RELATION",
+          "value": "UNKNOWN",
+          "observation_state": "UNKNOWN",
+          "source": "UNKNOWN_SOURCE",
+          "verification_state": "UNKNOWN",
+          "evidence_reference": null
+        }
+      ]
+    },
+    {
+      "id": "fixture-02",
+      "atoms": [
+        {
+          "field": "TEMPORAL_RELATION",
+          "value": "ONGOING_THREAT",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-2"
+        },
+        {
+          "field": "TEMPORAL_RELATION",
+          "value": "ONGOING_THREAT",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_METADATA",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "meta-2"
+        }
+      ]
+    },
+    {
+      "id": "fixture-03",
+      "atoms": [
+        {
+          "field": "TARGET_RELATION",
+          "value": "NAMED_TARGET",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-3"
+        },
+        {
+          "field": "TARGET_RELATION",
+          "value": "GENERAL_TARGET",
+          "observation_state": "OBSERVED",
+          "source": "VERIFIED_EXTERNAL_EVIDENCE",
+          "verification_state": "VERIFIED",
+          "evidence_reference": "ver-3"
+        }
+      ]
+    },
+    {
+      "id": "fixture-04",
+      "atoms": [
+        {
+          "field": "PROVENANCE",
+          "value": "DIRECT_PROPOSAL",
+          "observation_state": "OBSERVED",
+          "source": "USER_ASSERTION",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-4"
+        },
+        {
+          "field": "PROVENANCE",
+          "value": "DIRECT_PROPOSAL",
+          "observation_state": "OBSERVED",
+          "source": "VERIFIED_EXTERNAL_EVIDENCE",
+          "verification_state": "VERIFIED",
+          "evidence_reference": "ref-4"
+        }
+      ]
+    },
+    {
+      "id": "fixture-05",
+      "atoms": [
+        {
+          "field": "ACTION_RELATION",
+          "value": "UNKNOWN",
+          "observation_state": "UNKNOWN",
+          "source": "UNKNOWN_SOURCE",
+          "verification_state": "UNKNOWN",
+          "evidence_reference": null
+        }
+      ]
+    },
+    {
+      "id": "fixture-06",
+      "atoms": [
+        {
+          "field": "TEMPORAL_RELATION",
+          "value": "ONGOING_THREAT",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-6"
+        },
+        {
+          "field": "TEMPORAL_RELATION",
+          "value": "ONGOING_THREAT",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_METADATA",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "meta-6"
+        }
+      ]
+    },
+    {
+      "id": "fixture-07",
+      "atoms": [
+        {
+          "field": "TARGET_RELATION",
+          "value": "NAMED_TARGET",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-7"
+        },
+        {
+          "field": "TARGET_RELATION",
+          "value": "GENERAL_TARGET",
+          "observation_state": "OBSERVED",
+          "source": "VERIFIED_EXTERNAL_EVIDENCE",
+          "verification_state": "VERIFIED",
+          "evidence_reference": "ver-7"
+        }
+      ]
+    },
+    {
+      "id": "fixture-08",
+      "atoms": [
+        {
+          "field": "PROVENANCE",
+          "value": "DIRECT_PROPOSAL",
+          "observation_state": "OBSERVED",
+          "source": "USER_ASSERTION",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-8"
+        },
+        {
+          "field": "PROVENANCE",
+          "value": "DIRECT_PROPOSAL",
+          "observation_state": "OBSERVED",
+          "source": "VERIFIED_EXTERNAL_EVIDENCE",
+          "verification_state": "VERIFIED",
+          "evidence_reference": "ref-8"
+        }
+      ]
+    },
+    {
+      "id": "fixture-09",
+      "atoms": [
+        {
+          "field": "ACTION_RELATION",
+          "value": "UNKNOWN",
+          "observation_state": "UNKNOWN",
+          "source": "UNKNOWN_SOURCE",
+          "verification_state": "UNKNOWN",
+          "evidence_reference": null
+        }
+      ]
+    },
+    {
+      "id": "fixture-10",
+      "atoms": [
+        {
+          "field": "TEMPORAL_RELATION",
+          "value": "ONGOING_THREAT",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-10"
+        },
+        {
+          "field": "TEMPORAL_RELATION",
+          "value": "ONGOING_THREAT",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_METADATA",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "meta-10"
+        }
+      ]
+    },
+    {
+      "id": "fixture-11",
+      "atoms": [
+        {
+          "field": "TARGET_RELATION",
+          "value": "NAMED_TARGET",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-11"
+        },
+        {
+          "field": "TARGET_RELATION",
+          "value": "GENERAL_TARGET",
+          "observation_state": "OBSERVED",
+          "source": "VERIFIED_EXTERNAL_EVIDENCE",
+          "verification_state": "VERIFIED",
+          "evidence_reference": "ver-11"
+        }
+      ]
+    },
+    {
+      "id": "fixture-12",
+      "atoms": [
+        {
+          "field": "PROVENANCE",
+          "value": "DIRECT_PROPOSAL",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-12"
+        }
+      ]
+    },
+    {
+      "id": "fixture-13",
+      "atoms": [
+        {
+          "field": "ACTION_RELATION",
+          "value": "UNKNOWN",
+          "observation_state": "UNKNOWN",
+          "source": "UNKNOWN_SOURCE",
+          "verification_state": "UNKNOWN",
+          "evidence_reference": null
+        }
+      ]
+    },
+    {
+      "id": "fixture-14",
+      "atoms": [
+        {
+          "field": "TEMPORAL_RELATION",
+          "value": "ONGOING_THREAT",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-14"
+        },
+        {
+          "field": "TEMPORAL_RELATION",
+          "value": "ONGOING_THREAT",
+          "observation_state": "OBSERVED",
+          "source": "EXPLICIT_METADATA",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "meta-14"
+        }
+      ]
+    },
+    {
+      "id": "fixture-15",
+      "atoms": [
+        {
+          "field": "TARGET_RELATION",
+          "value": "NAMED_TARGET",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-15"
+        },
+        {
+          "field": "TARGET_RELATION",
+          "value": "GENERAL_TARGET",
+          "observation_state": "OBSERVED",
+          "source": "VERIFIED_EXTERNAL_EVIDENCE",
+          "verification_state": "VERIFIED",
+          "evidence_reference": "ver-15"
+        }
+      ]
+    },
+    {
+      "id": "fixture-16",
+      "atoms": [
+        {
+          "field": "PROVENANCE",
+          "value": "BAD_VALUE",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-16"
+        }
+      ]
+    },
+    {
+      "id": "fixture-17",
+      "atoms": [
+        {
+          "field": "ACTION_RELATION",
+          "value": "UNKNOWN",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-17"
+        }
+      ]
+    },
+    {
+      "id": "fixture-18",
+      "atoms": [
+        {
+          "field": "TEMPORAL_RELATION",
+          "value": "ONGOING_THREAT",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-18"
+        }
+      ]
+    },
+    {
+      "id": "fixture-19",
+      "atoms": [
+        {
+          "field": "TARGET_RELATION",
+          "value": "NAMED_TARGET",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-19"
+        },
+        {
+          "field": "TARGET_RELATION",
+          "value": "GENERAL_TARGET",
+          "observation_state": "OBSERVED",
+          "source": "VERIFIED_EXTERNAL_EVIDENCE",
+          "verification_state": "VERIFIED",
+          "evidence_reference": "ver-19"
+        }
+      ]
+    },
+    {
+      "id": "fixture-20",
+      "atoms": [
+        {
+          "field": "PROVENANCE",
+          "value": "BAD_VALUE",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-20"
+        }
+      ]
+    },
+    {
+      "id": "fixture-21",
+      "atoms": [
+        {
+          "field": "ACTION_RELATION",
+          "value": "UNKNOWN",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-21"
+        }
+      ]
+    },
+    {
+      "id": "fixture-22",
+      "atoms": [
+        {
+          "field": "TEMPORAL_RELATION",
+          "value": "ONGOING_THREAT",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-22"
+        }
+      ]
+    },
+    {
+      "id": "fixture-23",
+      "atoms": [
+        {
+          "field": "TARGET_RELATION",
+          "value": "NAMED_TARGET",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-23"
+        },
+        {
+          "field": "TARGET_RELATION",
+          "value": "GENERAL_TARGET",
+          "observation_state": "OBSERVED",
+          "source": "VERIFIED_EXTERNAL_EVIDENCE",
+          "verification_state": "VERIFIED",
+          "evidence_reference": "ver-23"
+        }
+      ]
+    },
+    {
+      "id": "fixture-24",
+      "atoms": [
+        {
+          "field": "PROVENANCE",
+          "value": "BAD_VALUE",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-24"
+        }
+      ]
+    },
+    {
+      "id": "fixture-25",
+      "atoms": [
+        {
+          "field": "ACTION_RELATION",
+          "value": "UNKNOWN",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-25"
+        }
+      ]
+    },
+    {
+      "id": "fixture-26",
+      "atoms": [
+        {
+          "field": "TEMPORAL_RELATION",
+          "value": "ONGOING_THREAT",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-26"
+        }
+      ]
+    },
+    {
+      "id": "fixture-27",
+      "atoms": [
+        {
+          "field": "TARGET_RELATION",
+          "value": "NAMED_TARGET",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-27"
+        }
+      ]
+    },
+    {
+      "id": "fixture-28",
+      "atoms": [
+        {
+          "field": "PROVENANCE",
+          "value": "DIRECT_PROPOSAL",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-28"
+        }
+      ]
+    },
+    {
+      "id": "fixture-29",
+      "atoms": [
+        {
+          "field": "ACTION_RELATION",
+          "value": "ADVOCATE",
+          "observation_state": "OBSERVED",
+          "source": "RAW_INPUT",
+          "verification_state": "ASSERTED",
+          "evidence_reference": "ref-29"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "version": "ETHOS_POLICY_RATIONALE_AUDIT_V1",
+  "scope": "Read-only audit of current Greed, Pride, and Envy numeric enforcement parameters.",
+  "parameters": [
+    {
+      "parameter": "Greed per-vector tolerance",
+      "current_value": 70,
+      "current_location": "greed_analyzer.py: _default_tolerances",
+      "historical_source": "GreedRegulatorGUI.py and legacy Pythonista GreedRegulatorGUI.py default slider 70 / 0.7",
+      "explicit_rationale_found": false,
+      "evidence_type": "historical GUI default; current architecture says GUI-mirroring bootstrap continuity",
+      "enforcement_relevance": "direct",
+      "confidence_in_provenance": "HIGH",
+      "classification": "HISTORICAL_DEFAULT"
+    },
+    {
+      "parameter": "Pride and Envy vector tolerances; all overall tolerances",
+      "current_value": 70,
+      "current_location": "pride_analyzer.py, envy_analyzer.py, greed_analyzer.py configs",
+      "historical_source": "current and legacy regulator GUI sliders default to 70 / 0.7",
+      "explicit_rationale_found": false,
+      "evidence_type": "historical GUI default; bootstrap continuity documentation",
+      "enforcement_relevance": "direct",
+      "confidence_in_provenance": "HIGH",
+      "classification": "HISTORICAL_DEFAULT"
+    },
+    {
+      "parameter": "Violation comparison operator",
+      "current_value": "score > tolerance",
+      "current_location": "greed_analyzer.py, pride_analyzer.py, envy_analyzer.py",
+      "historical_source": "GUI labels use Lock >= N but are non-enforcing simulations",
+      "explicit_rationale_found": false,
+      "evidence_type": "current implementation; conflicting/non-enforcing legacy display convention",
+      "enforcement_relevance": "direct",
+      "confidence_in_provenance": "HIGH for absence of explicit rationale",
+      "classification": "UNJUSTIFIED_CURRENT_POLICY"
+    },
+    {
+      "parameter": "Greed/Pride/Envy default weights",
+      "current_value": 1.0,
+      "current_location": "_default_weights in all three analyzers",
+      "historical_source": "Greed GUI offers mutable equal-initialized weight controls; legacy definition describes weighted averaging",
+      "explicit_rationale_found": false,
+      "evidence_type": "implementation default and simulation-era weighted-preview design",
+      "enforcement_relevance": "direct for Greed overall; neutral for one-vector Pride/Envy",
+      "confidence_in_provenance": "MEDIUM",
+      "classification": "IMPLEMENTATION_DEFAULT"
+    },
+    {
+      "parameter": "Cue magnitudes and 0..100 cap",
+      "current_value": "30, 35, 45, 50, 55, 60, 65, 70, 75, 80; capped at 100",
+      "current_location": "Greed/Pride/Envy cue tables and min(100, points)",
+      "historical_source": "none found for individual magnitudes",
+      "explicit_rationale_found": false,
+      "evidence_type": "implementation constants; historical GUIs are simulated/random and non-enforcing",
+      "enforcement_relevance": "direct",
+      "confidence_in_provenance": "HIGH for absence of calibration evidence",
+      "classification": "UNJUSTIFIED_CURRENT_POLICY"
+    }
+  ],
+  "conclusion": "C. HISTORICALLY INHERITED for the 70 defaults; D. CURRENTLY UNJUSTIFIED for strict > and cue magnitude semantics. Available evidence does not establish a reviewed numeric enforcement rationale."
+}

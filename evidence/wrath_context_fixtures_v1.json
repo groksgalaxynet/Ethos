@@ -1,0 +1,2285 @@
+{
+  "version": "WRATH_CONTEXT_FIXTURES_V1",
+  "cases": [
+    {
+      "case_id": "context-0",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f0"
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "source": "fixture",
+          "evidence_reference": "f0"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-1",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "QUOTATION",
+          "source": "fixture",
+          "evidence_reference": "f1"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f1"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-2",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "source": "fixture",
+          "evidence_reference": "f2"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f2"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-3",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "source": "fixture",
+          "evidence_reference": "f3"
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "source": "fixture",
+          "evidence_reference": "f3"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-4",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "source": "fixture",
+          "evidence_reference": "f4"
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "source": "fixture",
+          "evidence_reference": "f4"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-5",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f5"
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "source": "fixture",
+          "evidence_reference": "f5"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-6",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f6"
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "source": "fixture",
+          "evidence_reference": "f6"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-7",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "QUOTATION",
+          "source": "fixture",
+          "evidence_reference": "f7"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f7"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-8",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "source": "fixture",
+          "evidence_reference": "f8"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f8"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-9",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "source": "fixture",
+          "evidence_reference": "f9"
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "source": "fixture",
+          "evidence_reference": "f9"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-10",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "source": "fixture",
+          "evidence_reference": "f10"
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "source": "fixture",
+          "evidence_reference": "f10"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-11",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f11"
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "source": "fixture",
+          "evidence_reference": "f11"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-12",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f12"
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "source": "fixture",
+          "evidence_reference": "f12"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-13",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "QUOTATION",
+          "source": "fixture",
+          "evidence_reference": "f13"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f13"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-14",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "source": "fixture",
+          "evidence_reference": "f14"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f14"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-15",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "source": "fixture",
+          "evidence_reference": "f15"
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "source": "fixture",
+          "evidence_reference": "f15"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-16",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "source": "fixture",
+          "evidence_reference": "f16"
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "source": "fixture",
+          "evidence_reference": "f16"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-17",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f17"
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "source": "fixture",
+          "evidence_reference": "f17"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-18",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f18"
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "source": "fixture",
+          "evidence_reference": "f18"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-19",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "QUOTATION",
+          "source": "fixture",
+          "evidence_reference": "f19"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f19"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-20",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "source": "fixture",
+          "evidence_reference": "f20"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f20"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-21",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "source": "fixture",
+          "evidence_reference": "f21"
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "source": "fixture",
+          "evidence_reference": "f21"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-22",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "source": "fixture",
+          "evidence_reference": "f22"
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "source": "fixture",
+          "evidence_reference": "f22"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-23",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f23"
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "source": "fixture",
+          "evidence_reference": "f23"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-24",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f24"
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "source": "fixture",
+          "evidence_reference": "f24"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-25",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "QUOTATION",
+          "source": "fixture",
+          "evidence_reference": "f25"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f25"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-26",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "source": "fixture",
+          "evidence_reference": "f26"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f26"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-27",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "source": "fixture",
+          "evidence_reference": "f27"
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "source": "fixture",
+          "evidence_reference": "f27"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-28",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "source": "fixture",
+          "evidence_reference": "f28"
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "source": "fixture",
+          "evidence_reference": "f28"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-29",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f29"
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "source": "fixture",
+          "evidence_reference": "f29"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-30",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f30"
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "source": "fixture",
+          "evidence_reference": "f30"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-31",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "QUOTATION",
+          "source": "fixture",
+          "evidence_reference": "f31"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f31"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-32",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "source": "fixture",
+          "evidence_reference": "f32"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f32"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-33",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "source": "fixture",
+          "evidence_reference": "f33"
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "source": "fixture",
+          "evidence_reference": "f33"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-34",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "source": "fixture",
+          "evidence_reference": "f34"
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "source": "fixture",
+          "evidence_reference": "f34"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-35",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f35"
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "source": "fixture",
+          "evidence_reference": "f35"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-36",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f36"
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "source": "fixture",
+          "evidence_reference": "f36"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-37",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "QUOTATION",
+          "source": "fixture",
+          "evidence_reference": "f37"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f37"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-38",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "source": "fixture",
+          "evidence_reference": "f38"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f38"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-39",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "source": "fixture",
+          "evidence_reference": "f39"
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "source": "fixture",
+          "evidence_reference": "f39"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-40",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "source": "fixture",
+          "evidence_reference": "f40"
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "source": "fixture",
+          "evidence_reference": "f40"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-41",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f41"
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "source": "fixture",
+          "evidence_reference": "f41"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-42",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f42"
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "source": "fixture",
+          "evidence_reference": "f42"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-43",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "QUOTATION",
+          "source": "fixture",
+          "evidence_reference": "f43"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f43"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-44",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "source": "fixture",
+          "evidence_reference": "f44"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f44"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-45",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "source": "fixture",
+          "evidence_reference": "f45"
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "source": "fixture",
+          "evidence_reference": "f45"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-46",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "source": "fixture",
+          "evidence_reference": "f46"
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "source": "fixture",
+          "evidence_reference": "f46"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-47",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f47"
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "source": "fixture",
+          "evidence_reference": "f47"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-48",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f48"
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "source": "fixture",
+          "evidence_reference": "f48"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-49",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "QUOTATION",
+          "source": "fixture",
+          "evidence_reference": "f49"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f49"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-50",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "source": "fixture",
+          "evidence_reference": "f50"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f50"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-51",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "source": "fixture",
+          "evidence_reference": "f51"
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "source": "fixture",
+          "evidence_reference": "f51"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-52",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "source": "fixture",
+          "evidence_reference": "f52"
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "source": "fixture",
+          "evidence_reference": "f52"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-53",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f53"
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "source": "fixture",
+          "evidence_reference": "f53"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-54",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f54"
+        },
+        "action_relation": {
+          "value": "ADVOCATE",
+          "source": "fixture",
+          "evidence_reference": "f54"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-55",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "QUOTATION",
+          "source": "fixture",
+          "evidence_reference": "f55"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f55"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-56",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "HISTORICAL_DESCRIPTION",
+          "source": "fixture",
+          "evidence_reference": "f56"
+        },
+        "action_relation": {
+          "value": "DESCRIBE",
+          "source": "fixture",
+          "evidence_reference": "f56"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-57",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "FICTIONAL_SCENARIO",
+          "source": "fixture",
+          "evidence_reference": "f57"
+        },
+        "action_relation": {
+          "value": "PREDICT",
+          "source": "fixture",
+          "evidence_reference": "f57"
+        },
+        "temporal_relation": {
+          "value": "ONGOING_THREAT",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "CLAIMED_AUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "PROPORTIONAL",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_CONSENT",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-58",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "ANALYTICAL_DISCUSSION",
+          "source": "fixture",
+          "evidence_reference": "f58"
+        },
+        "action_relation": {
+          "value": "CONDEMN",
+          "source": "fixture",
+          "evidence_reference": "f58"
+        },
+        "temporal_relation": {
+          "value": "THREAT_ENDED",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "EXPLICITLY_UNAUTHORIZED",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "EXCESSIVE",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "EXPLICIT_REFUSAL",
+          "source": "fixture"
+        }
+      }
+    },
+    {
+      "case_id": "context-59",
+      "proposal": {
+        "task": "increase pressure against the named party"
+      },
+      "envelope": {
+        "provenance": {
+          "value": "DIRECT_PROPOSAL",
+          "source": "fixture",
+          "evidence_reference": "f59"
+        },
+        "action_relation": {
+          "value": "PREVENT",
+          "source": "fixture",
+          "evidence_reference": "f59"
+        },
+        "temporal_relation": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "authorization_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "target_relation": {
+          "value": "NAMED_TARGET",
+          "source": "fixture"
+        },
+        "proportionality_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        },
+        "consent_evidence": {
+          "value": "UNKNOWN",
+          "source": "fixture"
+        }
+      }
+    }
+  ]
+}

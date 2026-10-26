@@ -1,0 +1,37 @@
+{
+  "version": "ETHOS_WRATH_TASK2_STRUCTURAL_REQUIREMENTS_V1",
+  "mode": "DESIGN_ONLY",
+  "structural_evidence_adequacy": "V1.1 SUFFICIENT WITH PRODUCER CAPABILITIES",
+  "frozen_hashes": {"ethos_structural_evidence.py": "6507e4ec3e0ed2898535e52dd15af1dffe8c7fa0a9bd8c33634f3868e8cbb2b3", "test_ethos_structural_evidence.py": "5ea43255794f9633214d8c6e91d1ee9b076bb9e3c634f2de0a76c4c857e1f8a9", "wrath_measurement_research.py": "e8edc6087cad30dd77c024be48117909e319a225123dc08a25f39d1c79776e0d", "evidence/wrath_measurement_corpus_v3.json": "a8037307b8768f96247d90ddae360ca23f2c6403a09c0e33a4249af7594c00e0"},
+  "factor_requirements": {
+    "ESI": {"minimum_neutral_facts": ["event identities", "actor-event participation", "event-target binding", "explicit event order", "supplied response relation", "provenance and availability"], "classifications": ["AVAILABLE_STRUCTURAL_V1_1", "AVAILABLE_IF_EXPLICITLY_SUPPLIED"], "wrath_local": ["escalation", "retaliation", "defense versus response", "advocacy"]},
+    "HPV": {"minimum_neutral_facts": ["event identity", "actor-event participation", "typed target binding", "supplied state/outcome observation", "provenance/verification/availability"], "classifications": ["AVAILABLE_STRUCTURAL_V1_1", "AVAILABLE_IF_EXPLICITLY_SUPPLIED"], "wrath_local": ["target-directed harm", "figurative/technical boundary", "defense/report boundary"]},
+    "FAF": {"minimum_neutral_facts": ["event/comparison event", "actor/event/target binding", "optional measured value/unit/method", "authorization/consent assertion", "provenance/availability"], "classifications": ["MISSING_PRODUCER_CAPABILITY", "AVAILABLE_IF_EXPLICITLY_SUPPLIED", "BOUNDARY_REQUIRES_REVIEW"], "wrath_local": ["coercion", "amplification", "excess", "necessity", "proportionality"]}
+  },
+  "classification": {
+    "AVAILABLE_STRUCTURAL_V1_1": ["scoped identity", "event/task entities", "actor/observer/target relation records", "many-to-many participation", "BEFORE/AFTER", "state/outcome relation shape", "authorization/assignment relation shape", "provenance/lineage", "verification representation", "availability time/phase", "conflict and UNKNOWN"],
+    "AVAILABLE_IF_EXPLICITLY_SUPPLIED": ["actor/event/target bindings", "event sequence", "observation", "state/outcome", "authorization assertion", "source/method/evidence references"],
+    "TEXT_ONLY_CURRENTLY": ["phrase families", "quotation/negation/prevention suppression", "source-field/path/kind and local cue context"],
+    "MISSING_PRODUCER_CAPABILITY": ["authoritative world state", "verified order/response link", "measured magnitude with unit/method", "verified authorization", "consent", "verified outcome"],
+    "REQUIRES_AUTHORITY_OR_VERIFICATION": ["authorization validity", "identity authentication", "observed outcome verification", "consent claim validity"],
+    "BOUNDARY_REQUIRES_REVIEW": ["continuation/response/cessation relation vocabulary", "neutral measurement vocabulary", "explicit consent claim model"],
+    "WRATH_LOCAL_DERIVATION": ["ESI", "HPV", "FAF", "retaliation", "escalation", "harmfulness", "coercion", "proportionality", "policy/score/threshold"],
+    "REJECTED_SHARED_SEMANTIC_LEAKAGE": ["shared aggression label", "shared harmfulness label", "shared coercion label", "shared excessive/disproportionate label", "producer-side ESI/HPV/FAF conclusion"]
+  },
+  "multi_agent": {"required_separation": ["assertor", "actor", "target", "observer", "verifier", "authorizer"], "invariants": ["participation does not imply responsibility/intent/truth/blame", "conflicts retained", "repeated lineage does not prove independence", "no primary actor/target inferred"]},
+  "magnitude": {"disposition": "not currently justified as a V1.1 extension", "future": "producer-specific observed measurement may retain value/unit/method/reference as opaque pending reviewed neutral vocabulary", "forbidden_shared_conclusion": "excessive"},
+  "authorization": {"disposition": "AVAILABLE_IF_EXPLICITLY_SUPPLIED and REQUIRES_AUTHORITY_OR_VERIFICATION", "invariant": "authorized is not ethical; unauthorized is not a Wrath violation"},
+  "consent": {"disposition": "BOUNDARY_REQUIRES_REVIEW", "invariant": "no inferred consent; current corpus does not justify contract extension"},
+  "temporal": {"requirement": "availability time/phase/scope selected at caller boundary", "invariant": "later evidence cannot contaminate historical pre-action interpretation"},
+  "representative_cases": [
+    {"case_id": "esi-retaliate", "current_text_signal": "ESI PRESENT", "minimum_neutral_facts": ["two events", "actor/target bindings", "order", "provenance"], "missing_facts": ["verified prior conflict/response"], "wrath_local_interpretation": "escalation/retaliation", "expected_unknown_boundary": "unknown without supplied relation"},
+    {"case_id": "reject-esi", "current_text_signal": "ESI CONTEXT_SUPPRESSED", "minimum_neutral_facts": ["source provenance", "action relation if supplied"], "missing_facts": ["speaker/action authority"], "wrath_local_interpretation": "none from shared facts", "expected_unknown_boundary": "text suppression remains local"},
+    {"case_id": "hpv-harm", "current_text_signal": "HPV PRESENT", "minimum_neutral_facts": ["event", "actor", "typed target", "supplied outcome", "provenance"], "missing_facts": ["meaning/outcome verification"], "wrath_local_interpretation": "target-directed harm", "expected_unknown_boundary": "no inferred harm"},
+    {"case_id": "quote-hpv", "current_text_signal": "HPV CONTEXT_SUPPRESSED", "minimum_neutral_facts": ["quoted provenance"], "missing_facts": ["advocacy relation"], "wrath_local_interpretation": "none", "expected_unknown_boundary": "quoted content is not a fact"},
+    {"case_id": "v2-faf-negation", "current_text_signal": "FAF CONTEXT_SUPPRESSED", "minimum_neutral_facts": ["event/comparison event", "measurement if supplied", "provenance"], "missing_facts": ["coercion/baseline/authority"], "wrath_local_interpretation": "amplification", "expected_unknown_boundary": "negation is text-local"},
+    {"case_id": "v3-escalation_boundary-discussion", "current_text_signal": "ESI AMBIGUOUS", "minimum_neutral_facts": ["source/action provenance"], "missing_facts": ["advocacy and event relation"], "wrath_local_interpretation": "none until supported", "expected_unknown_boundary": "UNKNOWN"},
+    {"case_id": "v2-all-advocacy", "current_text_signal": "ESI/HPV/FAF PRESENT", "minimum_neutral_facts": ["separate event/target/order/measurement records"], "missing_facts": ["relationship verification"], "wrath_local_interpretation": "independent co-occurring dimensions", "expected_unknown_boundary": "no aggregate/preference"}
+  ],
+  "next_experiment": {"type": "test-only explicit Structural Evidence fixture experiment", "freeze_before": ["packet IDs/scopes", "assertor/actor/target/observer/verifier identities", "provenance/lineage", "availability boundary", "expected conformance", "existing corpus labels"], "prohibited": ["production import", "adapter", "gate/controller integration", "authority resolver", "score", "threshold", "policy decision"]},
+  "recommendation": "WRATH READY FOR TEST-ONLY STRUCTURAL-EVIDENCE FIXTURE EXPERIMENT DESIGN"
+}

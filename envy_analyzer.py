@@ -9,9 +9,11 @@ unobserved agent state, so it remains a narrow research/bootstrap detector.
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-import json
 from typing import Any, TYPE_CHECKING
 
+from contextual_cues import contextual_cue_observations
+from ethos_evidence_view import build_view
+from proposal_provenance import proposal_text_sources
 from regulator_contract import RegulatorAnalysis
 
 if TYPE_CHECKING:
@@ -70,12 +72,12 @@ class EnvyAnalyzer:
 
     def analyze(self, proposal: "ActionProposal") -> EnvyAnalysis:
         """Return repeatable 0–100 social-comparison evidence for one proposal."""
-        text = self._proposal_text(proposal)
         hits: list[dict[str, Any]] = []
         points = 0.0
         for cue, value in self._SOCIAL_COMPARISON_CUES:
-            if cue in text:
-                hits.append({"cue": cue, "points": value})
+            cue_hits = self._cue_hits(proposal, cue, value)
+            hits.extend(cue_hits)
+            if any(hit["contributes_to_score"] for hit in cue_hits):
                 points += value
         score = min(100.0, points)
         subscores = {"SOCIAL_COMPARISON": score}
@@ -88,7 +90,7 @@ class EnvyAnalyzer:
             violations.append("SOCIAL_COMPARISON")
         if self.config.overall_tolerance is not None and overall > self.config.overall_tolerance:
             violations.append("OVERALL")
-        confidence = round(min(1.0, 0.2 + len(hits) * 0.12), 2)
+        confidence = round(min(1.0, 0.2 + sum(hit["contributes_to_score"] for hit in hits) * 0.12), 2)
         explanation = self._explanation(score, violations)
         return EnvyAnalysis(
             version=ENVY_VECTOR_V1,
@@ -104,17 +106,49 @@ class EnvyAnalyzer:
         )
 
     @staticmethod
-    def _proposal_text(proposal: "ActionProposal") -> str:
-        return "\n".join(
-            (
-                proposal.task,
-                proposal.proposal_type,
-                proposal.target,
-                json.dumps(proposal.arguments, sort_keys=True),
-                proposal.exposed_reasoning,
-                proposal.raw_model_output,
-            )
-        ).lower()
+    def _cue_hits(proposal: "ActionProposal", cue: str, points: float) -> list[dict[str, Any]]:
+        """Interpret immutable EvidenceView records with Envy-local semantics."""
+        hits: list[dict[str, Any]] = []
+        counted = False
+        view = build_view(proposal, (cue,))
+        sources = {source.source_id: source for source in view.source_records}
+        for observed in view.cue_records:
+            source = sources[observed.source_id]
+            contributes = source.scoring_eligible and observed.context == "ASSERTED" and not counted
+            if contributes:
+                counted = True
+            hits.append({
+                "cue": cue, "configured_points": points,
+                "span": {"start": observed.start, "end": observed.end},
+                "context": observed.context, "reason": observed.reason,
+                "points": points if contributes else 0.0, "contributes_to_score": contributes,
+                "source_field": source.field, "source_path": source.path,
+                "source_kind": source.kind, "provenance_reason": source.scoring_reason,
+            })
+            if not contributes and source.scoring_eligible is False:
+                hits[-1]["reason"] = f"{source.scoring_reason}; {observed.reason}"
+        return hits
+
+    @staticmethod
+    def _legacy_cue_hits(proposal: "ActionProposal", cue: str, points: float) -> list[dict[str, Any]]:
+        """Rollback seam: pre-EvidenceView extraction retained for this experiment."""
+        hits: list[dict[str, Any]] = []
+        counted = False
+        for source in proposal_text_sources(proposal):
+            for hit in contextual_cue_observations(source.text, cue, points):
+                contributes = source.scoring_eligible and hit["context"] == "ASSERTED" and not counted
+                if contributes:
+                    counted = True
+                hit.update({
+                    "points": points if contributes else 0.0,
+                    "contributes_to_score": contributes,
+                    "source_field": source.field, "source_path": source.path,
+                    "source_kind": source.kind, "provenance_reason": source.scoring_reason,
+                })
+                if not contributes and source.scoring_eligible is False:
+                    hit["reason"] = f"{source.scoring_reason}; {hit['reason']}"
+                hits.append(hit)
+        return hits
 
     @staticmethod
     def _explanation(score: float, violations: list[str]) -> str:

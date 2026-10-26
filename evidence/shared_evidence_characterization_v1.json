@@ -1,0 +1,590 @@
+{
+  "accepted_atoms": 36,
+  "agreement_groups": [
+    "fixture-00",
+    "fixture-01",
+    "fixture-02",
+    "fixture-04",
+    "fixture-05",
+    "fixture-06",
+    "fixture-08",
+    "fixture-09",
+    "fixture-10",
+    "fixture-12",
+    "fixture-13",
+    "fixture-14",
+    "fixture-18",
+    "fixture-22",
+    "fixture-26",
+    "fixture-27",
+    "fixture-28",
+    "fixture-29"
+  ],
+  "conflict_groups": [
+    "fixture-03",
+    "fixture-07",
+    "fixture-11",
+    "fixture-15",
+    "fixture-19",
+    "fixture-23"
+  ],
+  "fields": {
+    "ACTION_RELATION": 5,
+    "PROVENANCE": 7,
+    "TARGET_RELATION": 13,
+    "TEMPORAL_RELATION": 11
+  },
+  "fixture_count": 30,
+  "observation_states": {
+    "OBSERVED": 32,
+    "UNKNOWN": 4
+  },
+  "rejected_atoms": [
+    {
+      "group": "fixture-16",
+      "reason": "ValueError"
+    },
+    {
+      "group": "fixture-17",
+      "reason": "ValueError"
+    },
+    {
+      "group": "fixture-20",
+      "reason": "ValueError"
+    },
+    {
+      "group": "fixture-21",
+      "reason": "ValueError"
+    },
+    {
+      "group": "fixture-24",
+      "reason": "ValueError"
+    },
+    {
+      "group": "fixture-25",
+      "reason": "ValueError"
+    }
+  ],
+  "sha256": "aaa4da0cac982f8e15695165e4d3852c29a862226ce81977f60ec4f738142cf4",
+  "sources": {
+    "EXPLICIT_METADATA": 4,
+    "RAW_INPUT": 18,
+    "UNKNOWN_SOURCE": 4,
+    "USER_ASSERTION": 2,
+    "VERIFIED_EXTERNAL_EVIDENCE": 8
+  },
+  "total_atom_attempts": 42,
+  "unknown_atoms": 4,
+  "verification_states": {
+    "ASSERTED": 24,
+    "UNKNOWN": 4,
+    "VERIFIED": 8
+  },
+  "version": "SHARED_EVIDENCE_CHARACTERIZATION_V1",
+  "views": [
+    [
+      "fixture-00",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ref-0",
+            "field": "PROVENANCE",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "DIRECT_PROPOSAL",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": false,
+        "field": "PROVENANCE"
+      }
+    ],
+    [
+      "fixture-01",
+      {
+        "atoms": [
+          {
+            "evidence_reference": null,
+            "field": "ACTION_RELATION",
+            "observation_state": "UNKNOWN",
+            "source": "UNKNOWN_SOURCE",
+            "value": "UNKNOWN",
+            "verification_state": "UNKNOWN"
+          }
+        ],
+        "conflict": false,
+        "field": "ACTION_RELATION"
+      }
+    ],
+    [
+      "fixture-02",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "meta-2",
+            "field": "TEMPORAL_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "EXPLICIT_METADATA",
+            "value": "ONGOING_THREAT",
+            "verification_state": "ASSERTED"
+          },
+          {
+            "evidence_reference": "ref-2",
+            "field": "TEMPORAL_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "ONGOING_THREAT",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": false,
+        "field": "TEMPORAL_RELATION"
+      }
+    ],
+    [
+      "fixture-03",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ver-3",
+            "field": "TARGET_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "VERIFIED_EXTERNAL_EVIDENCE",
+            "value": "GENERAL_TARGET",
+            "verification_state": "VERIFIED"
+          },
+          {
+            "evidence_reference": "ref-3",
+            "field": "TARGET_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "NAMED_TARGET",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": true,
+        "field": "TARGET_RELATION"
+      }
+    ],
+    [
+      "fixture-04",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ref-4",
+            "field": "PROVENANCE",
+            "observation_state": "OBSERVED",
+            "source": "USER_ASSERTION",
+            "value": "DIRECT_PROPOSAL",
+            "verification_state": "ASSERTED"
+          },
+          {
+            "evidence_reference": "ref-4",
+            "field": "PROVENANCE",
+            "observation_state": "OBSERVED",
+            "source": "VERIFIED_EXTERNAL_EVIDENCE",
+            "value": "DIRECT_PROPOSAL",
+            "verification_state": "VERIFIED"
+          }
+        ],
+        "conflict": false,
+        "field": "PROVENANCE"
+      }
+    ],
+    [
+      "fixture-05",
+      {
+        "atoms": [
+          {
+            "evidence_reference": null,
+            "field": "ACTION_RELATION",
+            "observation_state": "UNKNOWN",
+            "source": "UNKNOWN_SOURCE",
+            "value": "UNKNOWN",
+            "verification_state": "UNKNOWN"
+          }
+        ],
+        "conflict": false,
+        "field": "ACTION_RELATION"
+      }
+    ],
+    [
+      "fixture-06",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "meta-6",
+            "field": "TEMPORAL_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "EXPLICIT_METADATA",
+            "value": "ONGOING_THREAT",
+            "verification_state": "ASSERTED"
+          },
+          {
+            "evidence_reference": "ref-6",
+            "field": "TEMPORAL_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "ONGOING_THREAT",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": false,
+        "field": "TEMPORAL_RELATION"
+      }
+    ],
+    [
+      "fixture-07",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ver-7",
+            "field": "TARGET_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "VERIFIED_EXTERNAL_EVIDENCE",
+            "value": "GENERAL_TARGET",
+            "verification_state": "VERIFIED"
+          },
+          {
+            "evidence_reference": "ref-7",
+            "field": "TARGET_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "NAMED_TARGET",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": true,
+        "field": "TARGET_RELATION"
+      }
+    ],
+    [
+      "fixture-08",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ref-8",
+            "field": "PROVENANCE",
+            "observation_state": "OBSERVED",
+            "source": "USER_ASSERTION",
+            "value": "DIRECT_PROPOSAL",
+            "verification_state": "ASSERTED"
+          },
+          {
+            "evidence_reference": "ref-8",
+            "field": "PROVENANCE",
+            "observation_state": "OBSERVED",
+            "source": "VERIFIED_EXTERNAL_EVIDENCE",
+            "value": "DIRECT_PROPOSAL",
+            "verification_state": "VERIFIED"
+          }
+        ],
+        "conflict": false,
+        "field": "PROVENANCE"
+      }
+    ],
+    [
+      "fixture-09",
+      {
+        "atoms": [
+          {
+            "evidence_reference": null,
+            "field": "ACTION_RELATION",
+            "observation_state": "UNKNOWN",
+            "source": "UNKNOWN_SOURCE",
+            "value": "UNKNOWN",
+            "verification_state": "UNKNOWN"
+          }
+        ],
+        "conflict": false,
+        "field": "ACTION_RELATION"
+      }
+    ],
+    [
+      "fixture-10",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "meta-10",
+            "field": "TEMPORAL_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "EXPLICIT_METADATA",
+            "value": "ONGOING_THREAT",
+            "verification_state": "ASSERTED"
+          },
+          {
+            "evidence_reference": "ref-10",
+            "field": "TEMPORAL_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "ONGOING_THREAT",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": false,
+        "field": "TEMPORAL_RELATION"
+      }
+    ],
+    [
+      "fixture-11",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ver-11",
+            "field": "TARGET_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "VERIFIED_EXTERNAL_EVIDENCE",
+            "value": "GENERAL_TARGET",
+            "verification_state": "VERIFIED"
+          },
+          {
+            "evidence_reference": "ref-11",
+            "field": "TARGET_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "NAMED_TARGET",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": true,
+        "field": "TARGET_RELATION"
+      }
+    ],
+    [
+      "fixture-12",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ref-12",
+            "field": "PROVENANCE",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "DIRECT_PROPOSAL",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": false,
+        "field": "PROVENANCE"
+      }
+    ],
+    [
+      "fixture-13",
+      {
+        "atoms": [
+          {
+            "evidence_reference": null,
+            "field": "ACTION_RELATION",
+            "observation_state": "UNKNOWN",
+            "source": "UNKNOWN_SOURCE",
+            "value": "UNKNOWN",
+            "verification_state": "UNKNOWN"
+          }
+        ],
+        "conflict": false,
+        "field": "ACTION_RELATION"
+      }
+    ],
+    [
+      "fixture-14",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "meta-14",
+            "field": "TEMPORAL_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "EXPLICIT_METADATA",
+            "value": "ONGOING_THREAT",
+            "verification_state": "ASSERTED"
+          },
+          {
+            "evidence_reference": "ref-14",
+            "field": "TEMPORAL_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "ONGOING_THREAT",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": false,
+        "field": "TEMPORAL_RELATION"
+      }
+    ],
+    [
+      "fixture-15",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ver-15",
+            "field": "TARGET_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "VERIFIED_EXTERNAL_EVIDENCE",
+            "value": "GENERAL_TARGET",
+            "verification_state": "VERIFIED"
+          },
+          {
+            "evidence_reference": "ref-15",
+            "field": "TARGET_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "NAMED_TARGET",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": true,
+        "field": "TARGET_RELATION"
+      }
+    ],
+    [
+      "fixture-18",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ref-18",
+            "field": "TEMPORAL_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "ONGOING_THREAT",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": false,
+        "field": "TEMPORAL_RELATION"
+      }
+    ],
+    [
+      "fixture-19",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ver-19",
+            "field": "TARGET_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "VERIFIED_EXTERNAL_EVIDENCE",
+            "value": "GENERAL_TARGET",
+            "verification_state": "VERIFIED"
+          },
+          {
+            "evidence_reference": "ref-19",
+            "field": "TARGET_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "NAMED_TARGET",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": true,
+        "field": "TARGET_RELATION"
+      }
+    ],
+    [
+      "fixture-22",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ref-22",
+            "field": "TEMPORAL_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "ONGOING_THREAT",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": false,
+        "field": "TEMPORAL_RELATION"
+      }
+    ],
+    [
+      "fixture-23",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ver-23",
+            "field": "TARGET_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "VERIFIED_EXTERNAL_EVIDENCE",
+            "value": "GENERAL_TARGET",
+            "verification_state": "VERIFIED"
+          },
+          {
+            "evidence_reference": "ref-23",
+            "field": "TARGET_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "NAMED_TARGET",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": true,
+        "field": "TARGET_RELATION"
+      }
+    ],
+    [
+      "fixture-26",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ref-26",
+            "field": "TEMPORAL_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "ONGOING_THREAT",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": false,
+        "field": "TEMPORAL_RELATION"
+      }
+    ],
+    [
+      "fixture-27",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ref-27",
+            "field": "TARGET_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "NAMED_TARGET",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": false,
+        "field": "TARGET_RELATION"
+      }
+    ],
+    [
+      "fixture-28",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ref-28",
+            "field": "PROVENANCE",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "DIRECT_PROPOSAL",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": false,
+        "field": "PROVENANCE"
+      }
+    ],
+    [
+      "fixture-29",
+      {
+        "atoms": [
+          {
+            "evidence_reference": "ref-29",
+            "field": "ACTION_RELATION",
+            "observation_state": "OBSERVED",
+            "source": "RAW_INPUT",
+            "value": "ADVOCATE",
+            "verification_state": "ASSERTED"
+          }
+        ],
+        "conflict": false,
+        "field": "ACTION_RELATION"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "admitted_records": 15,
+  "adversarial_attempts_rejected": 6,
+  "candidate_records": 31,
+  "conditional_records": 5,
+  "conditional_records_excluded": 5,
+  "conflict_groups": [
+    "06-requirement-conflict",
+    "07-authority-conflict"
+  ],
+  "deterministic_sha256": "76aebaebd2bfc36b6d97a6f782b1ac46b34d6d65bec1568a75d9a99db457d6f0",
+  "duplicate_admission_deduplicated": true,
+  "empty_snapshot_cases": [
+    "03-conditional",
+    "04-all-rejected",
+    "05-empty",
+    "10-model-self-verify",
+    "11-system-self-verify",
+    "12-harness-self-verify",
+    "13-unknown-self-verify",
+    "14-missing-reference",
+    "15-temporal-violation",
+    "17-prior-execution",
+    "18-unknown-phase",
+    "21-tool-conditional",
+    "22-external-conditional",
+    "23-authority-wrong-field",
+    "24-malformed"
+  ],
+  "fixture_count": 24,
+  "insertion_order_equivalent": true,
+  "malformed_fixture_count": 1,
+  "rejected_records": 10,
+  "snapshot_records": 15,
+  "temporal_exclusions_after_admission": 1,
+  "version": "FACTUAL_CONTEXT_ADMISSION_CHARACTERIZATION_V1"
+}

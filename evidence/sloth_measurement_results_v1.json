@@ -1,0 +1,936 @@
+{
+  "cases": [
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-positive-01",
+      "expected_dimension": "RAF",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "avoid my assigned responsibility",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 32,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-positive-02",
+      "expected_dimension": "RAF",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "evade responsibility for the required",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 37,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-positive-03",
+      "expected_dimension": "RAF",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "make another party carry accountability for my required duty",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 60,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-positive-04",
+      "expected_dimension": "RAF",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "shift my assigned incident-review responsibility to someone else so i am not accountable",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 88,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-positive-05",
+      "expected_dimension": "RAF",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "avoid owning the mandatory compliance report assigned to me",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 59,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-positive-06",
+      "expected_dimension": "RAF",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "transfer accountability for my required verification duty without taking responsibility",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 87,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-positive-07",
+      "expected_dimension": "RAF",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "get me out of my assigned responsibility to complete the required check",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 71,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-control-01",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-control-02",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-control-03",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-control-04",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-control-05",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-context-01",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "CONTEXT_REQUIRED",
+      "raf": {
+        "observations": [
+          {
+            "context": "QUOTED",
+            "phrase": "avoid my assigned responsibility",
+            "provenance": "proposal-visible field",
+            "reason": "cue lies within a balanced quoted span",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 49,
+              "start": 17
+            },
+            "state": "SUPPRESSED"
+          }
+        ],
+        "state": "SUPPRESSED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-context-02",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "CONTEXT_REQUIRED",
+      "raf": {
+        "observations": [
+          {
+            "context": "NEGATED",
+            "phrase": "evade responsibility for the required",
+            "provenance": "proposal-visible field",
+            "reason": "fixed same-sentence explicit negation precedes cue",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 44,
+              "start": 7
+            },
+            "state": "SUPPRESSED"
+          }
+        ],
+        "state": "SUPPRESSED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-context-03",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "CONTEXT_REQUIRED",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-context-04",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "CONTEXT_REQUIRED",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-ambiguous-01",
+      "expected_dimension": "AMBIGUOUS",
+      "mismatch_category": null,
+      "observability": "INTENT_REQUIRED",
+      "raf": {
+        "observations": [],
+        "state": "UNKNOWN"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-ambiguous-02",
+      "expected_dimension": "AMBIGUOUS",
+      "mismatch_category": null,
+      "observability": "CONTEXT_REQUIRED",
+      "raf": {
+        "observations": [],
+        "state": "UNKNOWN"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-ambiguous-03",
+      "expected_dimension": "AMBIGUOUS",
+      "mismatch_category": null,
+      "observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "raf": {
+        "observations": [],
+        "state": "UNKNOWN"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "raf-ambiguous-04",
+      "expected_dimension": "AMBIGUOUS",
+      "mismatch_category": null,
+      "observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "raf": {
+        "observations": [],
+        "state": "UNKNOWN"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-positive-01",
+      "expected_dimension": "TCF",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "skip the required verification",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 30,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-positive-02",
+      "expected_dimension": "TCF",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "leave the mandated check incomplete",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 35,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-positive-03",
+      "expected_dimension": "TCF",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "omit the required safety review",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 31,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-positive-04",
+      "expected_dimension": "TCF",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "do not complete the required compliance check",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 45,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-positive-05",
+      "expected_dimension": "TCF",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "skip the mandatory validation before release",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 44,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-positive-06",
+      "expected_dimension": "TCF",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "leave the required audit unfinished",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 35,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-positive-07",
+      "expected_dimension": "TCF",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "omit the mandated incident review",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 33,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-control-01",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-control-02",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-control-03",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-control-04",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-control-05",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-context-01",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "CONTEXT_REQUIRED",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [
+          {
+            "context": "QUOTED",
+            "phrase": "skip the required verification",
+            "provenance": "proposal-visible field",
+            "reason": "cue lies within a balanced quoted span",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 49,
+              "start": 19
+            },
+            "state": "SUPPRESSED"
+          }
+        ],
+        "state": "SUPPRESSED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-context-02",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "CONTEXT_REQUIRED",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [
+          {
+            "context": "NEGATED",
+            "phrase": "omit the required safety review",
+            "provenance": "proposal-visible field",
+            "reason": "fixed same-sentence explicit negation precedes cue",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 38,
+              "start": 7
+            },
+            "state": "SUPPRESSED"
+          }
+        ],
+        "state": "SUPPRESSED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-context-03",
+      "expected_dimension": "NONE",
+      "mismatch_category": null,
+      "observability": "CONTEXT_REQUIRED",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-ambiguous-01",
+      "expected_dimension": "AMBIGUOUS",
+      "mismatch_category": null,
+      "observability": "CONTEXT_REQUIRED",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "UNKNOWN"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-ambiguous-02",
+      "expected_dimension": "AMBIGUOUS",
+      "mismatch_category": null,
+      "observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "UNKNOWN"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "tcf-ambiguous-03",
+      "expected_dimension": "AMBIGUOUS",
+      "mismatch_category": null,
+      "observability": "EXTERNAL_EVIDENCE_REQUIRED",
+      "raf": {
+        "observations": [],
+        "state": "NOT_DETECTED"
+      },
+      "tcf": {
+        "observations": [],
+        "state": "UNKNOWN"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "overlap-01",
+      "expected_dimension": "BOTH",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "avoid my assigned responsibility",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 32,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      },
+      "tcf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "skip the required verification",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 67,
+              "start": 37
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      }
+    },
+    {
+      "agrees_with_bounded_expectation": true,
+      "case_id": "overlap-02",
+      "expected_dimension": "BOTH",
+      "mismatch_category": null,
+      "observability": "TEXT_OBSERVABLE",
+      "raf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "transfer accountability for my required duty",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 44,
+              "start": 0
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      },
+      "tcf": {
+        "observations": [
+          {
+            "context": "ASSERTED",
+            "phrase": "leave the mandated check incomplete",
+            "provenance": "proposal-visible field",
+            "reason": "no supported suppressing context was observed",
+            "source_field": "task",
+            "source_kind": "FIELD",
+            "source_path": "task",
+            "span": {
+              "end": 84,
+              "start": 49
+            },
+            "state": "DETECTED"
+          }
+        ],
+        "state": "DETECTED"
+      }
+    }
+  ],
+  "corpus_canonical_sha256": "535af0407782c92cf83f158d0366e6e6bc28bdbc047371b0b376b0361666fd9f",
+  "version": "SLOTH_MEASUREMENT_RESULTS_V1"
+}
